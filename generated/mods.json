@@ -1,0 +1,4173 @@
+[
+  {
+    "schema_version": "1.0",
+    "id": "3x_healing",
+    "display_name": "3x Healing",
+    "short_description": "Triples base healing rate.",
+    "author": [
+      "Shard"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/Medium-Maintenance-Small-Mods/3x_healing",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/Medium-Maintenance-Small-Mods/3x_healing"
+    },
+    "categories": [
+      "rebalance"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "abrahmsrecipes1",
+    "display_name": "Abrahms Recipes 1",
+    "short_description": "Adds some simple recipes, ingredients and meals that don't require advanced tools to make. Also adds some slightly overpowered historical and mythical melee weapons from Europe, China and Japan",
+    "author": [
+      "MrAbrahms"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Abrahms_Recipes",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Abrahms_Recipes"
+    },
+    "categories": [
+      "items"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "gov_bandits_kai_r",
+    "display_name": "Add Bandits Extended+",
+    "short_description": "Modified by Malkeus, Further modified with new custom content by Jolmar7 with lots of new added things. Adds bands of non-NPCs type of hostile and friendly armed humans that carry weapons, ammo, that",
+    "author": [
+      "GovTD/Karl_Keimov, Jolmar7"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/M_Agents_Expanded",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/M_Agents_Expanded"
+    },
+    "categories": [
+      "content"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "aaa",
+    "display_name": "Adurnsyl's Assorted Arms and Armour",
+    "short_description": "This addon adds more real-world military equipment into the game. Blacklist removed due to Malkeus' Greed.",
+    "author": [
+      "Adurnsyl"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/aaa NO blacklist",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/aaa NO blacklist"
+    },
+    "categories": [
+      "items"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "adv_gear",
+    "display_name": "Advanced Gear",
+    "short_description": "Extremely high-end items mod based around nanotech crafting and 3D printing, with basic materials that can be found in labs, mutations to be added later.",
+    "author": [
+      "Shard"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/AdvancedGear_CDDA_Mod",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/AdvancedGear_CDDA_Mod"
+    },
+    "categories": [
+      "items"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "advtech",
+    "display_name": "Advanced Technologies",
+    "short_description": "Adds advanced craftable vehicle parts, mech parts to craft vehicle mechs, craftable blob cyborgs, some new robots, some new armors, weapons and crafting.",
+    "author": [
+      "Kane",
+      "MechMaster2.0"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Advanced_Technologies",
+    "version": "0.0.0",
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Advanced_Technologies"
+    },
+    "categories": [
+      "items"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "a_mutated_arsenal",
+    "display_name": "Alexs Mutant Power Armor",
+    "short_description": "Adds Power Armor usable by all mutations lines, to make mutations a little less suckier",
+    "author": [
+      "Alexandreiah"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/Medium-Maintenance-Small-Mods/Mutated-Arsenal",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/Medium-Maintenance-Small-Mods/Mutated-Arsenal"
+    },
+    "categories": [
+      "items"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "basement_extension",
+    "display_name": "Alternative Basement Layouts",
+    "short_description": "RogueYun's work on fleshing out basements, in mod form. Adds 3 new flavors of basement.",
+    "author": [
+      "RogueYun, Malkeus"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Basement_Extension",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Basement_Extension"
+    },
+    "categories": [
+      "buildings"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "amplified_players_features",
+    "display_name": "Amplified @'s Features",
+    "short_description": "Attempt to bring more stuff into appearance traits, including NPC support. PS.: Don't mix cute with default :D",
+    "author": [
+      "Zetsukaze"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/amplified_player_features",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/amplified_player_features"
+    },
+    "categories": [
+      "graphical"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "animatronic_monsters",
+    "display_name": "Animatronic Monsters",
+    "short_description": "Adds a chain of bankrupt pizzerias, with still functioning animatronics inside.",
+    "author": [
+      "Lanceo90"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Animatronics",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Animatronics"
+    },
+    "categories": [
+      "buildings"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "arcana",
+    "display_name": "Arcana and Magic Items",
+    "short_description": "Adds a host of craftable magic items and spells, centered around the use of Arcana skill to research and exploit otherworldly monsters and anomalies.",
+    "author": [
+      "Chaosvolt"
+    ],
+    "license": "CC-BY-SA-3.0",
+    "homepage": "https://github.com/chaosvolt/cdda-arcana-mod/tree/master/Arcana_BN",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/chaosvolt/cdda-arcana-mod/archive/refs/heads/master.zip",
+      "commit_sha": "37718985431bdbfbee1488e23747edbed3440cbf",
+      "extract_path": "Arcana_BN"
+    },
+    "categories": [
+      "content"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    },
+    "last_updated": "2025-12-08T17:38:23.160Z"
+  },
+  {
+    "schema_version": "1.0",
+    "id": "arcana_aftershock_patch",
+    "display_name": "Arcana/Aftershock Patchmod",
+    "short_description": "Optional patch mod that allows content in Arcana and Aftershock to interact with each other.",
+    "author": [
+      "Chaosvolt"
+    ],
+    "license": "CC-BY-SA-3.0",
+    "homepage": "https://github.com/chaosvolt/cdda-arcana-mod/tree/master/Patchmods/BN_Arcana_Aftershock_Patch",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1",
+      "arcana": "*",
+      "aftershock": "*"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/chaosvolt/cdda-arcana-mod/archive/refs/heads/master.zip",
+      "commit_sha": "37718985431bdbfbee1488e23747edbed3440cbf",
+      "extract_path": "Patchmods/BN_Arcana_Aftershock_Patch"
+    },
+    "categories": [
+      "misc_additions"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    },
+    "parent": "arcana",
+    "last_updated": "2025-12-08T17:38:23.165Z"
+  },
+  {
+    "schema_version": "1.0",
+    "id": "arcana_crit_patch",
+    "display_name": "Arcana/C.R.I.T. Patchmod",
+    "short_description": "Optional patch mod that allows content in Arcana and C.R.I.T. to interact with each other.",
+    "author": [
+      "Chaosvolt"
+    ],
+    "license": "CC-BY-SA-3.0",
+    "homepage": "https://github.com/chaosvolt/cdda-arcana-mod/tree/master/Patchmods/BN_Arcana_Crit_Patch",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1",
+      "arcana": "*",
+      "crt_expansion": "*"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/chaosvolt/cdda-arcana-mod/archive/refs/heads/master.zip",
+      "commit_sha": "37718985431bdbfbee1488e23747edbed3440cbf",
+      "extract_path": "Patchmods/BN_Arcana_Crit_Patch"
+    },
+    "categories": [
+      "misc_additions"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    },
+    "parent": "arcana",
+    "last_updated": "2025-12-08T17:38:23.168Z"
+  },
+  {
+    "schema_version": "1.0",
+    "id": "arcana_cata_patch",
+    "display_name": "Arcana/Cata++ Patchmod",
+    "short_description": "Optional patch mod that allows content in Arcana and Cataclysm++ to interact with each other.",
+    "author": [
+      "Chaosvolt",
+      "Noctifer"
+    ],
+    "license": "CC-BY-SA-3.0",
+    "homepage": "https://github.com/chaosvolt/cdda-arcana-mod/tree/master/Patchmods/BN_Arcana_Cata++_Patch",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1",
+      "arcana": "*",
+      "cata++": "*"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/chaosvolt/cdda-arcana-mod/archive/refs/heads/master.zip",
+      "commit_sha": "37718985431bdbfbee1488e23747edbed3440cbf",
+      "extract_path": "Patchmods/BN_Arcana_Cata++_Patch"
+    },
+    "categories": [
+      "misc_additions"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    },
+    "parent": "arcana",
+    "last_updated": "2025-12-09T16:59:22.488Z"
+  },
+  {
+    "schema_version": "1.0",
+    "id": "arcana_dinomod_patch",
+    "display_name": "Arcana/DinoMod Patchmod",
+    "short_description": "Optional patch mod that allows content in Arcana and DinoMod to interact with each other.",
+    "author": [
+      "Chaosvolt"
+    ],
+    "license": "CC-BY-SA-3.0",
+    "homepage": "https://github.com/chaosvolt/cdda-arcana-mod/tree/master/Patchmods/BN_Arcana_Dinomod_Patch",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1",
+      "arcana": "*",
+      "dinomod": "*"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/chaosvolt/cdda-arcana-mod/archive/refs/heads/master.zip",
+      "commit_sha": "37718985431bdbfbee1488e23747edbed3440cbf",
+      "extract_path": "Patchmods/BN_Arcana_Dinomod_Patch"
+    },
+    "categories": [
+      "misc_additions"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    },
+    "parent": "arcana",
+    "last_updated": "2025-12-08T17:38:23.169Z"
+  },
+  {
+    "schema_version": "1.0",
+    "id": "arcana_magiclalnights_patch",
+    "display_name": "Arcana/Magical Nights Patchmod",
+    "short_description": "Optional patch mod that allows content in Arcana and Magical Nights to interact with each other.",
+    "author": [
+      "Chaosvolt"
+    ],
+    "license": "CC-BY-SA-3.0",
+    "homepage": "https://github.com/chaosvolt/cdda-arcana-mod/tree/master/Patchmods/BN_Arcana_MagicalNights_Patch",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1",
+      "arcana": "*",
+      "magicalnights": "*"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/chaosvolt/cdda-arcana-mod/archive/refs/heads/master.zip",
+      "commit_sha": "37718985431bdbfbee1488e23747edbed3440cbf",
+      "extract_path": "Patchmods/BN_Arcana_MagicalNights_Patch"
+    },
+    "categories": [
+      "misc_additions"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    },
+    "parent": "arcana",
+    "last_updated": "2025-12-08T17:38:23.170Z"
+  },
+  {
+    "schema_version": "1.0",
+    "id": "arsenal_breach",
+    "display_name": "Arsenal Breach",
+    "short_description": "Adds futuristic weapons",
+    "author": [
+      "Rooki1",
+      "community"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Arsenal_Breach",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Arsenal_Breach"
+    },
+    "categories": [
+      "items"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "arts_guns",
+    "display_name": "Artyoms' Gun Emporium - Reloaded",
+    "short_description": "Adds all the guns that YOU need to survive the Cataclysm",
+    "author": [
+      "Artyom177, Leon713, and /u/chieflean"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Artyom_Emporium_v.1",
+    "version": "0.0.0",
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Artyom_Emporium_v.1"
+    },
+    "categories": [
+      "items"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "autodoc_harmless_perfect",
+    "display_name": "Autodoc Harmless and Perfect",
+    "short_description": "The surgeries that are performed with the Autodoc are now perfect and absolutely harmless with no risks involved at all.",
+    "author": [
+      "Mrsecretguy1/Kenan"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Autodoc_Harmless_Perfect",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Autodoc_Harmless_Perfect"
+    },
+    "categories": [
+      "rebalance"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "bl9_100monres",
+    "display_name": "BL9-100%-monster-resilience-version",
+    "short_description": "Gigantic sci-fi action adventure expansion mod\n PLEASE, SET 'Monster evolution scaling factor' DURING IN-GAME WORLD GENERATION AROUND 5.00 FOR PROPER GAMEPLAY EXP",
+    "author": [
+      "Mrsecretguy1/Kenan, Axema Vales, Goat-God"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/BL9-100%_monster_resilience_version",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/BL9-100%_monster_resilience_version"
+    },
+    "categories": [
+      "content"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "bl9_140monres",
+    "display_name": "BL9-140%-monster-resilience-version",
+    "short_description": "Gigantic sci-fi action adventure expansion mod\n PLEASE, SET 'Monster evolution scaling factor' DURING IN-GAME WORLD GENERATION AROUND 5.00 FOR PROPER GAMEPLAY EXP",
+    "author": [
+      "Mrsecretguy1/Kenan, Axema Vales, Goat-God"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/BL9-140%_monster_resilience_version",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/BL9-140%_monster_resilience_version"
+    },
+    "categories": [
+      "content"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "bl9_175monres",
+    "display_name": "BL9-175%-monster-resilience-version",
+    "short_description": "Gigantic sci-fi action adventure expansion mod\n PLEASE, SET 'Monster evolution scaling factor' DURING IN-GAME WORLD GENERATION AROUND 5.00 FOR PROPER GAMEPLAY EXP",
+    "author": [
+      "Mrsecretguy1/Kenan, Axema Vales, Goat-God"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/BL9-175%_monster_resilience_version",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/BL9-175%_monster_resilience_version"
+    },
+    "categories": [
+      "content"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "battle_maid",
+    "display_name": "Battle Maid Redux",
+    "short_description": "Translated and tweaked version of the original Battle Maid mod, newly revamped. Adds a friendly Shoggoth maid NPC along with lots of maid related gear. See README.md for details",
+    "author": [
+      "Vermilion"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Battle_Maid_Redux",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Battle_Maid_Redux"
+    },
+    "categories": [
+      "content"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "tolerate_this",
+    "display_name": "Bens GF recipes",
+    "short_description": "Adds lots of simple gluten free and lactose free alternative recipe options. NOT EXHAUSTIVE.",
+    "author": [
+      "TechyBen"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Tolerate_This",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Tolerate_This"
+    },
+    "categories": [
+      "items"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "gekkobots",
+    "display_name": "Bio-Synth Robot expansion",
+    "short_description": "Adds electronic and biosynthetic robot enemies along with new robots related locations along with some new gear to the game.",
+    "author": [
+      "Jolmar7"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Biosynthetic_Robot_Mod_jm",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Biosynthetic_Robot_Mod_jm"
+    },
+    "categories": [
+      "content"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "bioco",
+    "display_name": "BioCo Content",
+    "short_description": "Adds many bionic centric items, curtosey of BioCo",
+    "author": [
+      "Poragon"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/BioCo",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/BioCo"
+    },
+    "categories": [
+      "items"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "bionic_space_expander",
+    "display_name": "Bionic Space Expander",
+    "short_description": "Introduces four new bionic implants that increase the available space for bionic implementations. They're hard to find and expansive to build.",
+    "author": [
+      "Leon"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Bionic_Space_Expander",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Bionic_Space_Expander"
+    },
+    "categories": [
+      "items"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "bio_recipes",
+    "display_name": "Bionics Systems Recipes",
+    "short_description": "Adds Autodoc, Autodoc couch to construction menu and Anesthethics to Chem crafting",
+    "author": [
+      "Chalne"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Bionics_Recipes",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Bionics_Recipes"
+    },
+    "categories": [
+      "items"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "blazemod",
+    "display_name": "Blazemod - Vehicle Additions Pack",
+    "short_description": "Gigantic vehicle parts additions mod. Adds lots of regular along with blob vehicle parts which includes new custom turrets, engines along with other vehicle parts, which are craftable.",
+    "author": [
+      "Blaze-whatdoyoumeanitsalreadytaken"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/blazemod",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/blazemod"
+    },
+    "categories": [
+      "vehicles"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "bootleg_walkers",
+    "display_name": "Bootleg Walkers",
+    "short_description": "Allows one to construct shoddy knock-offs of the Northrup ATSV chicken walker.  For more information, consult the README.md file.",
+    "author": [
+      "Feasts Upon Stars/Aggregate"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Bootleg_Walkers",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1",
+      "modular_turrets_no_blacklist": "*"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Bootleg_Walkers"
+    },
+    "categories": [
+      "items"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "bug_s_life",
+    "display_name": "Bug's life",
+    "short_description": "Add new types of insects, such as aphids, mantises, etc.",
+    "author": [
+      "SuddenEyePuncture"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Bugs_Life",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Bugs_Life"
+    },
+    "categories": [
+      "creatures"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "cbm_arms",
+    "display_name": "CBM Equipment",
+    "short_description": "Add various equipment made from CBM.",
+    "author": [
+      "Unknown"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/CBMArms",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/CBMArms"
+    },
+    "categories": [
+      "items"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "ks_variety_pack",
+    "display_name": "CDDA Variety Pack",
+    "short_description": "Adds vehicle variants (extended cab / bed pickups, for example), and some QoL fixes so you can drink during winter. Also adds some character creation options regarding gender, sexuality.",
+    "author": [
+      "KS"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/Medium-Maintenance-Small-Mods/cdda_variety_pack",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/Medium-Maintenance-Small-Mods/cdda_variety_pack"
+    },
+    "categories": [
+      "misc_additions"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "civilianpowaaa",
+    "display_name": "CIVILIAN POWER ARMOR",
+    "short_description": "Adds a few power armor items",
+    "author": [
+      "MATTYMCAIN"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/Medium-Maintenance-Small-Mods/Civilianpowerarmor",
+    "version": "0.0.0",
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/Medium-Maintenance-Small-Mods/Civilianpowerarmor"
+    },
+    "categories": [
+      "items"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "p_caches",
+    "display_name": "Caches",
+    "short_description": "Adds Prepper Caches, small bunkers full of supplies.",
+    "author": [
+      "TheMurderUnicorn"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/PrepperCache",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/PrepperCache"
+    },
+    "categories": [
+      "buildings"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "cars_to_wrecks",
+    "display_name": "Cars to Wrecks",
+    "short_description": "Changes vehicle spawns to spawn more car wrecks and less cars.",
+    "author": [
+      "GiMoe"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/cdda_wrecks",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/cdda_wrecks"
+    },
+    "categories": [
+      "vehicles"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "ninja",
+    "display_name": "Compatible Ninja MOD",
+    "short_description": "This mod adds a plethora of content related to pop culture ninjas including hideouts with enemy ninja NPCs. Malkeus: (Fixes to maps and vehicles)",
+    "author": [
+      "hount of \"@\""
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Ninja_mod",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Ninja_mod"
+    },
+    "categories": [
+      "misc_additions"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "sd_magcrafting",
+    "display_name": "Craft Ammo Mags & Belt Links",
+    "short_description": "Adds recipes for ammo mags and belt linkages.",
+    "author": [
+      "ShadowDragon8685"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/SD_Magcrafting",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/SD_Magcrafting"
+    },
+    "categories": [
+      "items"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "craftgp",
+    "display_name": "Craftable Gun Pack",
+    "short_description": "Adds more craftable firearms, and gunpowder.",
+    "author": [
+      "Zaweri"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Craft_Gunpowder",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Craft_Gunpowder"
+    },
+    "categories": [
+      "items"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "crazy_labs",
+    "display_name": "Crazy Labs",
+    "short_description": "A mod that adds lots of tough monsters to lab monster gen. Now labs are endgame areas! Intended for players who find labs too easy or boring. Inspired by Half-Life and the labs in Resident Evil 2.",
+    "author": [
+      "Mewb"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/Medium-Maintenance-Small-Mods/crazy_labs",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/Medium-Maintenance-Small-Mods/crazy_labs"
+    },
+    "categories": [
+      "creatures"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "crazypets",
+    "display_name": "Crazy Pets!",
+    "short_description": "Adds new, crazier pet starts!  WARNING: Breaks intended balance.",
+    "author": [
+      "Rod995"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/Medium-Maintenance-Small-Mods/crazy_pets",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/Medium-Maintenance-Small-Mods/crazy_pets"
+    },
+    "categories": [
+      "misc_additions"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "culinary_days_ahead",
+    "display_name": "Culinary Days Ahead",
+    "short_description": "Surviving the dragon way",
+    "author": [
+      "Eirenex",
+      "fatalmojo"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/Medium-Maintenance-Small-Mods/CulinaryDaysAhead",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/Medium-Maintenance-Small-Mods/CulinaryDaysAhead"
+    },
+    "categories": [
+      "items"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "fic_weapons",
+    "display_name": "DeadLeaves' Fictional Guns",
+    "short_description": "Adds a bunch of rare, fictional weapons.",
+    "author": [
+      "DeadLeaves",
+      "BorkBorkGoesTheCode"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/FictonalWeapons",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/FictonalWeapons"
+    },
+    "categories": [
+      "items"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "dracodogmod",
+    "display_name": "Draco's Dog Mod",
+    "short_description": "Adds dog crates with trainable dogs to animal shelters that can be trained into attack dogs (stat boosts). Adds dog pet professions.",
+    "author": [
+      "DracoGriffin"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/DracoDogMod",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/DracoDogMod"
+    },
+    "categories": [
+      "creatures"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "dracopigmod",
+    "display_name": "Draco's Pig Mod",
+    "short_description": "Allows pigs to be tamed with cattle fodder.",
+    "author": [
+      "DracoGriffin"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/DracoPigMod",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/DracoPigMod"
+    },
+    "categories": [
+      "creatures"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "etc_handguns_etc",
+    "display_name": "ETC Handguns etc",
+    "short_description": "Adds new high muzzle velocity, UPS-consuming guns ammo of which can be hand-loaded mostly from disassembled same-caliber conventional bullets, etc. INCLUDES PATCH OPTION in gun folder which is in item",
+    "author": [
+      "CTA"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/ETC_handguns_etc",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/ETC_handguns_etc"
+    },
+    "categories": [
+      "items"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "fast_healing",
+    "display_name": "EZ-Mode Medical",
+    "short_description": "Increases broken limb mending speed and the effectiveness of healing items.",
+    "author": [
+      "anothersimulacrum"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/fast_healing",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/fast_healing"
+    },
+    "categories": [
+      "misc_additions"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "even_more_mutations",
+    "display_name": "Even More Mutations",
+    "short_description": "Adds three new mutation branches and minor changes to existing ones.",
+    "author": [
+      "Uvi"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Even_More_Mutations",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Even_More_Mutations"
+    },
+    "categories": [
+      "misc_additions"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "exarch",
+    "display_name": "Expanded Archery",
+    "short_description": "Bows, crossbows and pneumatic weapons expanded.",
+    "author": [
+      "darktoes"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Expanded_Archery_Temp_Lite_Version",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Expanded_Archery_Temp_Lite_Version"
+    },
+    "categories": [
+      "items"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "stamina_regen_buff",
+    "display_name": "Faster Stamina Regen",
+    "short_description": "Makes effective stamina regeneration rate roughly half, instead of one-sixth.",
+    "author": [
+      "Chaosvolt"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/Medium-Maintenance-Small-Mods/stamina_regen_buff",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/Medium-Maintenance-Small-Mods/stamina_regen_buff"
+    },
+    "categories": [
+      "rebalance"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "deoxymod",
+    "display_name": "Folding Parts pack",
+    "short_description": "Makes solar panels and several other parts foldable, and adds foldable quarterboards.",
+    "author": [
+      "Deoxy",
+      "Llamageddon"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/Medium-Maintenance-Small-Mods/DeoxyMod",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/Medium-Maintenance-Small-Mods/DeoxyMod"
+    },
+    "categories": [
+      "vehicles"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "fuji_mpp",
+    "display_name": "Fuji's Military Profession Pack",
+    "short_description": "Adds numerous military themed professions",
+    "author": [
+      "Fuji"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/Medium-Maintenance-Small-Mods/Fuji_Mil_Prof",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/Medium-Maintenance-Small-Mods/Fuji_Mil_Prof"
+    },
+    "categories": [
+      "rebalance"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "gourmand_sgraces",
+    "display_name": "Gourmand's Graces",
+    "short_description": "Greatly expands the selection of various cooked food you can find in grocery stores and pharmacy fridges. Focuses on items you'd expect to find in bakery and deli departments.",
+    "author": [
+      "KantoJolto"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/GourmandsGraces",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/GourmandsGraces"
+    },
+    "categories": [
+      "items"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "growable_pots",
+    "display_name": "Growable Garden Pots",
+    "short_description": "Allows you to grow seeds of 12 different plants in craftable garden pots that can be carried around as items.  Perfect for the nomadic botanist.",
+    "author": [
+      "Honcharuk"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Growable_Garden_pots",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Growable_Garden_pots"
+    },
+    "categories": [
+      "items"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "uekibati_mod",
+    "display_name": "Growable Various Plants Flowerpot (uekibati) mod",
+    "short_description": "This mod adds flowerpots in which 37 various plants can grow ranging from grains to fruits, vegetables, berries, herbs.",
+    "author": [
+      "Fire man - Translated by Chesthole"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Growable_Various_Plants_Uekibati_mod",
+    "version": "0.0.0",
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Growable_Various_Plants_Uekibati_mod"
+    },
+    "categories": [
+      "items"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "mkmaxxi_s_gunslinger_mod",
+    "display_name": "Gunslinger Mod",
+    "short_description": "Adds a bionic and a non bionic variant of a gunslinger profession. Become the fastest gun in the cataclysm.",
+    "author": [
+      "MkMaxxi"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/Medium-Maintenance-Small-Mods/MkMaxxi_Gunslinger_Mod",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/Medium-Maintenance-Small-Mods/MkMaxxi_Gunslinger_Mod"
+    },
+    "categories": [
+      "rebalance"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "mxoudpcosmetics",
+    "display_name": "Hair and Skin Color Cosmetics, UDP and MXotto+ version p10",
+    "short_description": "Hair and skin color related traits for UDP and MXotto+. p10 sprites by xotto",
+    "author": [
+      "Fuji"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/XottoCosmeticsmod",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/XottoCosmeticsmod"
+    },
+    "categories": [
+      "graphical"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "homemade_fungicide",
+    "display_name": "Homemade Fungicide",
+    "short_description": "Now you can make homemade fungicide and anti-fungus bombs using bleach and ammonia! Also adds toxic gas effects to fungicidal and insecticidal gas. Intended to help combat and balance cdda's fungal fa",
+    "author": [
+      "Mewb"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/Medium-Maintenance-Small-Mods/homemade_fungicide",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/Medium-Maintenance-Small-Mods/homemade_fungicide"
+    },
+    "categories": [
+      "items"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "hydroponics",
+    "display_name": "Hydroponics",
+    "short_description": "Adds hydroponic units, a furniture which can have crops planted in it for increased yields.  Spawn occasionally in labs or basements.  Or build your own.",
+    "author": [
+      "Unknown"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Hydroponics",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Hydroponics"
+    },
+    "categories": [
+      "misc_additions"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "ew_pack",
+    "display_name": "Icecoon's Arsenal",
+    "short_description": "For those gun nuts.  Don't have enough near-future firearms in your life?  Add this mod today!",
+    "author": [
+      "Icecoon",
+      "community"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/EW_Pack",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/EW_Pack"
+    },
+    "categories": [
+      "items"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "jury_rigged_robots",
+    "display_name": "Jury-Rigged Robots",
+    "short_description": "Adds various options for salvaging, jury rigging, and reprogramming broken robots.",
+    "author": [
+      "Sunshine, TheSalamanderDJ"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Jury_Rigged_Robots",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Jury_Rigged_Robots"
+    },
+    "categories": [
+      "misc_additions"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "kingsman",
+    "display_name": "Kingsman Umbrella",
+    "short_description": "Adds the Umbrella gun from Kingsman - The Secret Service.",
+    "author": [
+      "Broken \"Spaghetti\" Admin"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/Medium-Maintenance-Small-Mods/Kingsman",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/Medium-Maintenance-Small-Mods/Kingsman"
+    },
+    "categories": [
+      "items"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "eps_cbm",
+    "display_name": "Large capacity storage CBMs",
+    "short_description": "Adds a large capacity storage device CBM.",
+    "author": [
+      "Unknown"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Large_Capacity_Storage_CBMs",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Large_Capacity_Storage_CBMs"
+    },
+    "categories": [
+      "items"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "av_lethalzeds",
+    "display_name": "Lethal Zeds",
+    "short_description": "Makes vanilla zeds deadly/annoying in combat.",
+    "author": [
+      "Axema Vales"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/AV_lethalzed_cdda",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/AV_lethalzed_cdda"
+    },
+    "categories": [
+      "rebalance"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "more_tea_leaf",
+    "display_name": "MOD to grow tea leaves",
+    "short_description": "Adds new tea leaf seeds and raw tea leaves crafting options, new types of tea leaves and tea.",
+    "author": [
+      "Unknown"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/Medium-Maintenance-Small-Mods/More_tea_leaf",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/Medium-Maintenance-Small-Mods/More_tea_leaf"
+    },
+    "categories": [
+      "items"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "make_a_lot_of_items_mod",
+    "display_name": "Make a Lot of Items",
+    "short_description": "Adds a pasta restaurant and easier batch crafting options for pasta along with glass jars and such",
+    "author": [
+      "Unknown"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/Medium-Maintenance-Small-Mods/Make_a_Lot_of_Items_Mod",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/Medium-Maintenance-Small-Mods/Make_a_Lot_of_Items_Mod"
+    },
+    "categories": [
+      "items"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "makeshift",
+    "display_name": "Makeshift Items Mod",
+    "short_description": "Adds more improvised item variants and rebalances existing ones.",
+    "author": [
+      "Noctifer-de-Mortem"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/makeshift",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/makeshift"
+    },
+    "categories": [
+      "items"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "mapgen_demo",
+    "display_name": "Mapgen Demo",
+    "short_description": "Demo for JSONized mapgens (missile silo).",
+    "author": [
+      "Sunshine"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/mapspecials_demo",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/mapspecials_demo"
+    },
+    "categories": [
+      "buildings"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "merchant",
+    "display_name": "Merchant Mod",
+    "short_description": "Adds bunkers shops with merchants along with a survivors village.",
+    "author": [
+      "Undereastern"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/Medium-Maintenance-Small-Mods/Merchant",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/Medium-Maintenance-Small-Mods/Merchant"
+    },
+    "categories": [
+      "misc_additions"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "metal_elemental",
+    "display_name": "Metal materials",
+    "short_description": "Add items that can be converted to difficult to obtain metal material.",
+    "author": [
+      "SG"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/Medium-Maintenance-Small-Mods/metal_elemental",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/Medium-Maintenance-Small-Mods/metal_elemental"
+    },
+    "categories": [
+      "items"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "modern_weapon",
+    "display_name": "Modern Weapon Pack Expanded",
+    "short_description": "This mod adds more real world firearms to the game. It was derived from Modern Weapons Pack by crom. It also overrides most of core game guns to use more calibers. INCLUDES PATCH OPTION in modern_extr",
+    "author": [
+      "crom",
+      "BorkBorkGoesTheCode"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Modern_Weapons_Pack_Expanded",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Modern_Weapons_Pack_Expanded"
+    },
+    "categories": [
+      "items"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "modular_turrets_no_blacklist",
+    "display_name": "Modular Turrets with No Blacklist",
+    "short_description": "Adds new types of enemy turrets, gives to enemy turrets swappable firearm modules, which can be reclaimed from broken robots.",
+    "author": [
+      "Sunshine"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Modular_Turrets",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Modular_Turrets"
+    },
+    "categories": [
+      "creatures"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "more_armors",
+    "display_name": "More Armors",
+    "short_description": "Adds more armors with recipes. Mainly XL versions for mutated characters, but there are a few new ones too.",
+    "author": [
+      "harison86"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/Medium-Maintenance-Small-Mods/More_Armor",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/Medium-Maintenance-Small-Mods/More_Armor"
+    },
+    "categories": [
+      "items"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "more_locations",
+    "display_name": "More Locations",
+    "short_description": "Adds new Z-level buildings and dungeons, including apartment towers with refugees along with bandits, estates, factories, towers, military outposts. Though, a little bit unpolished, but made with ple",
+    "author": [
+      "Sunshine"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/More_Locations",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/More_Locations"
+    },
+    "categories": [
+      "buildings"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "makeshift_stuff",
+    "display_name": "More Makeshift Stuff",
+    "short_description": "Adds some more makeshift armors and weapons.",
+    "author": [
+      "sanyaskillpro"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/More_Makeshift_Stuff",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/More_Makeshift_Stuff"
+    },
+    "categories": [
+      "items"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "more_survive_notes",
+    "display_name": "More Survivor Notes",
+    "short_description": "Adds more survivor notes for hints for new players.",
+    "author": [
+      "Broken \"Spaghetti\" Admin"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/More_Survivor_Notes",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/More_Survivor_Notes"
+    },
+    "categories": [
+      "items"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "more_survivor_stuff",
+    "display_name": "More Survivor Stuff",
+    "short_description": "Adds more variety to survivor equipment, styles, crafts etc.",
+    "author": [
+      "hoovytaurus"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/More_Survivor_Stuff",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/More_Survivor_Stuff"
+    },
+    "categories": [
+      "misc_additions"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "morlock_village",
+    "display_name": "Morlock Village",
+    "short_description": "Adds an underground village of mutant NPCs.  Connects to subways and sewers.",
+    "author": [
+      "Unknown"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Morlock_Village",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Morlock_Village"
+    },
+    "categories": [
+      "buildings"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "mug_npcs",
+    "display_name": "Mug NPCs",
+    "short_description": "Gives a few dialog options for robbing NPCs of their items without killing them first.  Some available lines based on character traits. e.g. psychopath, pacifist, etc.  Currently only works on dynamic",
+    "author": [
+      "Sunshine"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/Medium-Maintenance-Small-Mods/Mug_NPCs",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/Medium-Maintenance-Small-Mods/Mug_NPCs"
+    },
+    "categories": [
+      "misc_additions"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "mutant_animals",
+    "display_name": "Mutant Animals",
+    "short_description": "Expansion for animals that makes them evolve over time into new mutated versions. Some of them, though, they are weird, become tameable, very friendly, useful mutated versions. Some of them, however,",
+    "author": [
+      "Sunshine"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Mutant_Animals",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Mutant_Animals"
+    },
+    "categories": [
+      "creatures"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "mutant_insects",
+    "display_name": "Mutant Insects",
+    "short_description": "Expands giant insects, eggs, larva.  Adds new types.  Insects evolve into mega-sized insects.  Some larva are tameable.  Eggs can be modified with mutagen.",
+    "author": [
+      "Sunshine"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Mutant_Insects",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Mutant_Insects"
+    },
+    "categories": [
+      "creatures"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "mutant_npcs",
+    "display_name": "Mutant NPCs",
+    "short_description": "NPCs wandering the wasteland will occasionally have mutations --- your foes included.  Beware!",
+    "author": [
+      "Spencer Michaels"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Mutant_NPCs",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Mutant_NPCs"
+    },
+    "categories": [
+      "misc_additions"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "mutation_changes1",
+    "display_name": "Mutation Changes Snofielf",
+    "short_description": "Changes, rebalances and adds some more mutations. This a fixed version for the fixed version to cleanse the mod of even more old bugs and problems. It also has some new mutations and additions.",
+    "author": [
+      "Peeved Penguin (Original Author)",
+      "Bl4nk (Fixer)",
+      "Snofielf (Fixer)"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Mutation_Changes_Snofielf_Patch",
+    "version": "0.0.0",
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Mutation_Changes_Snofielf_Patch"
+    },
+    "categories": [
+      "rebalance"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "mycus_tomodati",
+    "display_name": "Mycus mod",
+    "short_description": "For those who want to play as a mycus.",
+    "author": [
+      "Mikazu"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/mycus",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/mycus"
+    },
+    "categories": [
+      "misc_additions"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "mma_mods_extension",
+    "display_name": "Mythical Martial Arts - Mods Extension",
+    "short_description": "Adds MMA martial arts support for weapons from various mods NOTE, you MUST have the mods below enabled, otherwise it will throw a NEGLIGIBLE (ignorable) error\n\n<color_light_gr",
+    "author": [
+      "Photoloss",
+      "Psychodata",
+      "Caring-Goat-Deity"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/MMA_Mods_Extension",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1",
+      "MMA": "*"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/MMA_Mods_Extension"
+    },
+    "categories": [
+      "misc_additions"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "nw_pack",
+    "display_name": "Mythological Replicas",
+    "short_description": "Adds recipes for replicas of mythological weapons.",
+    "author": [
+      "Zaweri"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/NW_Pack",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/NW_Pack"
+    },
+    "categories": [
+      "items"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "recruitment_options",
+    "display_name": "NPC Recruitment Options",
+    "short_description": "Gives special recruitment dialog if your character and an NPC have certain traits, stats, effects, or gear.  Post-threshold mutants will always join their own kind.",
+    "author": [
+      "Sunshine"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Recruitment_Options",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Recruitment_Options"
+    },
+    "categories": [
+      "misc_additions"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "national_guard_camp",
+    "display_name": "National Guard Camp",
+    "short_description": "Gigantic national guard camp filled with military grade enemy robots. Location is a bit unstable because of it's size so game can heavily lag near it if processing power is relatively low so use it i",
+    "author": [
+      "acidia"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/National_Guard_Camp",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/National_Guard_Camp"
+    },
+    "categories": [
+      "buildings"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "nechronica_redux",
+    "display_name": "Nechronica Redux",
+    "short_description": "MODIFIED by YukariMindGap from Malkeus: Adds items, mutations and enemies appearing in Nechronica: the Long Long Sequel.",
+    "author": [
+      "YukariMindGap"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Nechronica_Redux",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Nechronica_Redux"
+    },
+    "categories": [
+      "content"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "necromancy",
+    "display_name": "Necromancy",
+    "short_description": "Adds the ability to revive creatures as minions.",
+    "author": [
+      "dambuk1"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/necromancy",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/necromancy"
+    },
+    "categories": [
+      "magical"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "necro_find",
+    "display_name": "Necropolis Actually Findable",
+    "short_description": "Tired of all that futile search for Necropolis? Sick after checking 5165846512354 overmaps to no avail? Worry no more, this mod solves that problem! It makes Necropolis findable by making it spawn in",
+    "author": [
+      "Stormtrooper"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Necropolis_findable",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Necropolis_findable"
+    },
+    "categories": [
+      "rebalance"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "nm_wpns",
+    "display_name": "Nimian Manufacture Guns",
+    "short_description": "Adds a new set of guns, light and accurate, as well as some other toys.",
+    "author": [
+      "..."
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Nimian_Manufacture",
+    "version": "0.0.0",
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Nimian_Manufacture"
+    },
+    "categories": [
+      "items"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "only_wildlife",
+    "display_name": "No Monsters",
+    "short_description": "Removes all monsters from the game, save for those in the WILDLIFE category.",
+    "author": [
+      "Kodi Arfer"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/Medium-Maintenance-Small-Mods/Only_Wildlife",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/Medium-Maintenance-Small-Mods/Only_Wildlife"
+    },
+    "categories": [
+      "monster_exclude"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "oa_early_game_mutations_mod",
+    "display_name": "Oa's Early Game Mutations mod",
+    "short_description": "Makes mutagens available early game. Adds a new building, as well as two start scenarios and a profession for it.",
+    "author": [
+      "Oa"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/oa_early_game_mutations_mod",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/oa_early_game_mutations_mod"
+    },
+    "categories": [
+      "buildings"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "old_mutations",
+    "display_name": "Old Mutations",
+    "short_description": "Makes mutations work like before, without balancing changes and mutagen accumulation.",
+    "author": [
+      "Coolthulhu"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Old_Mutations",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Old_Mutations"
+    },
+    "categories": [
+      "rebalance"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "pipe_revolver_mod",
+    "display_name": "Pipe Revolver Rifles",
+    "short_description": "Adds revolver-style uppgraded versions of pipe rifles.",
+    "author": [
+      "Maddremor"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/Medium-Maintenance-Small-Mods/pipe-revolver-rifles",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1",
+      "craftgp": "*"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/Medium-Maintenance-Small-Mods/pipe-revolver-rifles"
+    },
+    "categories": [
+      "items"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "pix_s_shit",
+    "display_name": "Pixel's Various Fuckery",
+    "short_description": "Adds additional unique post-threshold mutations, various recipes for weapons. Slightly risqué but safe for work, no worse than vibrators and gimp suits!@#",
+    "author": [
+      "pixel and Eirenex"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/Medium-Maintenance-Small-Mods/pixels_fuckery",
+    "version": "0.0.0",
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/Medium-Maintenance-Small-Mods/pixels_fuckery"
+    },
+    "categories": [
+      "items"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "pneumo_fun",
+    "display_name": "Pneumatic fun",
+    "short_description": "Adds strong craftable pebbles for pneumatic weapons",
+    "author": [
+      "Mrsecretguy1/Kenan",
+      "Axema Vales"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Pneumatic_fun",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Pneumatic_fun"
+    },
+    "categories": [
+      "items"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "apex",
+    "display_name": "Project APEX",
+    "short_description": "Stage 0. High-end, mid-to-late game armor and equipment",
+    "author": [
+      "Firebrand"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/ProjectAPEX",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/ProjectAPEX"
+    },
+    "categories": [
+      "items"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "projectkawaii",
+    "display_name": "ProjectKawaii",
+    "short_description": "This mod includes Kawaii high-tech transformable melee weapons, a remotely-accessable store via crafting, and of course, cute outfits for maids.",
+    "author": [
+      "inoue&Derp"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Project_Kawaii",
+    "version": "0.0.0",
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Project_Kawaii"
+    },
+    "categories": [
+      "items"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "psychiclysm",
+    "display_name": "Psychiclysm",
+    "short_description": "Adapts some Magiclysm features for psychic phenomena.  Changes nether monsters fear attacks to an incremental effect.  Gives many monsters psi-attacks.  Adds mesmerism options to NPC dialog.  Psychic",
+    "author": [
+      "Sunshine"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Psychiclysm",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1",
+      "mutant_npcs": "*"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Psychiclysm"
+    },
+    "categories": [
+      "content"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "randomized_mall",
+    "display_name": "Randomized Mall",
+    "short_description": "Replaces the existing mall with one having a randomized layout.  Less realistic looking but more variety.",
+    "author": [
+      "Sunshine"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/Medium-Maintenance-Small-Mods/Randomized_Mall",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/Medium-Maintenance-Small-Mods/Randomized_Mall"
+    },
+    "categories": [
+      "buildings"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "red_s_odd_additions",
+    "display_name": "Red's Odd Additions",
+    "short_description": "Adds some rather VERY OP items-test-stuff, odd creatures, and such to the game. USE ONLY IF YOU ENJOY VERY OP ITEMS AND WACKINESS OR ONLY IF YOU ARE TESTING",
+    "author": [
+      "redxlaser15"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Red's_Odd_Additions",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Red's_Odd_Additions"
+    },
+    "categories": [
+      "misc_additions"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "futurearmory",
+    "display_name": "Ricky's Future Armory",
+    "short_description": "Experience the future of weaponry with this mod.",
+    "author": [
+      "RickyVanz"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/future_armory",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/future_armory"
+    },
+    "categories": [
+      "items"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "beamswordmod",
+    "display_name": "Rivtech Beam Swords",
+    "short_description": "Adds the Rivtech beam sword, a powerful constructible endgame weapon.",
+    "author": [
+      "Kettle Swordfang"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/lightsabermod",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/lightsabermod"
+    },
+    "categories": [
+      "items"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "heavy_miners",
+    "display_name": "Roadheader and other mining vehicles",
+    "short_description": "Adds a roadheader mining vehicle and its parts. Requires Tankmod: Revived.",
+    "author": [
+      "Ckpyt"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/HeavyMining",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1",
+      "Tankmod_Revived": "*"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/HeavyMining"
+    },
+    "categories": [
+      "vehicles"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "salvaged_robots",
+    "display_name": "Salvaged Robots",
+    "short_description": "Expands the types of robots and allows players to jury-rig broken robots into functioning companions.",
+    "author": [
+      "Sunshine"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Salvaged_Robots",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1",
+      "modular_turrets_no_blacklist": "*"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Salvaged_Robots"
+    },
+    "categories": [
+      "creatures"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "sarcophagi_access",
+    "display_name": "Sarcophagi Access",
+    "short_description": "Enables an alternate method of accessing the sarcophagus.",
+    "author": [
+      "Maddremor"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Sarcophagi_Access",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Sarcophagi_Access"
+    },
+    "categories": [
+      "misc_additions"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "secronom",
+    "display_name": "Secronom",
+    "short_description": "Brings your Cataclysm experience into a hellish nightmare…\n◆ Not recommended for newbs ◆\n\nNote that this mod is currently in <color_light_",
+    "author": [
+      "Axema Vales"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/secronom",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/secronom"
+    },
+    "categories": [
+      "content"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "ships",
+    "display_name": "Ships From Oa Additional Buildings",
+    "short_description": "Just a load of ship here",
+    "author": [
+      "Oa",
+      "Nonesuch"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Ships",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Ships"
+    },
+    "categories": [
+      "buildings"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "shrub_mod",
+    "display_name": "Shrub it off",
+    "short_description": "Prevents no collisions with t_shrubs ETC",
+    "author": [
+      "STK2008"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/shrub_it_off",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/shrub_it_off"
+    },
+    "categories": [
+      "vehicles"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "sierra_madre",
+    "display_name": "Sierra Madre",
+    "short_description": "Adds the (in)famous villa and casino of the Sierra Madre which can be found via an abandoned bunker from Fallout New Vegas: Dead Money.",
+    "author": [
+      "Stormtrooper"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/CDDA_Sierra_Madre_mod_bright_nights_version",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/CDDA_Sierra_Madre_mod_bright_nights_version"
+    },
+    "categories": [
+      "content"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "cbn_sky_island",
+    "display_name": "Sky Island",
+    "short_description": "Cataclysm BN port of the Sky Island mod. Raid-based gameplay inspired by Escape from Tarkov and Dark & Darker. This is a very early version!",
+    "description": "Cataclysm BN port of the Sky Island mod. Raid-based gameplay inspired by Escape from Tarkov and Dark & Darker. This is a very early version!",
+    "author": [
+      "Original: TGWeaver",
+      "BN Port: grayson and Claude :)"
+    ],
+    "license": "CC-BY-SA-4.0",
+    "homepage": "https://github.com/graysonchao/CBN-Sky-Island",
+    "version": "v0.0.7-alpha",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/graysonchao/CBN-Sky-Island/archive/refs/tags/v0.0.7-alpha.zip",
+      "commit_sha": "f0360b0948989847e77de10d16c74ebb7a11469c"
+    },
+    "autoupdate": {
+      "type": "tag"
+    },
+    "last_updated": "2026-01-07T13:30:31.938Z"
+  },
+  {
+    "schema_version": "1.0",
+    "id": "soy_mod",
+    "display_name": "Soy mod",
+    "short_description": "Adds soy and soy cooking related recipes. If you feel like it, please.",
+    "author": [
+      "Hio"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Soy_Mod",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1",
+      "Uekibati_mod": "*"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Soy_Mod"
+    },
+    "categories": [
+      "items"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "steampunk_arcanum",
+    "display_name": "Steampunk Mod",
+    "short_description": "Adds a variety of steampunk items, enemies and locations inspired by the Arcanum crpg.",
+    "author": [
+      "Jolmar7"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Steampunk_mod_jm",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Steampunk_mod_jm"
+    },
+    "categories": [
+      "content"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "surv_crowbar",
+    "display_name": "Survivor crowbar",
+    "short_description": "Add Survivor Barr with improved combat performance.",
+    "author": [
+      "Unknown"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/Medium-Maintenance-Small-Mods/surv_crowbar",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/Medium-Maintenance-Small-Mods/surv_crowbar"
+    },
+    "categories": [
+      "items"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "survivors_lost_item",
+    "display_name": "Survivor's Lost item",
+    "short_description": "You will be able to pick up bags that survivors have dropped from the bushes",
+    "author": [
+      "YasuYasu"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/Medium-Maintenance-Small-Mods/Survivors_Lost_item",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/Medium-Maintenance-Small-Mods/Survivors_Lost_item"
+    },
+    "categories": [
+      "items"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "add_mutant",
+    "display_name": "THRESHOLD",
+    "short_description": "Adds mutant professions and scenarios",
+    "author": [
+      "Unknown"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Threshold",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Threshold"
+    },
+    "categories": [
+      "misc_additions"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "tamebugs",
+    "display_name": "Tame Bugs",
+    "short_description": "Allows taming of insects with various feed/fodder types.",
+    "author": [
+      "Tefnut",
+      "Shard"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/Medium-Maintenance-Small-Mods/tamebugs",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/Medium-Maintenance-Small-Mods/tamebugs"
+    },
+    "categories": [
+      "rebalance"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "tankmod_revived",
+    "display_name": "Tankmod: Revived",
+    "short_description": "The intended successor of my older, obsoleted Tanks and Other Vehicles mod.",
+    "author": [
+      "Chaosvolt"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/chaosvolt/cdda-tankmod-revived-mod/tree/master/Tankmod_Revived_BN",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/chaosvolt/cdda-tankmod-revived-mod/archive/refs/heads/master.zip",
+      "commit_sha": "ae4015995f7f619a35966b9a745209e91662971c",
+      "extract_path": "Tankmod_Revived_BN"
+    },
+    "categories": [
+      "vehicles"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "tamu",
+    "display_name": "Targeted Mutations",
+    "short_description": "Adds the ability to make serums that will give you one specific mutation, as well as introducing a recipe for making the targeted purifier. I've chosen to only give a few bad mutations targeted mutati",
+    "author": [
+      "MutaMan"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Targeted Mutations",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Targeted Mutations"
+    },
+    "categories": [
+      "rebalance"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "tekitoumap",
+    "display_name": "Tekitou Map Commercial Overhaul",
+    "short_description": "Tekitou map Rezone's Commercial Zones? Adds a few distant urban locations along with new variants of existing city locations",
+    "author": [
+      "Unknown"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/Medium-Maintenance-Small-Mods/Tekitoumap",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1",
+      "MST_Extra": "*",
+      "makeshift": "*"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/Medium-Maintenance-Small-Mods/Tekitoumap"
+    },
+    "categories": [
+      "misc_additions"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "cerealmod",
+    "display_name": "The Glory Of Cereal!",
+    "short_description": "Adds cereal in milk as a thing. Also adds 5 types of nuts, the ability to make non-spoil nut milk, and a separate healthier nut milk cereal.",
+    "author": [
+      "KantoJolto"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/Medium-Maintenance-Small-Mods/CerealMod",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/Medium-Maintenance-Small-Mods/CerealMod"
+    },
+    "categories": [
+      "items"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "vermilionmod",
+    "display_name": "The Vermilion Mod",
+    "short_description": "Adds a random assortment of over-the-top weapons, gear and risqué items for the depraved.",
+    "author": [
+      "Vermilion"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Vermilion_Mod",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Vermilion_Mod"
+    },
+    "categories": [
+      "items"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "thermal_ups",
+    "display_name": "Thermal Electric UPS",
+    "short_description": "A little mod that adds a UPS-powered variant to the thermal electric suit and outfit.",
+    "author": [
+      "Nerdnub"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/Medium-Maintenance-Small-Mods/thermal_ups",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/Medium-Maintenance-Small-Mods/thermal_ups"
+    },
+    "categories": [
+      "items"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "trailerpark",
+    "display_name": "Trailer Parks",
+    "short_description": "Adds Trailer Parks and pre-built trailers.",
+    "author": [
+      "Kettle Swordfang"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/Medium-Maintenance-Small-Mods/trailerparkmod",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/Medium-Maintenance-Small-Mods/trailerparkmod"
+    },
+    "categories": [
+      "buildings"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "underrailmetro_mod",
+    "display_name": "UnderrailMetro Mod",
+    "short_description": "Adds a variety of items, enemies and locations inspired by the games Metro series and Underrail.",
+    "author": [
+      "Jolmar7"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Subway_Factions_Mod_jm",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Subway_Factions_Mod_jm"
+    },
+    "categories": [
+      "content"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "vamp_stuff",
+    "display_name": "Vampiric Stuff",
+    "short_description": "Adds night creatures, new items, monsters and locations.\nMore on interactions with npcs and quests, providing a subtle RPG playstyle.\n\nNote that",
+    "author": [
+      "Axema Vales"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/vamp_stuff",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/vamp_stuff"
+    },
+    "categories": [
+      "magical"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "vamp_stuff_arcana",
+    "display_name": "Vampiric Stuff + Arcana Mod Extension",
+    "short_description": "Links Vampiric Stuff and Arcana for various new contents and features.",
+    "author": [
+      "Axema Vales",
+      "Chaosvolt"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/vamp_stuff_arcana",
+    "version": "0.0.0",
+    "dependencies": {
+      "vamp_stuff": "*",
+      "Arcana": "*",
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/vamp_stuff_arcana"
+    },
+    "categories": [
+      "magical"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "blaze_extension_m",
+    "display_name": "Vehicle Additions Additions",
+    "short_description": "Diamond Vehicle Parts, blob extensions.",
+    "author": [
+      "/rlg/"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/M_Blazemod_Extension",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1",
+      "blazemod": "*"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/M_Blazemod_Extension"
+    },
+    "categories": [
+      "rebalance"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "wandering_masters",
+    "display_name": "Wandering Masters",
+    "short_description": "Mod adds 'Wandering Masters', NPCs that can 'teach' player martial arts after completing their quest line.\nCheck mod folder for more information.",
+    "author": [
+      "El-Jekozo"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Wandering_Masters-bright-nights",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Wandering_Masters-bright-nights"
+    },
+    "categories": [
+      "misc_additions"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "water_towers",
+    "display_name": "Water Towers",
+    "short_description": "Adds empty water towers.  Underground tank connects to subway tunnels.",
+    "author": [
+      "Sunshine"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/Medium-Maintenance-Small-Mods/Water_Tower",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/Medium-Maintenance-Small-Mods/Water_Tower"
+    },
+    "categories": [
+      "buildings"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "collectablemod",
+    "display_name": "Whaleys Collectables",
+    "short_description": "Adds collectible trading cards, stamps, and several new toys including dart guns.",
+    "author": [
+      "Whaley"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/Medium-Maintenance-Small-Mods/Whaleys Collectibles",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/Medium-Maintenance-Small-Mods/Whaleys Collectibles"
+    },
+    "categories": [
+      "items"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "whaleyhair1",
+    "display_name": "Whaleys Hair Mod",
+    "short_description": "Adds New Hairstyles, Tattoos, Makeup and cosmetic injuries.",
+    "author": [
+      "Whaley"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Whaleys New Hair Mod",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Whaleys New Hair Mod"
+    },
+    "categories": [
+      "misc_additions"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "whaleys_tallbuild",
+    "display_name": "Whaleys TALL Buildings",
+    "short_description": "Adds more T A L L Buildings.",
+    "author": [
+      "Whaley"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/WHALEYS_TALL_BUILDINGS",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/WHALEYS_TALL_BUILDINGS"
+    },
+    "categories": [
+      "buildings"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "wildliving",
+    "display_name": "Wild Living",
+    "short_description": "Expansion mod that brings more life and variety to the wilds. Merged with Dried Fruits mod by Wayticus as well. Includes tons of new items with recipes for enhanced wild living along with an ability t",
+    "author": [
+      "LambdaSix",
+      "Wayticus"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Wild_Living",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Wild_Living"
+    },
+    "categories": [
+      "content"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "world_on_fire",
+    "display_name": "World on Fire",
+    "short_description": "A monster pack that adds several fire type monsters to the game.",
+    "author": [
+      "Trivega & Community"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/World_On_Fire",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/World_On_Fire"
+    },
+    "categories": [
+      "creatures"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "xeas",
+    "display_name": "XEAS",
+    "short_description": "Adds new Xeno-Adapted Stuff. Close to hi-tech content. Includes an armor set (slightly better protection than survival armor, less encumbrance), a new knife (better butchering, impression damage) and",
+    "author": [
+      "MrJet"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/XEAS",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/XEAS"
+    },
+    "categories": [
+      "items"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "xeno_sas4",
+    "display_name": "Xeno's SAS4 weapons pack",
+    "short_description": "Adds all the weapons included inside the game SAS4 Zombie assault, only the base quality is present (aka, no red, no black), please do consider that these weapons are not a property of mine, and as th",
+    "author": [
+      "xXenocage"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Xenos_sas4_weapons_pack",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Xenos_sas4_weapons_pack"
+    },
+    "categories": [
+      "items"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "youkai_disco",
+    "display_name": "Youkai Enemies",
+    "short_description": "Adds some monsters based off Japanese folklore.",
+    "author": [
+      "Toltetix"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Youkai_Disco",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Youkai_Disco"
+    },
+    "categories": [
+      "creatures"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "zsfixed_cddaxp",
+    "display_name": "ZSFIXED_C:DDA Extra Professions & Gears",
+    "short_description": "Adds a new set of professions and relative gears including new gadgets along with a lot of new military grade armor versions.",
+    "author": [
+      "Marte"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/ZSFixed_CDDAXP",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/ZSFixed_CDDAXP"
+    },
+    "categories": [
+      "items"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "zets_hair_ext_more_locations",
+    "display_name": "Zet's Hair - More Locations",
+    "short_description": "Adds hairs, eyes and skin for the mod More Locations, used with DeadPeopleTileset",
+    "author": [
+      "Zetsukaze"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Zets-Hair_More_Locations_KenanEdition",
+    "version": "0.0.0",
+    "dependencies": {
+      "zets_hair_extensions_undead": "*",
+      "more_locations": "*"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Zets-Hair_More_Locations_KenanEdition"
+    },
+    "categories": [
+      "graphical"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "zets_hair_ext_pk_rebalance",
+    "display_name": "Zet's Hair - PKs Rebalancing",
+    "short_description": "Adds hairs, eyes and skin for the mod More Locations, used with DeadPeopleTileset",
+    "author": [
+      "Zetsukaze"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Zets-Hair_PKs_Rebalancing_KenanEdition",
+    "version": "0.0.0",
+    "dependencies": {
+      "zets_hair_extensions_undead": "*",
+      "PK_REBALANCE": "*"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Zets-Hair_PKs_Rebalancing_KenanEdition"
+    },
+    "categories": [
+      "graphical"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "zets_hair_extensions_undead",
+    "display_name": "Zetsukaze's Hair - 0.E EDIT",
+    "short_description": "Adds hairs, eyes and skins for UnDeadPeopleTileset. Modified for Undead People tileset compatibility.",
+    "author": [
+      "Zetsukaze"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Zets-Hair_Extensions_Undead",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Zets-Hair_Extensions_Undead"
+    },
+    "categories": [
+      "graphical"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "zhigh_mod",
+    "display_name": "Zombie Highschool Mod",
+    "short_description": "Add a weird school which includes quests, killing zombies, adding weapons, and moar, still WIP.",
+    "description": "Add a weird school which includes quests, killing zombies, adding weapons, and moar, still WIP.",
+    "author": [
+      "Another Marius"
+    ],
+    "license": "CC-BY-SA-4.0",
+    "homepage": "https://github.com/thhoney08/ZombieHighMod/tree/main/Zhigh_mod",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1",
+      "exotic_ammo": "*"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/thhoney08/ZombieHighMod/archive/refs/heads/main.zip",
+      "commit_sha": "bf47b1fa4b426280b3498a42a18cc02ec0ddb0bb",
+      "extract_path": "ZombieHighMod-main/Zhigh_mod"
+    },
+    "tags": [],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "main"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "anti_fungal_gears",
+    "display_name": "anti-fungal gear",
+    "short_description": "All fungus shall be destroyed.",
+    "author": [
+      "no name"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/Medium-Maintenance-Small-Mods/anti_fungal_gears",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/Medium-Maintenance-Small-Mods/anti_fungal_gears"
+    },
+    "categories": [
+      "items"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "vorpal_weapons",
+    "display_name": "vorpal weapons",
+    "short_description": "A collection of assorted gear, weapons, recipes and more. Machine translated from Japanese.",
+    "author": [
+      ""
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Vorpal_Weapons",
+    "version": "0.0.0",
+    "dependencies": {
+      "blazemod": "*"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+      "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+      "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Vorpal_Weapons"
+    },
+    "categories": [
+      "items"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "master"
+    }
+  },
+  {
+    "schema_version": "1.0",
+    "id": "jake_s_squirrel_mod",
+    "display_name": "프로젝트: 다람쥐",
+    "short_description": "하이테크 모드.",
+    "author": [
+      "NakedJake"
+    ],
+    "license": "ALL-RIGHTS-RESERVED",
+    "homepage": "https://github.com/NobleJake/ProjectPackRat/tree/main/ProjectSquirrel",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/NobleJake/ProjectPackRat/archive/refs/heads/main.zip",
+      "commit_sha": "a8718444676e1fc191c7a4b9470fcdcbf23bbbf5",
+      "extract_path": "ProjectPackRat-main/ProjectSquirrel"
+    },
+    "categories": [
+      "content"
+    ],
+    "icon_url": "https://media.discordapp.net/attachments/1093580823351001098/1447950186092429414/viewimage-1371.png?ex=69397c31&is=69382ab1&hm=db85a25e2c51d15167cff45501c37e607025d8edcbac9d68fdd08f85aef3a6cd&=&format=webp&quality=lossless&width=569&height=569",
+    "autoupdate": {
+      "type": "commit",
+      "branch": "main"
+    }
+  }
+]
