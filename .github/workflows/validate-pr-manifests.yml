@@ -1,0 +1,145 @@
+name: Validate PR Manifests
+
+on:
+  pull_request:
+    paths:
+      - "manifests/**"
+      - ".github/workflows/validate-pr-manifests.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  validate-pr-manifests:
+    name: Validate changed manifests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          path: registry-index
+
+      - uses: denoland/setup-deno@v2
+        with:
+          deno-version: v2.x
+          cache: true
+
+      - name: Clone registry schema
+        run: git clone --depth 1 https://github.com/cataclysmbn/registry.git registry
+
+      - name: Collect changed manifests
+        working-directory: registry-index
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+        run: |
+          git fetch --no-tags --depth=1 origin "$BASE_SHA"
+          git diff --name-status -M "$BASE_SHA" HEAD -- manifests > "$RUNNER_TEMP/manifest_changes.tsv"
+          if [ -s "$RUNNER_TEMP/manifest_changes.tsv" ]; then
+            cat "$RUNNER_TEMP/manifest_changes.tsv"
+          else
+            echo "No manifest changes found."
+          fi
+
+      - name: Validate changed manifests
+        working-directory: registry
+        env:
+          CHANGES_FILE: ${{ runner.temp }}/manifest_changes.tsv
+          REGISTRY_INDEX: ../registry-index
+        run: |
+          deno run --allow-read=../registry-index,${{ runner.temp }} --allow-env=CHANGES_FILE,REGISTRY_INDEX - <<'TS'
+          const v = await import("valibot")
+          const YAML = await import("@std/yaml")
+          const path = await import("@std/path")
+          const { ModManifest } = await import("./src/schema/manifest.ts")
+
+          const changesFile = Deno.env.get("CHANGES_FILE")
+          const registryIndex = Deno.env.get("REGISTRY_INDEX")
+          if (!changesFile || !registryIndex) throw new Error("CHANGES_FILE and REGISTRY_INDEX are required")
+
+          const manifestPattern = /\.(ya?ml|json)$/i
+          const escapeCommand = (value) => String(value)
+            .replaceAll("%", "%25")
+            .replaceAll("\r", "%0D")
+            .replaceAll("\n", "%0A")
+          const issuePath = (issue) =>
+            issue.path?.map((item) => item.key).filter((key) => key !== undefined).map(String)
+              .join(".") ?? "<root>"
+          const issueMessage = (issue) => {
+            const details = [`field: ${issuePath(issue)}`, `message: ${issue.message}`]
+            if (issue.expected && issue.expected !== "unknown") details.push(`expected: ${issue.expected}`)
+            if (issue.received) details.push(`received: ${issue.received}`)
+            return details.join("; ")
+          }
+          const annotation = ({ level, file, title, message }) =>
+            console.error(
+              `::${level} file=${escapeCommand(file)},title=${escapeCommand(title)}::${escapeCommand(message)}`,
+            )
+
+          const changes = (await Deno.readTextFile(changesFile)).split("\n")
+            .filter(Boolean)
+            .map((line) => {
+              const [status, firstPath, secondPath] = line.split("\t")
+              const code = status.at(0) ?? ""
+              return { status, code, file: code === "R" || code === "C" ? secondPath : firstPath }
+            })
+            .filter(({ file }) => file?.startsWith("manifests/") && manifestPattern.test(file))
+            .filter(({ file }) => {
+              const name = path.basename(file)
+              if (!name.startsWith("_") && !name.startsWith(".")) return true
+              console.log(`Skipping template or dotfile manifest: ${file}`)
+              return false
+            })
+
+          if (changes.length === 0) {
+            console.log("No changed manifest files to validate.")
+            Deno.exit(0)
+          }
+
+          let failed = false
+          console.log(`Validating ${changes.length} changed manifest file(s).`)
+          for (const change of changes) {
+            console.log(`\n${change.status} ${change.file}`)
+            if (change.code === "D") {
+              annotation({
+                level: "notice",
+                file: change.file,
+                title: "Manifest deleted",
+                message: "Deleted manifests are recorded in the PR diff and skipped because there is no file content to parse.",
+              })
+              continue
+            }
+
+            const filePath = path.join(registryIndex, change.file)
+            let parsed
+            try {
+              const content = await Deno.readTextFile(filePath)
+              parsed = change.file.endsWith(".json") ? JSON.parse(content) : YAML.parse(content)
+            } catch (error) {
+              failed = true
+              const message = error instanceof Error ? error.message : String(error)
+              console.error(`  ✗ Could not parse file: ${message}`)
+              annotation({ level: "error", file: change.file, title: "Manifest parse error", message })
+              continue
+            }
+
+            const result = v.safeParse(ModManifest, parsed)
+            if (result.success) {
+              console.log("  ✓ Valid")
+              continue
+            }
+
+            failed = true
+            console.error(`  ✗ ${result.issues.length} schema issue(s) found:`)
+            console.error(v.summarize(result.issues).split("\n").map((line) => `    ${line}`).join("\n"))
+            for (const issue of result.issues) {
+              annotation({
+                level: "error",
+                file: change.file,
+                title: `Invalid manifest field: ${issuePath(issue)}`,
+                message: issueMessage(issue),
+              })
+            }
+          }
+
+          if (failed) Deno.exit(1)
+          TS
