@@ -4,11 +4,11 @@ display_name: XE038
 short_description: The blob has evolved, now a new substance called XE038 is making monsters mutate even further. Add challenging late game monsters, big bundle of materials and late game items.
 author:
   - leoCottret aka Sudo67
-license: CC-BY-4.0
+license: CC BY-SA 3.0
 homepage: >-
-  https://github.com/thelonestander/Lones-atomic-additions/tree/main/Lones
-  Atomic additions
-version: 1.0.0
+  https://github.com/leoCottret/cbn-leocottret-mods/tree/main/MODS/XE038
+  XE038
+version: 1.1.0
 source:
   type: github_archive
   url: >-
@@ -24,9 +24,9 @@ categories:
   - creatures
   - items
 dependencies:
-  bn: ">=0.9.1"
+  bn: ">=0.11.1"
 modinfo_url: "https://raw.githubusercontent.com/leoCottret/cbn-leocottret-mods/refs/heads/main/MODS/XE038/modinfo.json"
-uses_lua: false
+uses_lua: true
 autoupdate:
   type: commit
   branch: main  
