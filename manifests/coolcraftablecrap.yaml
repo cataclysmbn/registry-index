@@ -1,0 +1,36 @@
+schema_version: "1.0"
+id: coolcraftablecrap
+display_name: Cool Craftable Crap
+short_description: >-
+  Adds a bunch of craftable armors and weapons, mostly upgrades or alternatives
+  to existing stuff
+description: |
+  Currently adds:
+
+      10 superalloy swords
+      Superalloy chain links and chainmail sheets
+      9 pieces of superalloy chainmail
+      2 pieces of superalloy trench armor
+      Superheavy composite armor
+      10 customizable guns with 57 interchangeable parts
+      usable lathe and drill press
+author:
+  - zimnybigos
+license: CC-BY-SA-4.0
+homepage: >-
+  https://github.com/zimnybigos1/bn-coolcraftablecrap/tree/main/coolcraftablecrap
+version: 0.0.0
+dependencies:
+  bn: ">=0.12.0"
+source:
+  type: github_archive
+  url: >-
+    https://github.com/zimnybigos1/bn-coolcraftablecrap/archive/refs/heads/main.zip
+  commit_sha: c64d13401a07a42fbb245e9d8d63fcb71ad5be9a
+  extract_path: bn-coolcraftablecrap-main/coolcraftablecrap
+categories:
+  - content
+  - items
+autoupdate:
+  type: tag
+
