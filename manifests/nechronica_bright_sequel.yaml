@@ -1,0 +1,31 @@
+schema_version: "1.0"
+id: nechronica_bright_sequel
+display_name: "Nechronica: Bright Sequel"
+short_description: >-
+  Become an undead DOLL and fight monstrosities in the mod based on the Japanese
+  TTRPG, Nechronica: the Long Long Sequel.
+author:
+  - YukariMindGap
+  - Malkeus (Original Creator)
+  - Yunder (Original Creator)
+license: ALL-RIGHTS-RESERVED
+homepage: >-
+  https://github.com/YukariMindGap/Nechronica_Bright_Sequel/tree/master/Nechronica-Bright-Sequel-BN
+version: 0.0.0
+dependencies:
+  bn: ">=0.9.1"
+source:
+  type: github_archive
+  url: >-
+    https://github.com/YukariMindGap/Nechronica_Bright_Sequel/archive/refs/heads/master.zip
+  commit_sha: 6ebcf1ec0760f9d868e40d60d0dbbb8e889f0877
+  extract_path: Nechronica-Bright-Sequel-BN
+categories:
+  - content
+modinfo_url: >-
+  https://raw.githubusercontent.com/YukariMindGap/Nechronica_Bright_Sequel/6ebcf1ec0760f9d868e40d60d0dbbb8e889f0877/Nechronica-Bright-Sequel-BN/modinfo.json
+uses_lua: false
+autoupdate:
+  type: commit
+  branch: master
+last_updated: "2026-06-19T11:39:11.189Z"
