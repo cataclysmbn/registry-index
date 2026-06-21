@@ -1,0 +1,35 @@
+schema_version: "1.0"
+id: overhaul
+display_name: Overhaul Tileset
+short_description: Anime-style graphical tileset for Bright Nights.
+description: >-
+  Anime-style tileset mod with character, appearance, mutation, and interface
+  graphics for Bright Nights.
+author:
+  - 비창
+  - 고양이
+  - Xotto
+  - 로갤
+license: ALL-RIGHTS-RESERVED
+homepage: "https://github.com/scarf005/Overhaul"
+version: 0.0.1
+dependencies:
+  bn: ">=0.9.1"
+source:
+  type: github_archive
+  url: "https://github.com/scarf005/Overhaul/archive/refs/tags/v0.0.1.zip"
+  commit_sha: 0b9d87c5e78ab2601b149597bf894617beed0a48
+  extract_path: Overhaul-0.0.1/overhaul
+modinfo_url: "https://raw.githubusercontent.com/scarf005/Overhaul/0b9d87c5e78ab2601b149597bf894617beed0a48/overhaul/modinfo.json"
+categories:
+  - graphical
+tags:
+  - tileset
+  - appearance
+icon_url: "https://raw.githubusercontent.com/scarf005/Overhaul/v0.0.1/icon.webp"
+uses_lua: false
+autoupdate:
+  type: tag
+  update_url: "https://github.com/scarf005/Overhaul"
+  regex: "^v[0-9]"
+last_updated: "2026-06-21T01:04:54Z"
