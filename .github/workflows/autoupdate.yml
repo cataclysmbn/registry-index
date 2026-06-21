@@ -55,6 +55,10 @@ jobs:
         working-directory: registry
         run: deno run -RW --allow-run=git src/scripts/generate.ts ../registry-index/manifests ../registry-index/generated
 
+      - name: Remove yanked generated entries
+        working-directory: registry-index
+        run: deno run -RW .github/scripts/prune_yanked_generated.ts manifests generated
+
       - name: Format registry-index files
         run: deno fmt registry-index
 
