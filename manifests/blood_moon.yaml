@@ -1,0 +1,33 @@
+schema_version: "1.0"
+id: blood_moon
+display_name: Blood Moon
+short_description: >-
+  Adds configurable blood moon nights that spawn zombie hordes at certain
+  intervals.
+description: >-
+  Adds configurable blood moon nights that spawn zombie hordes at certain
+  intervals.
+author:
+  - Kota
+license: CC-BY-SA-4.0
+homepage: "https://github.com/shmakota/blood_moon_bn/tree/main/Blood_Moon"
+version: 0.0.0
+source:
+  type: github_archive
+  url: "https://github.com/shmakota/blood_moon_bn/archive/refs/heads/main.zip"
+  commit_sha: 80803602b5e897a6fd344d409cfb8ce8334de613
+  extract_path: blood_moon_bn-main/Blood_Moon
+categories:
+  - overhaul
+dependencies:
+  bn: ">=0.9.1"
+tags:
+  - rebalance
+  - lua
+  - difficulty
+  - combat
+icon_url: "https://github.com/shmakota/blood_moon_bn/blob/main/gfx/mod_icon.png"
+autoupdate:
+  type: commit
+  branch: main
+
