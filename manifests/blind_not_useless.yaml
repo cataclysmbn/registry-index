@@ -1,0 +1,21 @@
+schema_version: "1.0"
+id: blind_not_useless
+display_name: Blindness
+short_description: A few additions for a new blind trait.
+author:
+  - AlexBromum
+license: MIT
+homepage: "https://github.com/AlexBromum/Blindness"
+version: 1.0.0
+dependencies:
+  bn: ">=v0.12.0"
+source:
+  type: github_archive
+  url: "https://github.com/AlexBromum/Blindness/archive/refs/heads/main.zip"
+  commit_sha: 1e61a470f22083650d2f2b4842edcbc4a13c1616
+categories:
+  - qol
+  - items
+icon_url: "https://ibb.co/G44zz7wX"
+autoupdate:
+  type: tag
