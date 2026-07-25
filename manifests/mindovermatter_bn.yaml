@@ -1,0 +1,24 @@
+schema_version: "1.0"
+id: mindovermatter_bn
+display_name: Mind Over Matter (BN)
+short_description: >-
+  Psionics: nine psychic power paths.  A Lua-based port of the Mind Over Matter
+  mod from Cataclysm: DDA.  Pinned upstream: CDDA master 69df2e4 (2026-07-04).
+description: >-
+  Psionics: nine psychic power paths.  A Lua-based port of the Mind Over Matter
+  mod from Cataclysm: DDA.  Pinned upstream: CDDA master 69df2e4 (2026-07-04).
+author:
+  - Standing-Storm (original)
+  - Mike Cantrell (BN port)
+license: CC-BY-SA-4.0
+homepage: >-
+  https://github.com/MSCantrell/Mind-Over-Matter-for-Bright-Nights/tree/main/mindovermatter_bn
+version: 0.0.0
+dependencies:
+  bn: ">=0.9.1"
+source:
+  type: github_archive
+  url: >-
+    https://github.com/MSCantrell/Mind-Over-Matter-for-Bright-Nights/archive/refs/heads/main.zip
+  commit_sha: ce06deacce8da15d6f885b2962faf406ebed155d
+  extract_path: Mind-Over-Matter-for-Bright-Nights-main/mindovermatter_bn
