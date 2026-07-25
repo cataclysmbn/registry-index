@@ -1,0 +1,25 @@
+schema_version: "1.0"
+id: sleepscumming_soulslike_version
+display_name: "Sleepscumming: the Soulslike penalty version"
+short_description: >-
+  When you die, you go back to the last place you slept.  Your stuff does not
+  come with you.  You also suffer a penalty on damage and to your HP until you
+  return to the place you died.
+description: >-
+  When you die, you go back to the last place you slept.  Your stuff does not
+  come with you.  You also suffer a penalty on damage and to your HP until you
+  return to the place you died.
+author:
+  - ihatenumber
+license: CC-BY-SA-4.0
+homepage: "https://github.com/ihatenumber/BN_sleepscumming"
+version: 1.0.0
+dependencies:
+  bn: ">=0.9.1"
+source:
+  type: github_archive
+  url: "https://github.com/ihatenumber/BN_sleepscumming/archive/refs/heads/main.zip"
+  commit_sha: 11180c745d1dfefc810c2afbb22e1d03ce92e914
+autoupdate:
+  type: commit
+  branch: main
