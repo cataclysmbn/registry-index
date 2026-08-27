@@ -1,0 +1,23 @@
+schema_version: "1.0"
+id: thg_Thogs_Zs
+display_name: Thog's Zombies
+short_description: >-
+  Adds over 50 zombie variations to fill gaps in existing vanilla spawns and
+  evolutions.
+description: >-
+  Adds over 50 zombie variations to fill gaps in existing vanilla spawns and
+  evolutions; tough variations of zombies, Juggernauts to fill the gap between
+  hulks and normal zombies, and more. Generally increases evolution difficulty
+  due to the presence of far more deadly dead, while attempting a vanilla-like
+  balance and feel. Be sure to bring your big guns.
+author:
+  - Thog/Caninmyham
+license: CC0-1.0
+homepage: "https://github.com/caninmyham/Thogs-Zombies"
+version: 0.0.0
+dependencies:
+  bn: ">=0.12.0"
+source:
+  type: direct_url
+  url: >-
+    https://github.com/caninmyham/Thogs-Zombies/releases/download/ReleaseV2/TZ-.Thog.s.Zombies.zip
