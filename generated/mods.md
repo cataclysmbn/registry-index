@@ -230,6 +230,10 @@ Stuff from the Core Region, all the wa | |
 instead of one-sixth. | |
 ![Icon](https://raw.githubusercontent.com/cataclysmbn/Cataclysm-BN/main/gfx/app_icon/app-icon.svg)
 |
+[Filthy Clothing](https://github.com/WishDuck/Cataclysm-BN-Mods/archive/refs/tags/12.0.1.zip)
+| Wishduck,UNOwenWasMe | 12.0.1 | Filthy clothing restoration mod. | |
+![Icon](https://raw.githubusercontent.com/cataclysmbn/Cataclysm-BN/main/gfx/app_icon/app-icon.svg)
+|
 [FinalFantasyMod](https://github.com/Baratan-creates/BN-FinalFantasyMod/archive/refs/heads/main.zip)
 | Unknown | 2026.6.20-b206c3f | Adds Final Fantasy creatures. When the Catacylsm
 struck, portals to the Final Fantasy Franchise opened, and creatures crossed
@@ -921,6 +925,11 @@ risqué items for the depraved. | |
 [Thermal Electric UPS](https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip)
 | Nerdnub | 0.0.0 | A little mod that adds a UPS-powered variant to the thermal
 electric suit and outfit. | |
+![Icon](https://raw.githubusercontent.com/cataclysmbn/Cataclysm-BN/main/gfx/app_icon/app-icon.svg)
+|
+[Thog's Zombies](https://github.com/caninmyham/Thogs-Zombies/releases/download/ReleaseV2/TZ-.Thog.s.Zombies.zip)
+| Thog/Caninmyham | 0.0.0 | Adds over 50 zombie variations to fill gaps in
+existing vanilla spawns and evolutions. | |
 ![Icon](https://raw.githubusercontent.com/cataclysmbn/Cataclysm-BN/main/gfx/app_icon/app-icon.svg)
 |
 [Trailer Parks](https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip)

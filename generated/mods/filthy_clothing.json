@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0",
+  "id": "filthy_clothing",
+  "display_name": "Filthy Clothing",
+  "short_description": "Filthy clothing restoration mod.",
+  "description": "Filthy clothing restoration mod.",
+  "author": [
+    "Wishduck",
+    "UNOwenWasMe"
+  ],
+  "license": "AGPL-3.0-or-later",
+  "homepage": "https://github.com/WishDuck/Cataclysm-BN-Mods/tree/master/FilthyClothing",
+  "version": "12.0.1",
+  "dependencies": {
+    "bn": ">=0.12.0"
+  },
+  "source": {
+    "type": "github_archive",
+    "url": "https://github.com/WishDuck/Cataclysm-BN-Mods/archive/refs/tags/12.0.1.zip",
+    "extract_path": "FilthyClothing"
+  },
+  "uses_lua": true,
+  "lua_api_version": 2,
+  "autoupdate": {
+    "type": "tag",
+    "update_url": "https://github.com/WishDuck/Cataclysm-BN-Mods",
+    "regex": "^[0-9]+\\.[0-9]+\\.[0-9]+$",
+    "url": "https://github.com/WishDuck/Cataclysm-BN-Mods/archive/refs/tags/$version.zip"
+  },
+  "last_updated": "2026-08-28T09:26:05+09:00"
+}
