@@ -9,7 +9,7 @@
   ],
   "license": "CC-BY-SA-3.0",
   "homepage": "https://github.com/Noctifer-de-Mortem/nocts_cata_mod/tree/master/Patchmods/BN_Arcana_Cata++_Patch",
-  "version": "2026.8.13-030996e",
+  "version": "2026.9.1-82ea081",
   "previous_releases": [
     {
       "version": "0.0.0",
@@ -240,6 +240,16 @@
         "extract_path": "Patchmods/BN_Arcana_Cata++_Patch"
       },
       "released_at": "2026-08-10T01:13:26.790Z"
+    },
+    {
+      "version": "2026.8.13-030996e",
+      "source": {
+        "type": "github_archive",
+        "url": "https://github.com/Noctifer-de-Mortem/nocts_cata_mod/archive/refs/heads/master.zip",
+        "commit_sha": "030996e735764695552eaa5fb25c29f440d8a61d",
+        "extract_path": "Patchmods/BN_Arcana_Cata++_Patch"
+      },
+      "released_at": "2026-08-13T01:21:21.425Z"
     }
   ],
   "dependencies": {
@@ -250,7 +260,7 @@
   "source": {
     "type": "github_archive",
     "url": "https://github.com/Noctifer-de-Mortem/nocts_cata_mod/archive/refs/heads/master.zip",
-    "commit_sha": "030996e735764695552eaa5fb25c29f440d8a61d",
+    "commit_sha": "82ea0814f99115313cad4e944e491c08aac411f7",
     "extract_path": "Patchmods/BN_Arcana_Cata++_Patch"
   },
   "categories": [
@@ -263,5 +273,5 @@
     "branch": "master"
   },
   "parent": "arcana",
-  "last_updated": "2026-08-13T01:21:21.425Z"
+  "last_updated": "2026-09-01T03:02:03.455Z"
 }
