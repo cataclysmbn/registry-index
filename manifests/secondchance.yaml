@@ -1,0 +1,37 @@
+schema_version: "1.0"
+id: secondchance
+display_name: "Cataclysm: Second Chance"
+short_description: >-
+  The successor to Tefnut's Expansion, remade from the ground up. A mod that
+  aims to bring more hope and humor to whats normally a fairly grimdark setting.
+description: >-
+  New Kitsune mutation line, Crackhead Engineering & Weird Science Skills and
+  related crafts & weapons(oh my god the weapons), WW2 American & Japanese
+  weapons, uniforms, and museums, Various modest maid uniforms and related
+  gear,  Survivor-ified versions of blankets, cloaks, uniforms, wrist computers,
+  maid outfits, etc., various foods and related recipes, wildlife, robots, and
+  mutants, 4 brand new Professions and a new vehicle. + Vehicle parts, mounted
+  guns, and grid-powered air conditioners and floodlights.
+
+
+  Plushies!!! Bodypillows!!!
+author:
+  - Tefnut
+license: CC-BY-SA-4.0
+homepage: >-
+  https://github.com/lotus-eaten/Cataclysm-Second-Chance/tree/main/Second Chance
+  Redux
+version: 0.0.0
+dependencies:
+  bn: ">=0.9.1"
+source:
+  type: github_archive
+  url: >-
+    https://github.com/lotus-eaten/Cataclysm-Second-Chance/archive/refs/heads/main.zip
+  commit_sha: 30d3b06d751121afaa65ca77f55ab2f5a2934913
+  extract_path: Cataclysm-Second-Chance-main/Second Chance Redux
+categories:
+  - content
+autoupdate:
+  type: commit
+  branch: main
