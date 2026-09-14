@@ -102,6 +102,12 @@ The gigantic jabberwock of a mod that adds a lot of content to the game: new
 items, buildings, scenarios, monsters, etc. It also reworks and | |
 ![Icon](https://raw.githubusercontent.com/cataclysmbn/Cataclysm-BN/main/gfx/app_icon/app-icon.svg)
 |
+[Cataclysm: Second Chance](https://github.com/lotus-eaten/Cataclysm-Second-Chance/archive/refs/heads/main.zip)
+| Tefnut | 0.0.0 | The successor to Tefnut's Expansion, remade from the ground
+up. A mod that aims to bring more hope and humor to whats normally a fairly
+grimdark setting. | |
+![Icon](https://raw.githubusercontent.com/cataclysmbn/Cataclysm-BN/main/gfx/app_icon/app-icon.svg)
+|
 [Chorus's Arcana Addon](https://github.com/yay855/ChorusMod/archive/refs/heads/main.zip)
 | ChorusSystem | 2026.8.11-1b9b6ce | Various things added to Arcana, some pulled
 from other mods. | |
