@@ -1,0 +1,173 @@
+name: Comment Manifest Validation
+
+on:
+  workflow_run:
+    workflows: ["Validate PR Manifests"]
+    types: [completed]
+
+permissions:
+  contents: read
+  actions: read
+  pull-requests: write
+
+jobs:
+  comment:
+    if: ${{ github.event.workflow_run.repository.full_name == github.repository }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Verify run, PR, and report artifact
+        id: context
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const run = context.payload.workflow_run
+            const repository = `${context.repo.owner}/${context.repo.repo}`
+            const expectedPath = ".github/workflows/validate-pr-manifests.yml"
+            if (run.event !== "pull_request" || run.repository?.full_name !== repository || !run.workflow_id) {
+              core.setFailed("The triggering run is not the expected pull-request workflow.")
+              return
+            }
+            const workflow = await github.rest.actions.getWorkflow({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              workflow_id: run.workflow_id
+            })
+            if (workflow.data.path !== expectedPath || workflow.data.state === "disabled_inactivity") {
+              core.setFailed(`The triggering workflow path is not ${expectedPath}.`)
+              return
+            }
+            const headRepository = run.head_repository
+            const headOwner = headRepository?.owner?.login
+            const headBranch = run.head_branch
+            if (!headOwner || !headBranch || !headRepository?.full_name) {
+              core.setFailed("The triggering run did not identify its head repository and branch.")
+              return
+            }
+            const pulls = await github.paginate(github.rest.pulls.list, {
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: "open",
+              head: `${headOwner}:${headBranch}`,
+              base: run.base_ref || context.payload.repository.default_branch,
+              per_page: 100
+            })
+            const matches = pulls.filter((pull) =>
+              pull.head.sha === run.head_sha &&
+              pull.head.repo?.full_name === headRepository.full_name &&
+              pull.base.repo?.full_name === repository &&
+              pull.base.ref === (run.base_ref || context.payload.repository.default_branch)
+            )
+            const associated = run.pull_requests || []
+            if (associated.length > 0 && !associated.some((pull) => matches.some((match) => match.number === pull.number))) {
+              core.setFailed("The run PR association did not match the verified head SHA and repository.")
+              return
+            }
+            if (matches.length !== 1) {
+              core.setFailed(`Expected exactly one open PR for ${headRepository.full_name}:${headBranch} at ${run.head_sha}, found ${matches.length}.`)
+              return
+            }
+            const artifacts = await github.paginate(github.rest.actions.listWorkflowRunArtifacts, {
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              run_id: run.id,
+              per_page: 100
+            })
+            const reports = artifacts.filter((artifact) => artifact.name === "manifest-validation-report")
+            if (reports.length !== 1 || reports[0].expired || reports[0].size_in_bytes > 131_072) {
+              core.setFailed("Expected exactly one unexpired validation report artifact no larger than 128 KiB.")
+              return
+            }
+            core.setOutput("pr_number", String(matches[0].number))
+            core.setOutput("artifact_id", String(reports[0].id))
+
+      - name: Download only the verified report archive
+        uses: actions/github-script@v7
+        env:
+          ARTIFACT_ID: ${{ steps.context.outputs.artifact_id }}
+        with:
+          script: |
+            const fs = require("fs")
+            fs.mkdirSync("report", { recursive: true })
+            const response = await github.rest.actions.downloadArtifact({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              artifact_id: Number(process.env.ARTIFACT_ID),
+              archive_format: "zip"
+            })
+            fs.writeFileSync("report/artifact.zip", Buffer.from(response.data))
+
+      - name: Extract the bounded report file
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          from zipfile import ZipFile
+
+          archive_path = Path("report/artifact.zip")
+          report_path = Path("report/manifest-validation.md")
+          with ZipFile(archive_path) as archive:
+              entries = archive.infolist()
+              if len(entries) != 1 or entries[0].filename != report_path.name:
+                  raise SystemExit("The report archive must contain only manifest-validation.md.")
+              if entries[0].is_dir() or entries[0].file_size > 131_072:
+                  raise SystemExit("The validation report must be a regular file no larger than 128 KiB.")
+              report_path.write_bytes(archive.read(entries[0]))
+          PY
+
+      - name: Create or update the validation bot comment
+        uses: actions/github-script@v7
+        env:
+          PR_NUMBER: ${{ steps.context.outputs.pr_number }}
+        with:
+          script: |
+            const fs = require("fs")
+            const path = require("path")
+            const marker = "<!-- registry-index-manifest-validation -->"
+            const maxReportBytes = 131_072
+            const reportPath = path.resolve("report", "manifest-validation.md")
+            const reportDir = path.resolve("report")
+            const stat = fs.lstatSync(reportPath)
+            if (!stat.isFile() || stat.isSymbolicLink() || stat.size > maxReportBytes || path.dirname(reportPath) !== reportDir) {
+              core.setFailed("The downloaded validation report is not a regular file within the report directory or is too large.")
+              return
+            }
+            let report = fs.readFileSync(reportPath, "utf8")
+            const escapeHtml = (text) => text
+              .replaceAll("&", "&amp;")
+              .replaceAll("<", "&lt;")
+              .replaceAll(">", "&gt;")
+              .replaceAll('"', "&quot;")
+              .replaceAll("'", "&#39;")
+            const plain = report
+              .normalize("NFKC")
+              .replace(/[\u0000-\u0008\u000B\u000C\u000E-\u001F\u007F]/g, "")
+              .replaceAll("@", "＠")
+            const escaped = escapeHtml(plain)
+            const safeReport = escaped.length > 59_000
+              ? `${escaped.slice(0, 58_850)}\n\n[Report truncated; see the workflow artifact for the complete output.]`
+              : escaped
+            const body = `${marker}\n<pre>${safeReport}</pre>`
+            const number = Number(process.env.PR_NUMBER)
+            const comments = await github.paginate(github.rest.issues.listComments, {
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: number,
+              per_page: 100
+            })
+            const existing = comments.find((comment) =>
+              comment.user?.login === "github-actions[bot]" && comment.body?.startsWith(marker)
+            )
+            if (existing) {
+              await github.rest.issues.updateComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                comment_id: existing.id,
+                body
+              })
+            } else {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: number,
+                body
+              })
+            }
