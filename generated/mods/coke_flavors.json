@@ -9,7 +9,7 @@
   ],
   "license": "ALL-RIGHTS-RESERVED",
   "homepage": "https://github.com/thelonestander/Lones-soda-mod",
-  "version": "2026.6.20-398cef4",
+  "version": "2026.9.18-badce41",
   "previous_releases": [
     {
       "version": "0.0.0",
@@ -127,6 +127,15 @@
         "commit_sha": "398cef459c73ffc71f4395e24d9d7f7f64fd6fe1"
       },
       "released_at": "2026-06-19T03:55:36.113Z"
+    },
+    {
+      "version": "2026.6.20-398cef4",
+      "source": {
+        "type": "github_archive",
+        "url": "https://github.com/thelonestander/Lones-soda-mod/archive/refs/heads/main.zip",
+        "commit_sha": "398cef459c73ffc71f4395e24d9d7f7f64fd6fe1"
+      },
+      "released_at": "2026-06-20T02:48:43.688Z"
     }
   ],
   "dependencies": {
@@ -135,7 +144,7 @@
   "source": {
     "type": "github_archive",
     "url": "https://github.com/thelonestander/Lones-soda-mod/archive/refs/heads/main.zip",
-    "commit_sha": "398cef459c73ffc71f4395e24d9d7f7f64fd6fe1"
+    "commit_sha": "badce413ef20d723b4d22e1d5e49c2a7ce019aed"
   },
   "categories": [
     "items"
@@ -146,5 +155,5 @@
     "type": "commit",
     "branch": "main"
   },
-  "last_updated": "2026-06-20T02:48:43.688Z"
+  "last_updated": "2026-09-18T02:39:43.049Z"
 }

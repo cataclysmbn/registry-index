@@ -359,25 +359,25 @@ fancy needs. | |
 ![Icon](https://raw.githubusercontent.com/cataclysmbn/Cataclysm-BN/main/gfx/app_icon/app-icon.svg)
 |
 [Lones Atomic additions](https://github.com/thelonestander/Lones-atomic-additions/archive/refs/heads/main.zip)
-| Thelonestander | 2026.6.25-8e49c93 | Adds many new atomic gears to BN! | |
+| Thelonestander | 2026.9.18-954280c | Adds many new atomic gears to BN! | |
 ![Icon](https://raw.githubusercontent.com/cataclysmbn/Cataclysm-BN/main/gfx/app_icon/app-icon.svg)
 |
 [Lones Augmented Arsenal](https://github.com/thelonestander/Lones-Augmented-Arsenal/archive/refs/heads/main.zip)
-| Thelonestander | 2026.8.15-93b41ca | Adds many new atomic gears to BN! | |
+| Thelonestander | 2026.9.18-35c2844 | Adds many new atomic gears to BN! | |
 ![Icon](https://raw.githubusercontent.com/cataclysmbn/Cataclysm-BN/main/gfx/app_icon/app-icon.svg)
 |
 [Lones Cata++ patchmod](https://github.com/thelonestander/Lones-atomic-additions/archive/refs/heads/main.zip)
-| Thelonestander | 2026.6.25-8e49c93 | Patch mod for acs stealth cloak to be
+| Thelonestander | 2026.9.18-954280c | Patch mod for acs stealth cloak to be
 used for cata++. | |
 ![Icon](https://raw.githubusercontent.com/cataclysmbn/Cataclysm-BN/main/gfx/app_icon/app-icon.svg)
 |
 [Lones Soda mod](https://github.com/thelonestander/Lones-soda-mod/archive/refs/heads/main.zip)
-| thelonestander | 2026.6.20-398cef4 | A mod that adds many new flavors of coke
+| thelonestander | 2026.9.18-badce41 | A mod that adds many new flavors of coke
 to find | |
 ![Icon](https://raw.githubusercontent.com/cataclysmbn/Cataclysm-BN/main/gfx/app_icon/app-icon.svg)
 |
 [Lones used cars](https://github.com/thelonestander/Lones-Used-Cars/archive/refs/heads/main.zip)
-| thelonestander | 2026.6.25-56542c9 | A mod that adds new cars to BN! | |
+| thelonestander | 2026.9.18-0f5e078 | A mod that adds new cars to BN! | |
 ![Icon](https://raw.githubusercontent.com/cataclysmbn/Cataclysm-BN/main/gfx/app_icon/app-icon.svg)
 |
 [MOD to grow tea leaves](https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip)
