@@ -1,0 +1,30 @@
+schema_version: "1.0"
+id: limited_reviving_zombies
+display_name: Limited Zombie Revival
+short_description: >-
+  Zombies still rise, but never at full strength.  A corpse that gets up comes
+  back weakened in proportion to how badly it was mangled, spends a while
+  helpless and stiff after rising, and can only rise 
+description: >-
+  Zombies still rise, but never at full strength.  A corpse that gets up comes
+  back weakened in proportion to how badly it was mangled, spends a while
+  helpless and stiff after rising, and can only rise a limited number of times
+  before it is too broken to move again.  An alternative to disabling revival
+  entirely.
+author:
+  - sagittarius72
+license: MIT
+homepage: "https://github.com/sagittarius72git/Limited_Reviving_BN"
+version: 0.0.0
+dependencies:
+  bn: ">=0.12.0"
+source:
+  type: github_archive
+  url: >-
+    https://github.com/sagittarius72git/Limited_Reviving_BN/archive/refs/heads/main.zip
+  commit_sha: de8b0b863a711d07a71a01232cabc5db01166465
+categories:
+  - qol
+  - creatures
+autoupdate:
+  type: tag
