@@ -21,6 +21,7 @@ jobs:
       - name: Checkout registry-index
         uses: actions/checkout@v4
         with:
+          fetch-depth: 0
           path: registry-index
 
       - name: Checkout registry tools
@@ -32,6 +33,7 @@ jobs:
       - uses: denoland/setup-deno@v2
         with:
           deno-version: v2.x
+          cache: true
 
       - name: Run autoupdate
         working-directory: registry

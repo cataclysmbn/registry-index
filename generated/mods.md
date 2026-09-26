@@ -434,9 +434,9 @@ material. | |
 ![Icon](https://raw.githubusercontent.com/cataclysmbn/Cataclysm-BN/main/gfx/app_icon/app-icon.svg)
 |
 [Mind Over Matter (BN)](https://github.com/MSCantrell/Mind-Over-Matter-for-Bright-Nights/archive/refs/heads/main.zip)
-| Standing-Storm (original),Mike Cantrell (BN port) | 0.0.0 | Psionics: nine
-psychic power paths. A Lua-based port of the Mind Over Matter mod from
-Cataclysm: DDA. Pinned upstream: CDDA master 69df2e4 (2026-07-04). | |
+| Standing-Storm (original),Mike Cantrell (BN port) | 2026.9.26-28682f2 |
+Psionics: nine psychic power paths. A Lua-based port of the Mind Over Matter mod
+from Cataclysm: DDA. Pinned upstream: CDDA master 69df2e4 (2026-07-04). | |
 ![Icon](https://raw.githubusercontent.com/cataclysmbn/Cataclysm-BN/main/gfx/app_icon/app-icon.svg)
 |
 [Modern Weapon Pack Expanded](https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip)
