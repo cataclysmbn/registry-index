@@ -489,7 +489,7 @@
     ],
     "license": "CC-BY-SA-3.0",
     "homepage": "https://github.com/Noctifer-de-Mortem/nocts_cata_mod/tree/master/Patchmods/BN_Arcana_Cata++_Patch",
-    "version": "2026.9.20-a37b563",
+    "version": "2026.9.30-af3c2f1",
     "dependencies": {
       "bn": ">=0.9.1",
       "arcana": "*",
@@ -498,7 +498,7 @@
     "source": {
       "type": "github_archive",
       "url": "https://github.com/Noctifer-de-Mortem/nocts_cata_mod/archive/refs/heads/master.zip",
-      "commit_sha": "a37b563225aa9d7ea53b76e1ed746d29c6fb2cf9",
+      "commit_sha": "af3c2f1874fd41417d0b30a052fafc6a4d6853ce",
       "extract_path": "Patchmods/BN_Arcana_Cata++_Patch"
     },
     "categories": [
@@ -511,7 +511,7 @@
       "branch": "master"
     },
     "parent": "arcana",
-    "last_updated": "2026-09-20T02:50:57.115Z"
+    "last_updated": "2026-09-30T03:28:33.692Z"
   },
   {
     "schema_version": "1.0",
@@ -1542,7 +1542,7 @@
     ],
     "license": "CC-BY-SA-3.0",
     "homepage": "https://github.com/Noctifer-de-Mortem/nocts_cata_mod/tree/master/Patchmods/BN_Cata++_ExoticAmmo_Patch",
-    "version": "2026.9.20-a37b563",
+    "version": "2026.9.30-af3c2f1",
     "dependencies": {
       "bn": ">=0.9.1",
       "cata++": "*",
@@ -1551,7 +1551,7 @@
     "source": {
       "type": "github_archive",
       "url": "https://github.com/Noctifer-de-Mortem/nocts_cata_mod/archive/refs/heads/master.zip",
-      "commit_sha": "a37b563225aa9d7ea53b76e1ed746d29c6fb2cf9",
+      "commit_sha": "af3c2f1874fd41417d0b30a052fafc6a4d6853ce",
       "extract_path": "Patchmods/BN_Cata++_ExoticAmmo_Patch"
     },
     "categories": [
@@ -1564,7 +1564,7 @@
       "branch": "master"
     },
     "parent": "cata",
-    "last_updated": "2026-09-20T02:50:48.779Z"
+    "last_updated": "2026-09-30T03:28:20.627Z"
   },
   {
     "schema_version": "1.0",
@@ -1577,14 +1577,14 @@
     ],
     "license": "ALL-RIGHTS-RESERVED",
     "homepage": "https://github.com/Noctifer-de-Mortem/nocts_cata_mod/tree/master/nocts_cata_mod_BN",
-    "version": "2026.9.20-a37b563",
+    "version": "2026.9.30-af3c2f1",
     "dependencies": {
       "bn": ">=0.9.1"
     },
     "source": {
       "type": "github_archive",
       "url": "https://github.com/Noctifer-de-Mortem/nocts_cata_mod/archive/refs/heads/master.zip",
-      "commit_sha": "a37b563225aa9d7ea53b76e1ed746d29c6fb2cf9",
+      "commit_sha": "af3c2f1874fd41417d0b30a052fafc6a4d6853ce",
       "extract_path": "nocts_cata_mod_BN"
     },
     "categories": [
@@ -1596,7 +1596,7 @@
       "type": "commit",
       "branch": "master"
     },
-    "last_updated": "2026-09-20T02:50:58.189Z"
+    "last_updated": "2026-09-30T03:28:14.127Z"
   },
   {
     "schema_version": "1.0",
