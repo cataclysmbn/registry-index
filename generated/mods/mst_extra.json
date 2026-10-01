@@ -9,7 +9,7 @@
   ],
   "license": "ALL-RIGHTS-RESERVED",
   "homepage": "https://github.com/chaosvolt/MST_Extra_Mod/tree/master/MST_Extra_BN",
-  "version": "2026.7.3-4ed8ea6",
+  "version": "2026.10.1-2e9e1b5",
   "previous_releases": [
     {
       "version": "0.0.0",
@@ -150,6 +150,16 @@
         "extract_path": "MST_Extra_BN"
       },
       "released_at": "2026-06-20T02:48:58.446Z"
+    },
+    {
+      "version": "2026.7.3-4ed8ea6",
+      "source": {
+        "type": "github_archive",
+        "url": "https://github.com/chaosvolt/MST_Extra_Mod/archive/refs/heads/master.zip",
+        "commit_sha": "4ed8ea6e68a00c9fab0dc8610820e14cc1ef4eed",
+        "extract_path": "MST_Extra_BN"
+      },
+      "released_at": "2026-07-03T02:23:12.695Z"
     }
   ],
   "dependencies": {
@@ -158,7 +168,7 @@
   "source": {
     "type": "github_archive",
     "url": "https://github.com/chaosvolt/MST_Extra_Mod/archive/refs/heads/master.zip",
-    "commit_sha": "4ed8ea6e68a00c9fab0dc8610820e14cc1ef4eed",
+    "commit_sha": "2e9e1b5ab06f13358d92bdd954ef334f20a695e8",
     "extract_path": "MST_Extra_BN"
   },
   "categories": [
@@ -170,5 +180,5 @@
     "type": "commit",
     "branch": "master"
   },
-  "last_updated": "2026-07-03T02:23:12.695Z"
+  "last_updated": "2026-10-01T03:33:57.762Z"
 }
