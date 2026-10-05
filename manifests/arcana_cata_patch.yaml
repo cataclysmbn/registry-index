@@ -10,7 +10,7 @@ author:
 license: CC-BY-SA-3.0
 homepage: >-
   https://github.com/Noctifer-de-Mortem/nocts_cata_mod/tree/master/Patchmods/BN_Arcana_Cata++_Patch
-version: 2026.10.4-dbfc219
+version: 2026.10.5-0f307c8
 previous_releases:
   - version: 0.0.0
     source:
@@ -260,6 +260,14 @@ previous_releases:
       commit_sha: 7b2d99dd99c457efd410443a31d5bbf8bf48328e
       extract_path: Patchmods/BN_Arcana_Cata++_Patch
     released_at: "2026-10-03T03:18:22.601Z"
+  - version: 2026.10.4-dbfc219
+    source:
+      type: github_archive
+      url: >-
+        https://github.com/Noctifer-de-Mortem/nocts_cata_mod/archive/refs/heads/master.zip
+      commit_sha: dbfc219a0ec2ff75db07fb4283fe84e65c3699b0
+      extract_path: Patchmods/BN_Arcana_Cata++_Patch
+    released_at: "2026-10-04T03:46:20.214Z"
 dependencies:
   bn: ">=0.9.1"
   arcana: "*"
@@ -268,7 +276,7 @@ source:
   type: github_archive
   url: >-
     https://github.com/Noctifer-de-Mortem/nocts_cata_mod/archive/refs/heads/master.zip
-  commit_sha: dbfc219a0ec2ff75db07fb4283fe84e65c3699b0
+  commit_sha: 0f307c87c1e79c1eb877e3f8ce28361f4abba430
   extract_path: Patchmods/BN_Arcana_Cata++_Patch
 categories:
   - misc_additions
@@ -279,4 +287,4 @@ autoupdate:
   type: commit
   branch: master
 parent: arcana
-last_updated: "2026-10-04T03:46:20.214Z"
+last_updated: "2026-10-05T03:30:44.544Z"
