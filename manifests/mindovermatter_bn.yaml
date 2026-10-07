@@ -13,12 +13,16 @@ author:
 license: CC-BY-SA-4.0
 homepage: >-
   https://github.com/MSCantrell/Mind-Over-Matter-for-Bright-Nights/tree/main/mindovermatter_bn
-version: 0.0.0
+version: 2026.9.26-28682f2
 dependencies:
   bn: ">=0.9.1"
 source:
   type: github_archive
   url: >-
     https://github.com/MSCantrell/Mind-Over-Matter-for-Bright-Nights/archive/refs/heads/main.zip
-  commit_sha: ce06deacce8da15d6f885b2962faf406ebed155d
+  commit_sha: 28682f28b100296e5cebdf00e71f4e7f2730edd2
   extract_path: Mind-Over-Matter-for-Bright-Nights-main/mindovermatter_bn
+autoupdate:
+  type: commit
+  branch: main
+last_updated: "2026-09-26T05:56:44.467Z"
