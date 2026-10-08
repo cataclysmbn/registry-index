@@ -7,7 +7,7 @@ author:
   - Winterhome
 license: CC-BY-SA-3.0
 homepage: "https://github.com/Winterhome9054/Industrial_Infrastructure"
-version: 0.0.0
+version: 0.0.1
 dependencies:
   bn: ">=0.9.1"
 source:
