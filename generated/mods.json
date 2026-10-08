@@ -489,7 +489,7 @@
     ],
     "license": "CC-BY-SA-3.0",
     "homepage": "https://github.com/Noctifer-de-Mortem/nocts_cata_mod/tree/master/Patchmods/BN_Arcana_Cata++_Patch",
-    "version": "2026.10.6-1e0a640",
+    "version": "2026.10.8-3052ccf",
     "dependencies": {
       "bn": ">=0.9.1",
       "arcana": "*",
@@ -498,7 +498,7 @@
     "source": {
       "type": "github_archive",
       "url": "https://github.com/Noctifer-de-Mortem/nocts_cata_mod/archive/refs/heads/master.zip",
-      "commit_sha": "1e0a640c5d5b32d971c9e66473e515a06e19a452",
+      "commit_sha": "3052ccf8de500a7dd8969a4f79b9b987379087be",
       "extract_path": "Patchmods/BN_Arcana_Cata++_Patch"
     },
     "categories": [
@@ -511,7 +511,7 @@
       "branch": "master"
     },
     "parent": "arcana",
-    "last_updated": "2026-10-06T04:18:09.453Z"
+    "last_updated": "2026-10-08T04:02:31.774Z"
   },
   {
     "schema_version": "1.0",
@@ -1542,7 +1542,7 @@
     ],
     "license": "CC-BY-SA-3.0",
     "homepage": "https://github.com/Noctifer-de-Mortem/nocts_cata_mod/tree/master/Patchmods/BN_Cata++_ExoticAmmo_Patch",
-    "version": "2026.10.6-1e0a640",
+    "version": "2026.10.8-3052ccf",
     "dependencies": {
       "bn": ">=0.9.1",
       "cata++": "*",
@@ -1551,7 +1551,7 @@
     "source": {
       "type": "github_archive",
       "url": "https://github.com/Noctifer-de-Mortem/nocts_cata_mod/archive/refs/heads/master.zip",
-      "commit_sha": "1e0a640c5d5b32d971c9e66473e515a06e19a452",
+      "commit_sha": "3052ccf8de500a7dd8969a4f79b9b987379087be",
       "extract_path": "Patchmods/BN_Cata++_ExoticAmmo_Patch"
     },
     "categories": [
@@ -1564,7 +1564,7 @@
       "branch": "master"
     },
     "parent": "cata",
-    "last_updated": "2026-10-06T04:17:55.216Z"
+    "last_updated": "2026-10-08T04:02:09.400Z"
   },
   {
     "schema_version": "1.0",
@@ -1577,14 +1577,14 @@
     ],
     "license": "ALL-RIGHTS-RESERVED",
     "homepage": "https://github.com/Noctifer-de-Mortem/nocts_cata_mod/tree/master/nocts_cata_mod_BN",
-    "version": "2026.10.6-1e0a640",
+    "version": "2026.10.8-3052ccf",
     "dependencies": {
       "bn": ">=0.9.1"
     },
     "source": {
       "type": "github_archive",
       "url": "https://github.com/Noctifer-de-Mortem/nocts_cata_mod/archive/refs/heads/master.zip",
-      "commit_sha": "1e0a640c5d5b32d971c9e66473e515a06e19a452",
+      "commit_sha": "3052ccf8de500a7dd8969a4f79b9b987379087be",
       "extract_path": "nocts_cata_mod_BN"
     },
     "categories": [
@@ -1596,7 +1596,7 @@
       "type": "commit",
       "branch": "master"
     },
-    "last_updated": "2026-10-06T04:17:48.175Z"
+    "last_updated": "2026-10-08T04:01:55.007Z"
   },
   {
     "schema_version": "1.0",
@@ -3220,6 +3220,35 @@
       "branch": "master"
     },
     "last_updated": "2026-05-19T09:19:11+09:00"
+  },
+  {
+    "schema_version": "1.0",
+    "id": "limited_reviving_zombies",
+    "display_name": "Limited Zombie Revival",
+    "short_description": "Zombies still rise, but never at full strength.  A corpse that gets up comes back weakened in proportion to how badly it was mangled, spends a while helpless and stiff after rising, and can only rise ",
+    "description": "Zombies still rise, but never at full strength.  A corpse that gets up comes back weakened in proportion to how badly it was mangled, spends a while helpless and stiff after rising, and can only rise a limited number of times before it is too broken to move again.  An alternative to disabling revival entirely.",
+    "author": [
+      "sagittarius72"
+    ],
+    "license": "MIT",
+    "homepage": "https://github.com/sagittarius72git/Limited_Reviving_BN",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.12.0"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/sagittarius72git/Limited_Reviving_BN/archive/refs/heads/main.zip",
+      "commit_sha": "de8b0b863a711d07a71a01232cabc5db01166465"
+    },
+    "categories": [
+      "qol",
+      "creatures"
+    ],
+    "autoupdate": {
+      "type": "tag"
+    },
+    "last_updated": "2026-10-08T00:26:11+09:00"
   },
   {
     "schema_version": "1.0",
@@ -6716,6 +6745,33 @@
       "branch": "master"
     },
     "last_updated": "2026-05-19T09:19:11+09:00"
+  },
+  {
+    "schema_version": "1.0",
+    "id": "npc_swap_on_move",
+    "display_name": "Swap Places by Default",
+    "short_description": "Walking into a friendly, obedient NPC swaps places with them instead of opening the interaction menu.  The normal menu is still one keypress away: use the \"Open the NPC menu next time\" action, then to",
+    "description": "Walking into a friendly, obedient NPC swaps places with them instead of opening the interaction menu.  The normal menu is still one keypress away: use the \"Open the NPC menu next time\" action, then touch the NPC as usual.",
+    "author": [
+      "sagittarius72"
+    ],
+    "license": "MIT",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/sagittarius72git/NPC_Swap_Move/archive/refs/heads/main.zip",
+      "commit_sha": "452166a1d2ca38b2fbac452eddb5e94df0791036"
+    },
+    "categories": [
+      "qol"
+    ],
+    "autoupdate": {
+      "type": "tag"
+    },
+    "last_updated": "2026-10-08T00:26:11+09:00"
   },
   {
     "schema_version": "1.0",

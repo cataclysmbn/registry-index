@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0",
+  "id": "npc_swap_on_move",
+  "display_name": "Swap Places by Default",
+  "short_description": "Walking into a friendly, obedient NPC swaps places with them instead of opening the interaction menu.  The normal menu is still one keypress away: use the \"Open the NPC menu next time\" action, then to",
+  "description": "Walking into a friendly, obedient NPC swaps places with them instead of opening the interaction menu.  The normal menu is still one keypress away: use the \"Open the NPC menu next time\" action, then touch the NPC as usual.",
+  "author": [
+    "sagittarius72"
+  ],
+  "license": "MIT",
+  "version": "0.0.0",
+  "dependencies": {
+    "bn": ">=0.9.1"
+  },
+  "source": {
+    "type": "github_archive",
+    "url": "https://github.com/sagittarius72git/NPC_Swap_Move/archive/refs/heads/main.zip",
+    "commit_sha": "452166a1d2ca38b2fbac452eddb5e94df0791036"
+  },
+  "categories": [
+    "qol"
+  ],
+  "autoupdate": {
+    "type": "tag"
+  },
+  "last_updated": "2026-10-08T00:26:11+09:00"
+}
