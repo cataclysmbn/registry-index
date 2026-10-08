@@ -21,8 +21,7 @@ dependencies:
 source:
   type: github_archive
   url: >-
-    https://github.com/sagittarius72git/limited_reviving_zombies
-/archive/refs/heads/main.zip
+    https://github.com/sagittarius72git/limited_reviving_zombies/archive/refs/heads/main.zip
   commit_sha: de8b0b863a711d07a71a01232cabc5db01166465
 categories:
   - qol
