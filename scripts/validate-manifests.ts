@@ -15,6 +15,7 @@ export type Finding = {
   why: string
   severity: "error" | "warning"
   code: string
+  line?: number
 }
 export type Change = {
   status: string
@@ -1058,6 +1059,7 @@ const checkGeneratedUrls = async (
   return findings
 }
 
+const ErrorLine = v.object({ line: v.number() })
 const loadOne = async (
   file: string,
 ): Promise<{ findings: Finding[]; manifest?: Manifest }> => {
@@ -1069,8 +1071,8 @@ const loadOne = async (
     return { findings, manifest: parsed }
   } catch (error) {
     return {
-      findings: [
-        finding(
+      findings: [{
+        ...finding(
           file,
           "<root>",
           "<unparseable>",
@@ -1078,7 +1080,8 @@ const loadOne = async (
           error instanceof Error ? error.message : String(error),
           "parse-error",
         ),
-      ],
+        line: v.is(ErrorLine, error) ? error.line : undefined,
+      }],
     }
   }
 }
@@ -1135,20 +1138,16 @@ export const checkFiles = async (
 }
 
 const printResult = (result: ValidationResult, reportPath?: string) => {
-  for (const notice of result.notices) {
-    console.error(
-      `::notice title=Manifest validation notice::${escapeAnnotation(notice)}`,
-    )
-  }
+  for (const notice of result.notices) console.error(`notice: ${notice}`)
   for (const item of result.findings) {
     const message = findingMessage(item)
     console.error(`${item.severity} ${item.file}: ${message}`)
     console.error(
       `::${item.severity === "error" ? "error" : "warning"} file=${
         escapeAnnotation(item.file)
-      },title=${escapeAnnotation(`Manifest ${item.code}`)}::${
-        escapeAnnotation(message)
-      }`,
+      }${item.line ? `,line=${item.line}` : ""},title=${
+        escapeAnnotation(`Manifest ${item.code}`)
+      }::${escapeAnnotation(message)}`,
     )
   }
   if (reportPath) Deno.writeTextFileSync(reportPath, capReport(result.report))

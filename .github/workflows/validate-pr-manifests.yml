@@ -88,7 +88,7 @@ jobs:
               printf '\n\n%s: FAIL\n' "$check" >> "$REPORT_FILE"
               tail -c 3000 "$RUNNER_TEMP/static-check.log" | { grep -v '^::' || true; } >> "$REPORT_FILE"
             fi
-            tail -c 3000 "$RUNNER_TEMP/static-check.log"
+            tail -c 3000 "$RUNNER_TEMP/static-check.log" | { grep -v '^::' || true; }
           done
           echo "exit_code=$failed" >> "$GITHUB_OUTPUT"
           exit 0
