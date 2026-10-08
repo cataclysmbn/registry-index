@@ -489,9 +489,12 @@ Deno.test("parses YAML and keeps report text bounded", () => {
     severity: "error",
     code: "filename-id-mismatch",
   }])
-  assertStringIncludes(report, "Exact fix/example")
+  assertEquals(
+    report,
+    "error manifests/x.yaml: id = bad (filename-id-mismatch)\nstable identity\nFix: rename it",
+  )
   assert(capReport("a".repeat(100), 40).length <= 160)
   const unicode = capReport("한".repeat(100_000))
   assert(new TextEncoder().encode(unicode).length <= 58_000)
-  assertStringIncludes(unicode, "UTF-8 bytes")
+  assertStringIncludes(unicode, "Truncated at 58000 bytes")
 })

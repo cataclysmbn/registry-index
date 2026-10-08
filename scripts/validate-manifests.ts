@@ -581,33 +581,18 @@ const escapeAnnotation = (text: string) =>
   text.replaceAll("%", "%25").replaceAll("\r", "%0D").replaceAll("\n", "%0A")
     .replaceAll(":", "%3A").replaceAll(",", "%2C")
 export const findingMessage = (item: Finding) =>
-  `field: ${item.field}; observed: ${item.observed}; problem: ${item.code}; exact fix: ${item.fix}; why it matters: ${item.why}`
-export const renderReport = (findings: Finding[], notices: string[] = []) => {
-  const lines = [
-    "# Manifest validation report",
-    "",
-    "This report was generated from structured validator findings.",
-    "",
-  ]
-  for (const notice of notices) lines.push(`- Notice: ${notice}`)
-  if (!findings.length && !notices.length) {
-    lines.push("No manifest problems found in this check.")
-  }
-  for (const item of findings) {
-    lines.push(
-      `- **${item.severity.toUpperCase()}** \`${item.file}\`, field \`${item.field}\`: ${item.observed}`,
-    )
-    lines.push(`  - Problem: ${item.code}`)
-    lines.push(`  - Exact fix/example: ${item.fix}`)
-    lines.push(`  - Why it matters: ${item.why}`)
-  }
-  return `${lines.join("\n")}\n`
-}
+  `${item.field} = ${item.observed} (${item.code})\n${item.why}\nFix: ${item.fix}`
+export const renderReport = (findings: Finding[], notices: string[] = []) =>
+  [
+    ...notices.map((notice) => `notice: ${notice}`),
+    ...findings.map((item) =>
+      `${item.severity} ${item.file}: ${findingMessage(item)}`
+    ),
+  ].join("\n\n") || "No manifest problems found."
 export const capReport = (report: string, maxBytes = 58_000) => {
   const encoder = new TextEncoder()
   if (encoder.encode(report).length <= maxBytes) return report
-  const suffix =
-    `\n\nReport truncated safely at ${maxBytes} UTF-8 bytes. See the workflow log for the full diagnostics.\n`
+  const suffix = `\n\nTruncated at ${maxBytes} bytes; see the workflow log.`
   const available = maxBytes - encoder.encode(suffix).length
   let low = 0
   let high = report.length
@@ -1089,7 +1074,7 @@ const loadOne = async (
           file,
           "<root>",
           "<unparseable>",
-          "Fix the YAML/JSON syntax and rerun deno task validate.",
+          "Correct the YAML/JSON syntax.",
           error instanceof Error ? error.message : String(error),
           "parse-error",
         ),
@@ -1157,7 +1142,7 @@ const printResult = (result: ValidationResult, reportPath?: string) => {
   }
   for (const item of result.findings) {
     const message = findingMessage(item)
-    console.error(`${item.file}: ${item.severity}: ${message}`)
+    console.error(`${item.severity} ${item.file}: ${message}`)
     console.error(
       `::${item.severity === "error" ? "error" : "warning"} file=${
         escapeAnnotation(item.file)
