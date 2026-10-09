@@ -2,7 +2,7 @@
   "schema_version": "1.0",
   "id": "limited_reviving_zombies",
   "display_name": "Limited Zombie Revival",
-  "short_description": "Zombies still rise, but never at full strength.  A corpse that gets up comes back weakened in proportion to how badly it was mangled, spends a while helpless and stiff after rising, and can only rise ",
+  "short_description": "Zombies still rise, but never at full strength.  A corpse that gets up comes back weakened in proportion to how badly it was mangled, spends a while helpless and stiff after rising, and can only rise",
   "description": "Zombies still rise, but never at full strength.  A corpse that gets up comes back weakened in proportion to how badly it was mangled, spends a while helpless and stiff after rising, and can only rise a limited number of times before it is too broken to move again.  An alternative to disabling revival entirely.",
   "author": [
     "sagittarius72"
@@ -25,5 +25,5 @@
   "autoupdate": {
     "type": "tag"
   },
-  "last_updated": "2026-10-08T00:26:11+09:00"
+  "last_updated": "2026-10-08T04:02:39Z"
 }
