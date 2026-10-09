@@ -2,6 +2,7 @@ import { assert, assertEquals, assertStringIncludes } from "@std/assert"
 import {
   capReport,
   checkCanonical,
+  checkFiles,
   checkGeneratedSchema,
   checkNetwork,
   checkStaticSemantics,
@@ -489,9 +490,25 @@ Deno.test("parses YAML and keeps report text bounded", () => {
     severity: "error",
     code: "filename-id-mismatch",
   }])
-  assertStringIncludes(report, "Exact fix/example")
+  assertEquals(
+    report,
+    "error manifests/x.yaml: id = bad (filename-id-mismatch)\nstable identity\nFix: rename it",
+  )
   assert(capReport("a".repeat(100), 40).length <= 160)
   const unicode = capReport("한".repeat(100_000))
   assert(new TextEncoder().encode(unicode).length <= 58_000)
-  assertStringIncludes(unicode, "UTF-8 bytes")
+  assertStringIncludes(unicode, "Truncated at 58000 bytes")
+})
+
+Deno.test("reports the YAML parse error line for annotations", async () => {
+  const root = await Deno.makeTempDir()
+  const file = `${root}/demo.yaml`
+  await Deno.writeTextFile(
+    file,
+    'id: demo\nhomepage: "https://example.com/\ndependencies:\n  bn: ">=0.12.0"\n',
+  )
+  const { findings } = await checkFiles([file])
+  assertEquals(findings.map(({ code, line }) => ({ code, line })), [
+    { code: "parse-error", line: 4 },
+  ])
 })

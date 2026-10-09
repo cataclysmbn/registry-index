@@ -142,6 +142,9 @@
       "released_at": "2026-06-19T03:56:19.653Z"
     }
   ],
+  "yanked": {
+    "reason": "Requires removed Arcana patchmods that were replaced by mod_interactions."
+  },
   "dependencies": {
     "bn": ">=0.9.1",
     "realdarkskies": "*",

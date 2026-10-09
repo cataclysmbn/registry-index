@@ -12,7 +12,7 @@ author:
 license: ALL-RIGHTS-RESERVED
 homepage: >-
   https://github.com/chaosvolt/cdda_medieval_mod_reborn/tree/master/Medieval_Mod_Reborn_BN
-version: 2026.8.2-1b270e8
+version: 2026.10.9-364a66e
 previous_releases:
   - version: 0.0.0
     source:
@@ -126,13 +126,21 @@ previous_releases:
       commit_sha: 859c295dccf3ff2c2f78343a4a328ad211b6d158
       extract_path: Medieval_Mod_Reborn_BN
     released_at: "2026-06-20T02:48:53.752Z"
+  - version: 2026.8.2-1b270e8
+    source:
+      type: github_archive
+      url: >-
+        https://github.com/chaosvolt/cdda_medieval_mod_reborn/archive/refs/heads/master.zip
+      commit_sha: 1b270e80127c23f8905c6ff4d980cb7f182f5ffe
+      extract_path: Medieval_Mod_Reborn_BN
+    released_at: "2026-08-02T02:07:29.823Z"
 dependencies:
   bn: ">=0.9.1"
 source:
   type: github_archive
   url: >-
     https://github.com/chaosvolt/cdda_medieval_mod_reborn/archive/refs/heads/master.zip
-  commit_sha: 1b270e80127c23f8905c6ff4d980cb7f182f5ffe
+  commit_sha: 364a66e93a52a3eb2e0edd09cccb936f80e16f2b
   extract_path: Medieval_Mod_Reborn_BN
 categories:
   - items
@@ -142,4 +150,4 @@ uses_lua: false
 autoupdate:
   type: commit
   branch: master
-last_updated: "2026-08-02T02:07:29.823Z"
+last_updated: "2026-10-09T04:03:55.551Z"

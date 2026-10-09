@@ -118,6 +118,8 @@ previous_releases:
       commit_sha: 4e6abff37d33cfaac6cc43ff1eedcdf5abea17ea
       extract_path: Patch_mods/RDS_plus_Arcana_plus
     released_at: "2026-06-19T03:56:19.653Z"
+yanked:
+  reason: "Requires removed Arcana patchmods that were replaced by mod_interactions."
 dependencies:
   bn: ">=0.9.1"
   realdarkskies: "*"

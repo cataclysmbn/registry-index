@@ -79,6 +79,7 @@ jobs:
             }
             core.setOutput("pr_number", String(matches[0].number))
             core.setOutput("artifact_id", String(reports[0].id))
+            core.setOutput("run_url", run.html_url)
             core.setOutput("run_conclusion", ["success", "failure", "cancelled", "timed_out"].includes(run.conclusion) ? run.conclusion : "unknown")
 
       - name: Download only the verified report archive
@@ -119,6 +120,7 @@ jobs:
         env:
           PR_NUMBER: ${{ steps.context.outputs.pr_number }}
           RUN_CONCLUSION: ${{ steps.context.outputs.run_conclusion }}
+          RUN_URL: ${{ steps.context.outputs.run_url }}
         with:
           script: |
             const fs = require("fs")
@@ -145,9 +147,9 @@ jobs:
               .replaceAll("@", "＠")
             const escaped = escapeHtml(plain)
             const safeReport = escaped.length > 59_000
-              ? `${escaped.slice(0, 58_850)}\n\n[Report truncated; see the workflow artifact for the complete output.]`
+              ? `${escaped.slice(0, 58_850)}\n\n[truncated; see the workflow log]`
               : escaped
-            const body = `${marker}\nValidation workflow: **${process.env.RUN_CONCLUSION}** (verified run conclusion).\n<pre>${safeReport}</pre>`
+            const body = `${marker}\nManifest validation: **${process.env.RUN_CONCLUSION}** ([log](${process.env.RUN_URL}))\n<pre>${safeReport}</pre>`
             const number = Number(process.env.PR_NUMBER)
             const comments = await github.paginate(github.rest.issues.listComments, {
               owner: context.repo.owner,

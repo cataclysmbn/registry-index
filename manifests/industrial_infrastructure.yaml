@@ -1,0 +1,21 @@
+schema_version: "1.0"
+id: industrial_infrastructure
+display_name: Industrial Infrastructure
+short_description: Industrial scale crafting and eventual larger scale content mod.
+description: Industrial scale crafting and eventual larger scale content mod.
+author:
+  - Winterhome
+license: CC-BY-SA-3.0
+homepage: "https://github.com/Winterhome9054/Industrial_Infrastructure"
+version: 0.0.1
+dependencies:
+  bn: ">=0.9.1"
+source:
+  type: github_archive
+  url: >-
+    https://github.com/Winterhome9054/Industrial_Infrastructure/archive/refs/heads/main.zip
+  commit_sha: ea8662d6edce0e521a57ab20a30151d69c2c6bb8
+categories:
+  - content
+autoupdate:
+  type: tag

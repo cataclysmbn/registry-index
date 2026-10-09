@@ -46,7 +46,7 @@ jobs:
         env:
           REPORT_FILE: ${{ runner.temp }}/manifest-validation.md
         run: |
-          printf '# Manifest validation report\n\nValidator did not produce a report. Check the workflow log for the failure.\n' > "$REPORT_FILE"
+          printf 'Validator did not produce a report; see the workflow log.' > "$REPORT_FILE"
 
       - name: Validate changed manifests and URLs
         id: validation
@@ -65,11 +65,12 @@ jobs:
         id: static
         if: always()
         env:
+          NO_COLOR: "1"
           REPORT_FILE: ${{ runner.temp }}/manifest-validation.md
         run: |
           failed=0
           if [ ! -f "$REPORT_FILE" ]; then
-            printf '# Manifest validation report\n\nChanged-file validation did not produce a report; check the workflow log.\n' > "$REPORT_FILE"
+            printf 'Changed-file validation did not produce a report; see the workflow log.' > "$REPORT_FILE"
             failed=1
           fi
           for check in fmt lint type test validate; do
@@ -81,14 +82,13 @@ jobs:
               validate) command=(deno task validate) ;;
             esac
             if "${command[@]}" > "$RUNNER_TEMP/static-check.log" 2>&1; then
-              printf '\n- %s: PASS\n' "$check" >> "$REPORT_FILE"
+              printf '\n\n%s: PASS' "$check" >> "$REPORT_FILE"
             else
               failed=1
-              printf '\n- %s: FAIL (see workflow log for full output)\n\n```text\n' "$check" >> "$REPORT_FILE"
-              tail -c 3000 "$RUNNER_TEMP/static-check.log" >> "$REPORT_FILE"
-              printf '\n```\n' >> "$REPORT_FILE"
+              printf '\n\n%s: FAIL\n' "$check" >> "$REPORT_FILE"
+              tail -c 3000 "$RUNNER_TEMP/static-check.log" | { grep -v '^::' || true; } >> "$REPORT_FILE"
             fi
-            tail -c 3000 "$RUNNER_TEMP/static-check.log"
+            tail -c 3000 "$RUNNER_TEMP/static-check.log" | { grep -v '^::' || true; }
           done
           echo "exit_code=$failed" >> "$GITHUB_OUTPUT"
           exit 0
