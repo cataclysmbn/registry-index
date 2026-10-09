@@ -77,7 +77,7 @@ jobs:
             case "$check" in
               fmt) command=(deno fmt --check) ;;
               lint) command=(deno lint) ;;
-              type) command=(deno check scripts/validate-manifests.ts scripts/validate-manifests_test.ts) ;;
+              type) command=(deno check scripts/validate-manifests.ts scripts/validate-manifests_test.ts scripts/issue-manifest.ts scripts/issue-manifest_test.ts) ;;
               test) command=(deno test --allow-read --allow-write scripts) ;;
               validate) command=(deno task validate) ;;
             esac

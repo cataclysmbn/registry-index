@@ -1,0 +1,143 @@
+name: Issue Manifest PR
+
+on:
+  issues:
+    types: [opened, edited, reopened]
+
+concurrency:
+  group: issue-manifest-${{ github.event.issue.number }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: Validate issue manifest
+    if: github.event.issue.state == 'open' && contains(github.event.issue.labels.*.name, 'manifest')
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    outputs:
+      id: ${{ steps.extract.outputs.id }}
+      valid: ${{ steps.check.outputs.valid }}
+    steps:
+      - uses: actions/checkout@v4
+        with: { persist-credentials: false }
+
+      - uses: denoland/setup-deno@v2
+        with: { deno-version: v2.x, cache: true }
+
+      - name: Extract manifest from issue
+        id: extract
+        env:
+          ISSUE_BODY: ${{ github.event.issue.body }}
+          OUT: ${{ runner.temp }}/out
+        run: |
+          mkdir -p "$OUT"
+          if id=$(deno run --allow-env=ISSUE_BODY --allow-write=manifests scripts/issue-manifest.ts 2> "$OUT/report.md"); then
+            deno fmt "manifests/$id.yaml"
+            cp "manifests/$id.yaml" "$OUT/manifest.yaml"
+            echo "id=$id" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Validate manifest and URLs
+        id: check
+        if: steps.extract.outputs.id
+        env:
+          ID: ${{ steps.extract.outputs.id }}
+          REPORT_FILE: ${{ runner.temp }}/out/report.md
+        run: |
+          printf 'M\0manifests/%s.yaml\0' "$ID" > "$RUNNER_TEMP/changes.z"
+          if deno run --allow-read=manifests,scripts,"$RUNNER_TEMP" --allow-write="$REPORT_FILE" --allow-net scripts/validate-manifests.ts check-urls --changes-file "$RUNNER_TEMP/changes.z" --report "$REPORT_FILE"; then
+            echo "valid=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: issue-manifest
+          path: ${{ runner.temp }}/out
+          if-no-files-found: error
+          retention-days: 14
+
+  publish:
+    name: Report and open PR
+    needs: validate
+    if: always() && needs.validate.result == 'success'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions: { contents: write, issues: write, pull-requests: write }
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/download-artifact@v4
+        with:
+          name: issue-manifest
+          path: ${{ runner.temp }}/out
+
+      - name: Commit manifest and open PR
+        id: pr
+        if: needs.validate.outputs.valid == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ID: ${{ needs.validate.outputs.id }}
+          NUMBER: ${{ github.event.issue.number }}
+          LOGIN: ${{ github.event.issue.user.login }}
+          USER_ID: ${{ github.event.issue.user.id }}
+          OUT: ${{ runner.temp }}/out
+        run: |
+          branch="manifest/issue-$NUMBER"
+          if [ -f "manifests/$ID.yaml" ]; then title="fix: update $ID manifest"; else title="feat: add $ID manifest"; fi
+          git switch -c "$branch"
+          cp "$OUT/manifest.yaml" "manifests/$ID.yaml"
+          git add "manifests/$ID.yaml"
+          if git diff --cached --quiet; then
+            echo "url=" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          git -c user.name="github-actions[bot]" \
+            -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
+            commit -m "$title" -m "Co-authored-by: $LOGIN <$USER_ID+$LOGIN@users.noreply.github.com>"
+          git push --force origin "$branch"
+          if gh pr view "$branch" --json state --jq .state | grep -qx OPEN; then
+            gh pr edit "$branch" --title "$title"
+          else
+            gh pr create --head "$branch" --title "$title" --body "Closes #$NUMBER"
+          fi
+          echo "url=$(gh pr view "$branch" --json url --jq .url)" >> "$GITHUB_OUTPUT"
+
+      - name: Create or update the bot comment
+        if: always()
+        uses: actions/github-script@v7
+        env:
+          VALID: ${{ needs.validate.outputs.valid }}
+          PR_OUTCOME: ${{ steps.pr.outcome }}
+          PR_URL: ${{ steps.pr.outputs.url }}
+          REPORT: ${{ runner.temp }}/out/report.md
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        with:
+          script: |
+            const fs = require("fs")
+            const marker = "<!-- registry-index-issue-manifest -->"
+            const { VALID, PR_OUTCOME, PR_URL, REPORT, RUN_URL } = process.env
+            const report = fs.existsSync(REPORT) ? fs.readFileSync(REPORT, "utf8") : "No report; see the workflow log."
+            const escaped = report
+              .normalize("NFKC")
+              .replace(/[\u0000-\u0008\u000B\u000C\u000E-\u001F\u007F]/g, "")
+              .replaceAll("&", "&amp;")
+              .replaceAll("<", "&lt;")
+              .replaceAll(">", "&gt;")
+              .replaceAll("@", "＠")
+              .slice(0, 58_000)
+            const status = VALID !== "true"
+              ? "**failure**. Edit this issue to fix the manifest; the bot retries on every edit."
+              : PR_OUTCOME !== "success" ? "**success**, but opening the pull request failed; see the log."
+              : PR_URL ? `**success**. Pull request: ${PR_URL}` : "**success**. The manifest is identical to the registry; no pull request needed."
+            const body = `${marker}\nManifest validation: ${status} ([log](${RUN_URL}))\n<pre>${escaped}</pre>`
+            const issue = { owner: context.repo.owner, repo: context.repo.repo, issue_number: context.issue.number }
+            const comments = await github.paginate(github.rest.issues.listComments, { ...issue, per_page: 100 })
+            const existing = comments.find((comment) =>
+              comment.user?.login === "github-actions[bot]" && comment.body?.startsWith(marker)
+            )
+            if (existing) await github.rest.issues.updateComment({ ...issue, comment_id: existing.id, body })
+            else await github.rest.issues.createComment({ ...issue, body })
