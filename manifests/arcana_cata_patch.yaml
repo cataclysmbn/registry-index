@@ -284,6 +284,8 @@ previous_releases:
       commit_sha: 1e0a640c5d5b32d971c9e66473e515a06e19a452
       extract_path: Patchmods/BN_Arcana_Cata++_Patch
     released_at: "2026-10-06T04:18:09.453Z"
+yanked:
+  reason: "Replaced by mod_interactions."
 dependencies:
   bn: ">=0.9.1"
   arcana: "*"
