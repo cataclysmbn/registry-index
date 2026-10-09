@@ -1,0 +1,35 @@
+schema_version: "1.0"
+id: qol_item
+display_name: QoL Item
+short_description: >-
+  A rope ladder you can hang, dangle or throw across a gap, a water dispenser
+  for Auto Drink, reusable first aid for companions, and gear that fits mutated
+  feet and mouths.
+description: >-
+  A set of handy items: a rope ladder you can hang from a ledge, a homemade
+  water dispenser that lets you auto-drink from the fluid grid, a makeshift
+  bandage and disinfectant your companions can use any number of times, ankle
+  warmers for mutated feet, and plague masks that fit mutated mouths.  Also
+  makes the small and large cardboard boxes craftable.
+author:
+  - sagittarius72
+license: MIT
+homepage: "https://github.com/sagittarius72git/QoL_ITEM"
+version: 0.0.0
+dependencies:
+  bn: ">=0.13.0"
+source:
+  type: github_archive
+  url: >-
+    https://github.com/sagittarius72git/QoL_ITEM/archive/refs/heads/main.zip
+  commit_sha: 41511def76abb4c34a7130f72f5307b7f78c7317
+categories:
+  - items
+  - qol
+modinfo_url: >-
+  https://raw.githubusercontent.com/sagittarius72git/QoL_ITEM/41511def76abb4c34a7130f72f5307b7f78c7317/modinfo.json
+uses_lua: true
+lua_api_version: 2
+autoupdate:
+  type: commit
+  branch: main
