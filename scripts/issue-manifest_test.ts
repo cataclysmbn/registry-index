@@ -17,6 +17,12 @@ Deno.test("issueManifest rejects ids that are not safe filenames", () => {
   }
 })
 
+Deno.test("issueManifest rejects reserved template ids", () => {
+  for (const id of ["_probe", "_template", "_"]) {
+    assertThrows(() => issueManifest(body(`id: ${id}`)))
+  }
+})
+
 Deno.test("issueManifest rejects bodies without a manifest block", () => {
   assertThrows(() => issueManifest("### Manifest\n\n_No response_"))
   assertThrows(() => issueManifest(body("id: [")))

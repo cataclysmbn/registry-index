@@ -7,8 +7,8 @@ const IssueManifest = v.looseObject({
   id: v.pipe(
     v.string(),
     v.regex(
-      /^[A-Za-z0-9_-]+$/,
-      "id can only contain letters, numbers, underscores, and hyphens",
+      /^[A-Za-z0-9-][A-Za-z0-9_-]*$/,
+      "id must start with a letter, number, or hyphen and contain only letters, numbers, underscores, and hyphens",
     ),
   ),
 })

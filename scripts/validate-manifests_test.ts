@@ -161,19 +161,19 @@ const response = (
 const networkManifest = () => {
   const value = manifest("network_mod")
   value.homepage = "https://github.com/example/demo"
-  value.source = { type: "direct_url", url: "https://example.com/old.zip" }
+  value.source = { type: "direct_url", url: "https://github.com/old.zip" }
   value.autoupdate = {
     type: "tag",
     update_url: "https://github.com/example/demo",
-    url: "https://example.com/releases/$version/demo.zip",
-    icon_url: "https://example.com/icons/$version.png",
+    url: "https://github.com/releases/$version/demo.zip",
+    icon_url: "https://github.com/icons/$version.png",
   }
   return value
 }
 
 Deno.test("falls back to GET when a server rejects HEAD", async () => {
   const value = manifest("network_mod")
-  value.source = { type: "direct_url", url: "https://example.com/archive.zip" }
+  value.source = { type: "direct_url", url: "https://github.com/archive.zip" }
   const methods: string[] = []
   const issues = await checkNetwork(
     "manifests/network_mod.yaml",
@@ -190,7 +190,7 @@ Deno.test("falls back to GET when a server rejects HEAD", async () => {
 
 Deno.test("reports transient URL failures as warnings", async () => {
   const value = manifest("network_mod")
-  value.source = { type: "direct_url", url: "https://example.com/archive.zip" }
+  value.source = { type: "direct_url", url: "https://github.com/archive.zip" }
   const issues = await checkNetwork(
     "manifests/network_mod.yaml",
     value,
@@ -230,8 +230,8 @@ Deno.test("allows fixed tag URL and icon templates without $version", async () =
   const value = networkManifest()
   value.autoupdate = {
     type: "tag",
-    url: "https://example.com/latest/mod.zip",
-    icon_url: "https://example.com/icon.png",
+    url: "https://github.com/latest/mod.zip",
+    icon_url: "https://github.com/icon.png",
   }
   assertEquals(checkStaticSemantics("manifests/network_mod.yaml", value), [])
   const calls: string[] = []
@@ -247,15 +247,15 @@ Deno.test("allows fixed tag URL and icon templates without $version", async () =
     },
   )
   assertEquals(issues, [])
-  assert(calls.includes("https://example.com/latest/mod.zip"))
-  assert(calls.includes("https://example.com/icon.png"))
+  assert(calls.includes("https://github.com/latest/mod.zip"))
+  assert(calls.includes("https://github.com/icon.png"))
 })
 
 Deno.test("reports a broken fixed tag URL after substitution", async () => {
   const value = networkManifest()
   value.autoupdate = {
     type: "tag",
-    url: "https://example.com/latest/missing.zip",
+    url: "https://github.com/latest/missing.zip",
   }
   const issues = await checkNetwork(
     "manifests/network_mod.yaml",
@@ -274,7 +274,7 @@ Deno.test("reports a broken fixed tag URL after substitution", async () => {
   )
   assertEquals(
     issues.find((item) => item.code === "generated-url-unreachable")?.observed,
-    '"https://example.com/latest/missing.zip"',
+    '"https://github.com/latest/missing.zip"',
   )
 })
 
@@ -310,8 +310,8 @@ Deno.test("checks commit-generated URLs with updater CalVer rather than raw SHA"
   value.autoupdate = {
     type: "commit",
     branch: "main",
-    url: "https://example.com/releases/$version.zip",
-    icon_url: "https://example.com/icons/$version.png",
+    url: "https://github.com/releases/$version.zip",
+    icon_url: "https://github.com/icons/$version.png",
   }
   const sha = "abcdef0123456789abcdef0123456789abcdef01"
   const version = commitVersion(sha)
@@ -333,8 +333,8 @@ Deno.test("checks commit-generated URLs with updater CalVer rather than raw SHA"
     issues.filter((item) => item.code === "generated-url-unreachable").length,
     1,
   )
-  assert(calls.includes(`https://example.com/releases/${version}.zip`))
-  assert(calls.includes(`https://example.com/icons/${version}.png`))
+  assert(calls.includes(`https://github.com/releases/${version}.zip`))
+  assert(calls.includes(`https://github.com/icons/${version}.png`))
 })
 
 Deno.test("commit without templates retains current source and icon", async () => {

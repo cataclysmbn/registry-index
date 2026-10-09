@@ -12,9 +12,51 @@ permissions:
   contents: read
 
 jobs:
+  prepare:
+    name: Invalidate previous issue validation
+    if: github.event.issue.state == 'open' && contains(github.event.issue.labels.*.name, 'manifest')
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    permissions: { contents: read, issues: read, statuses: write }
+    outputs:
+      sha: ${{ steps.guard.outputs.sha }}
+      current: ${{ steps.guard.outputs.current }}
+    steps:
+      - name: Check issue snapshot and bot branch ownership
+        id: guard
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const repo = { owner: context.repo.owner, repo: context.repo.repo }
+            const snapshot = context.payload.issue
+            const { data: issue } = await github.rest.issues.get({ ...repo, issue_number: snapshot.number })
+            if (issue.body !== snapshot.body || issue.updated_at !== snapshot.updated_at || issue.state !== "open" || !issue.labels.some((label) => label.name === "manifest")) {
+              core.notice("The issue changed; this run will not publish its stale snapshot.")
+              return
+            }
+            const branch = `manifest/issue-${snapshot.number}`
+            let sha = ""
+            try {
+              const { data: ref } = await github.rest.git.getRef({ ...repo, ref: `heads/${branch}` })
+              sha = ref.object.sha
+            } catch (error) {
+              if (error.status !== 404) throw error
+            }
+            if (sha) {
+              const { data: { statuses } } = await github.rest.repos.getCombinedStatusForRef({ ...repo, ref: sha, per_page: 100 })
+              if (!statuses.some((status) => status.context === "Issue manifest validation" && status.creator?.login === "github-actions[bot]" && status.description?.startsWith(`Issue #${snapshot.number}: `))) {
+                core.setFailed("The issue branch has changes not published by this workflow; refusing to overwrite them.")
+                return
+              }
+              core.setOutput("sha", sha)
+              await github.rest.repos.createCommitStatus({ ...repo, sha, state: "pending", context: "Issue manifest validation", description: `Issue #${snapshot.number}: revalidation required` })
+            }
+            core.setOutput("current", "true")
+
   validate:
     name: Validate issue manifest
-    if: github.event.issue.state == 'open' && contains(github.event.issue.labels.*.name, 'manifest')
+    needs: prepare
+    if: needs.prepare.outputs.current == 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 10
     outputs:
@@ -48,7 +90,8 @@ jobs:
           REPORT_FILE: ${{ runner.temp }}/out/report.md
         run: |
           printf 'M\0manifests/%s.yaml\0' "$ID" > "$RUNNER_TEMP/changes.z"
-          if deno run --allow-read=manifests,scripts,"$RUNNER_TEMP" --allow-write="$REPORT_FILE" --allow-net scripts/validate-manifests.ts check-urls --changes-file "$RUNNER_TEMP/changes.z" --report "$REPORT_FILE"; then
+          network_hosts=$(deno run scripts/validate-manifests.ts --network-hosts)
+          if deno run --allow-read=manifests,scripts,"$RUNNER_TEMP" --allow-write="$REPORT_FILE" --allow-net="$network_hosts" scripts/validate-manifests.ts check-urls --changes-file "$RUNNER_TEMP/changes.z" --report "$REPORT_FILE"; then
             echo "valid=true" >> "$GITHUB_OUTPUT"
           fi
 
@@ -62,55 +105,109 @@ jobs:
 
   publish:
     name: Report and open PR
-    needs: validate
-    if: always() && needs.validate.result == 'success'
+    needs: [prepare, validate]
+    if: always() && (needs.prepare.outputs.current == 'true' || needs.prepare.outputs.sha)
     runs-on: ubuntu-latest
     timeout-minutes: 5
-    permissions: { contents: write, issues: write, pull-requests: write }
+    permissions: {
+      contents: write,
+      issues: write,
+      pull-requests: write,
+      statuses: write,
+    }
     steps:
       - uses: actions/checkout@v4
+        with: { persist-credentials: false }
 
       - uses: actions/download-artifact@v4
+        continue-on-error: true
         with:
           name: issue-manifest
           path: ${{ runner.temp }}/out
 
-      - name: Commit manifest and open PR
+      - name: Prepare a validated commit before changing any branch
+        id: commit
+        if: needs.validate.result == 'success' && needs.validate.outputs.valid == 'true'
+        uses: actions/github-script@v7
+        env:
+          ID: ${{ needs.validate.outputs.id }}
+          OUT: ${{ runner.temp }}/out
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        with:
+          script: |
+            const fs = require("fs")
+            const repo = { owner: context.repo.owner, repo: context.repo.repo }
+            const snapshot = context.payload.issue
+            const { data: issue } = await github.rest.issues.get({ ...repo, issue_number: snapshot.number })
+            if (issue.body !== snapshot.body || issue.updated_at !== snapshot.updated_at || issue.state !== "open" || !issue.labels.some((label) => label.name === "manifest")) {
+              core.setFailed("The issue changed during validation; refusing to publish the stale manifest.")
+              return
+            }
+            const path = `manifests/${process.env.ID}.yaml`
+            const content = fs.readFileSync(`${process.env.OUT}/manifest.yaml`, "utf8")
+            const { data: base } = await github.rest.git.getCommit({ ...repo, commit_sha: context.sha })
+            const { data: blob } = await github.rest.git.createBlob({ ...repo, content, encoding: "utf-8" })
+            let exists = false
+            try {
+              const { data: original } = await github.rest.repos.getContent({ ...repo, path, ref: context.sha })
+              exists = true
+              if (original.sha === blob.sha) {
+                core.setOutput("unchanged", "true")
+                return
+              }
+            } catch (error) {
+              if (error.status !== 404) throw error
+            }
+            const title = `${exists ? "fix: update" : "feat: add"} ${process.env.ID} manifest`
+            const { data: tree } = await github.rest.git.createTree({ ...repo, base_tree: base.tree.sha, tree: [{ path, mode: "100644", type: "blob", sha: blob.sha }] })
+            const { data: commit } = await github.rest.git.createCommit({
+              ...repo, tree: tree.sha, parents: [context.sha],
+              message: `${title}\n\nCo-authored-by: ${snapshot.user.login} <${snapshot.user.id}+${snapshot.user.login}@users.noreply.github.com>`
+            })
+            await github.rest.repos.createCommitStatus({ ...repo, sha: commit.sha, state: "success", context: "Issue manifest validation", description: `Issue #${snapshot.number}: validated`, target_url: process.env.RUN_URL })
+            core.setOutput("sha", commit.sha)
+            core.setOutput("title", title)
+
+      - name: Publish the validated commit and open PR
         id: pr
-        if: needs.validate.outputs.valid == 'true'
+        if: steps.commit.outputs.sha
         env:
           GH_TOKEN: ${{ github.token }}
-          ID: ${{ needs.validate.outputs.id }}
+          SHA: ${{ steps.commit.outputs.sha }}
+          TITLE: ${{ steps.commit.outputs.title }}
           NUMBER: ${{ github.event.issue.number }}
-          LOGIN: ${{ github.event.issue.user.login }}
-          USER_ID: ${{ github.event.issue.user.id }}
-          OUT: ${{ runner.temp }}/out
+          EXPECTED_SHA: ${{ needs.prepare.outputs.sha }}
         run: |
+          git config --local credential.helper '!f() { printf "username=x-access-token\npassword=%s\n" "$GH_TOKEN"; }; f'
           branch="manifest/issue-$NUMBER"
-          if [ -f "manifests/$ID.yaml" ]; then title="fix: update $ID manifest"; else title="feat: add $ID manifest"; fi
-          git switch -c "$branch"
-          cp "$OUT/manifest.yaml" "manifests/$ID.yaml"
-          git add "manifests/$ID.yaml"
-          if git diff --cached --quiet; then
-            echo "url=" >> "$GITHUB_OUTPUT"
-            exit 0
-          fi
-          git -c user.name="github-actions[bot]" \
-            -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
-            commit -m "$title" -m "Co-authored-by: $LOGIN <$USER_ID+$LOGIN@users.noreply.github.com>"
-          git push --force origin "$branch"
+          git fetch --no-tags --depth=1 origin "$SHA"
+          git push --force-with-lease="refs/heads/$branch:$EXPECTED_SHA" origin "$SHA:refs/heads/$branch"
           if gh pr view "$branch" --json state --jq .state | grep -qx OPEN; then
-            gh pr edit "$branch" --title "$title"
+            gh pr edit "$branch" --title "$TITLE"
           else
-            gh pr create --head "$branch" --title "$title" --body "Closes #$NUMBER"
+            gh pr create --head "$branch" --title "$TITLE" --body "Closes #$NUMBER"
           fi
           echo "url=$(gh pr view "$branch" --json url --jq .url)" >> "$GITHUB_OUTPUT"
+
+      - name: Mark failed updates on the previous PR head
+        if: always() && needs.prepare.outputs.sha && (needs.prepare.result != 'success' || needs.validate.result != 'success' || needs.validate.outputs.valid != 'true' || steps.commit.outcome != 'success' || steps.pr.outcome == 'failure')
+        uses: actions/github-script@v7
+        env:
+          SHA: ${{ needs.prepare.outputs.sha }}
+        with:
+          script: |
+            await github.rest.repos.createCommitStatus({
+              owner: context.repo.owner, repo: context.repo.repo, sha: process.env.SHA,
+              state: "failure", context: "Issue manifest validation", description: `Issue #${context.payload.issue.number}: update failed validation or publication`
+            })
 
       - name: Create or update the bot comment
         if: always()
         uses: actions/github-script@v7
         env:
           VALID: ${{ needs.validate.outputs.valid }}
+          COMMIT_OUTCOME: ${{ steps.commit.outcome }}
+          UNCHANGED: ${{ steps.commit.outputs.unchanged }}
           PR_OUTCOME: ${{ steps.pr.outcome }}
           PR_URL: ${{ steps.pr.outputs.url }}
           REPORT: ${{ runner.temp }}/out/report.md
@@ -118,8 +215,11 @@ jobs:
         with:
           script: |
             const fs = require("fs")
+            const snapshot = context.payload.issue
+            const current = await github.rest.issues.get({ owner: context.repo.owner, repo: context.repo.repo, issue_number: snapshot.number })
+            if (current.data.body !== snapshot.body || current.data.updated_at !== snapshot.updated_at) return
             const marker = "<!-- registry-index-issue-manifest -->"
-            const { VALID, PR_OUTCOME, PR_URL, REPORT, RUN_URL } = process.env
+            const { VALID, COMMIT_OUTCOME, UNCHANGED, PR_OUTCOME, PR_URL, REPORT, RUN_URL } = process.env
             const report = fs.existsSync(REPORT) ? fs.readFileSync(REPORT, "utf8") : "No report; see the workflow log."
             const escaped = report
               .normalize("NFKC")
@@ -131,13 +231,21 @@ jobs:
               .slice(0, 58_000)
             const status = VALID !== "true"
               ? "**failure**. Edit this issue to fix the manifest; the bot retries on every edit."
+              : COMMIT_OUTCOME !== "success" ? "**success**, but preparing the pull request failed; see the log."
+              : UNCHANGED === "true" ? "**success**. The manifest is identical to the registry; no new pull request needed. Any earlier pull request is unchanged and must be reviewed separately."
               : PR_OUTCOME !== "success" ? "**success**, but opening the pull request failed; see the log."
-              : PR_URL ? `**success**. Pull request: ${PR_URL}` : "**success**. The manifest is identical to the registry; no pull request needed."
+              : `**success**. Pull request: ${PR_URL}`
             const body = `${marker}\nManifest validation: ${status} ([log](${RUN_URL}))\n<pre>${escaped}</pre>`
             const issue = { owner: context.repo.owner, repo: context.repo.repo, issue_number: context.issue.number }
-            const comments = await github.paginate(github.rest.issues.listComments, { ...issue, per_page: 100 })
-            const existing = comments.find((comment) =>
-              comment.user?.login === "github-actions[bot]" && comment.body?.startsWith(marker)
-            )
+            let existing
+            let pages = 0
+            for await (const { data: comments } of github.paginate.iterator(github.rest.issues.listComments, { ...issue, per_page: 100 })) {
+              existing = comments.find((comment) => comment.user?.login === "github-actions[bot]" && comment.body?.startsWith(marker))
+              if (existing) break
+              if (++pages === 10 && comments.length === 100) {
+                core.warning("Bot comment not found within 1,000 comments; see the workflow log instead.")
+                return
+              }
+            }
             if (existing) await github.rest.issues.updateComment({ ...issue, comment_id: existing.id, body })
             else await github.rest.issues.createComment({ ...issue, body })
