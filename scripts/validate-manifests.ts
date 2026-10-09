@@ -29,6 +29,32 @@ export type FetchLike = (
 ) => Promise<Response>
 
 const manifestExtension = /\.(?:ya?ml|json)$/i
+export const networkHosts = [
+  "github.com",
+  "api.github.com",
+  "raw.githubusercontent.com",
+  "codeload.github.com",
+  "objects.githubusercontent.com",
+  "release-assets.githubusercontent.com",
+  "gitlab.com",
+] as const
+const NetworkUrl = v.pipe(
+  v.string(),
+  v.url(),
+  v.transform((value) => new URL(value)),
+  v.check(
+    (url) =>
+      url.protocol === "https:" && !url.username && !url.password &&
+      !url.port && networkHosts.some((host) => host === url.hostname),
+    `Network checks require HTTPS without credentials or custom ports on: ${
+      networkHosts.join(", ")
+    }. Other hosts require maintainer review.`,
+  ),
+)
+const RedirectCount = v.pipe(
+  v.number(),
+  v.maxValue(5, "Too many HTTP redirects."),
+)
 const requestTimeout = 15_000
 const jobTimeout = 480_000
 const maxConcurrentRequests = 6
@@ -637,8 +663,33 @@ const request = async <T>(
   const timer = setTimeout(() => controller.abort(), requestTimeout)
   let response: Response | undefined
   try {
-    response = await fetcher(url, { ...init, signal: controller.signal })
-    return await consume(response)
+    let destination = url
+    for (let redirects = 0;; redirects++) {
+      v.parse(RedirectCount, redirects)
+      const parsed = v.parse(NetworkUrl, destination)
+      response = await fetcher(parsed.href, {
+        ...init,
+        redirect: "manual",
+        signal: controller.signal,
+      })
+      if (![301, 302, 303, 307, 308].includes(response.status)) {
+        return await consume(response)
+      }
+      const location = response.headers.get("location")
+      if (!location) return await consume(response)
+      await response.body?.cancel()
+      destination = v.parse(
+        v.pipe(
+          v.string(),
+          v.check(
+            (value) => URL.canParse(value, parsed),
+            "Invalid redirect URL.",
+          ),
+          v.transform((value) => new URL(value, parsed).href),
+        ),
+        location,
+      )
+    }
   } finally {
     clearTimeout(timer)
     if (response?.body && !response.bodyUsed) {
@@ -712,7 +763,7 @@ const checkHttpUrl = (
     } catch (error) {
       return {
         error: error instanceof Error ? error.message : String(error),
-        transient: true,
+        transient: !(error instanceof v.ValiError),
       }
     }
   })()
@@ -768,7 +819,7 @@ const githubApi = (
     } catch (error) {
       return {
         error: error instanceof Error ? error.message : String(error),
-        transient: true,
+        transient: !(error instanceof v.ValiError),
       }
     }
   })()
@@ -1159,6 +1210,10 @@ const printResult = (result: ValidationResult, reportPath?: string) => {
 }
 const main = async () => {
   const args = [...Deno.args]
+  if (args.length === 1 && args[0] === "--network-hosts") {
+    console.log(networkHosts.join(","))
+    return
+  }
   const mode = args[0] === "check-urls" || args[0] === "validate"
     ? args.shift()
     : "validate"

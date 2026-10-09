@@ -1,0 +1,12 @@
+name: Mod manifest
+description: Add or update a mod; a bot opens the pull request
+title: "manifest: "
+labels: [manifest]
+body:
+  - type: textarea
+    id: manifest
+    attributes:
+      label: Manifest
+      description: YAML from the [manifest generator](https://mods.cataclysmbn.org/docs/generator/)
+      render: yaml
+    validations: { required: true }
