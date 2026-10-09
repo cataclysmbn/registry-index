@@ -27,4 +27,5 @@ categories:
   - qol
   - creatures
 autoupdate:
-  type: tag
+  type: commit
+  branch: main
