@@ -14,7 +14,7 @@ description: >-
 author:
   - sagittarius72
 license: MIT
-homepage: "https://github.com/sagittarius72git/
+homepage: "https://github.com/sagittarius72git/limited_reviving_zombies"
 version: 0.0.0
 dependencies:
   bn: ">=0.12.0"
