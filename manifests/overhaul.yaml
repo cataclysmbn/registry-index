@@ -26,6 +26,7 @@ categories:
 tags:
   - tileset
   - appearance
+  - anime
 icon_url: "https://raw.githubusercontent.com/scarf005/Overhaul/v0.0.2/icon.webp"
 uses_lua: false
 autoupdate:
