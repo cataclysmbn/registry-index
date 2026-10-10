@@ -489,7 +489,7 @@
     ],
     "license": "CC-BY-SA-3.0",
     "homepage": "https://github.com/Noctifer-de-Mortem/nocts_cata_mod/tree/master/Patchmods/BN_Arcana_Cata++_Patch",
-    "version": "2026.10.9-d5b283a",
+    "version": "2026.10.10-86eaafa",
     "yanked": {
       "reason": "Replaced by mod_interactions."
     },
@@ -501,7 +501,7 @@
     "source": {
       "type": "github_archive",
       "url": "https://github.com/Noctifer-de-Mortem/nocts_cata_mod/archive/refs/heads/master.zip",
-      "commit_sha": "d5b283a0e07debccc3541cf347d9f4f93a37e33d",
+      "commit_sha": "86eaafa0ee0ed72a86f5151ae481506b344cacdd",
       "extract_path": "Patchmods/BN_Arcana_Cata++_Patch"
     },
     "categories": [
@@ -514,7 +514,7 @@
       "branch": "master"
     },
     "parent": "arcana",
-    "last_updated": "2026-10-09T04:03:56.740Z"
+    "last_updated": "2026-10-10T03:48:56.216Z"
   },
   {
     "schema_version": "1.0",
@@ -1545,7 +1545,7 @@
     ],
     "license": "CC-BY-SA-3.0",
     "homepage": "https://github.com/Noctifer-de-Mortem/nocts_cata_mod/tree/master/Patchmods/BN_Cata++_ExoticAmmo_Patch",
-    "version": "2026.10.9-d5b283a",
+    "version": "2026.10.10-86eaafa",
     "yanked": {
       "reason": "Replaced by mod_interactions."
     },
@@ -1557,7 +1557,7 @@
     "source": {
       "type": "github_archive",
       "url": "https://github.com/Noctifer-de-Mortem/nocts_cata_mod/archive/refs/heads/master.zip",
-      "commit_sha": "d5b283a0e07debccc3541cf347d9f4f93a37e33d",
+      "commit_sha": "86eaafa0ee0ed72a86f5151ae481506b344cacdd",
       "extract_path": "Patchmods/BN_Cata++_ExoticAmmo_Patch"
     },
     "categories": [
@@ -1570,7 +1570,7 @@
       "branch": "master"
     },
     "parent": "cata",
-    "last_updated": "2026-10-09T04:03:37.860Z"
+    "last_updated": "2026-10-10T03:48:43.499Z"
   },
   {
     "schema_version": "1.0",
@@ -1583,14 +1583,14 @@
     ],
     "license": "ALL-RIGHTS-RESERVED",
     "homepage": "https://github.com/Noctifer-de-Mortem/nocts_cata_mod/tree/master/nocts_cata_mod_BN",
-    "version": "2026.10.9-d5b283a",
+    "version": "2026.10.10-86eaafa",
     "dependencies": {
       "bn": ">=0.9.1"
     },
     "source": {
       "type": "github_archive",
       "url": "https://github.com/Noctifer-de-Mortem/nocts_cata_mod/archive/refs/heads/master.zip",
-      "commit_sha": "d5b283a0e07debccc3541cf347d9f4f93a37e33d",
+      "commit_sha": "86eaafa0ee0ed72a86f5151ae481506b344cacdd",
       "extract_path": "nocts_cata_mod_BN"
     },
     "categories": [
@@ -1602,7 +1602,7 @@
       "type": "commit",
       "branch": "master"
     },
-    "last_updated": "2026-10-09T04:03:24.235Z"
+    "last_updated": "2026-10-10T03:48:36.275Z"
   },
   {
     "schema_version": "1.0",
@@ -3265,14 +3265,14 @@
       "sagittarius72"
     ],
     "license": "MIT",
-    "homepage": "https://github.com/sagittarius72git/Limited_Reviving_BN",
-    "version": "0.0.0",
+    "homepage": "https://github.com/sagittarius72git/limited_reviving_zombies",
+    "version": "1.0.0",
     "dependencies": {
       "bn": ">=0.12.0"
     },
     "source": {
       "type": "github_archive",
-      "url": "https://github.com/sagittarius72git/Limited_Reviving_BN/archive/refs/heads/main.zip",
+      "url": "https://github.com/sagittarius72git/limited_reviving_zombies/archive/refs/heads/main.zip",
       "commit_sha": "de8b0b863a711d07a71a01232cabc5db01166465"
     },
     "categories": [
@@ -3280,9 +3280,10 @@
       "creatures"
     ],
     "autoupdate": {
-      "type": "tag"
+      "type": "commit",
+      "branch": "main"
     },
-    "last_updated": "2026-10-08T04:02:39Z"
+    "last_updated": "2026-10-09T23:31:05+09:00"
   },
   {
     "schema_version": "1.0",
@@ -3456,14 +3457,14 @@
     ],
     "license": "ALL-RIGHTS-RESERVED",
     "homepage": "https://github.com/thelonestander/Lones-Used-Cars",
-    "version": "2026.10.9-8b341ac",
+    "version": "2026.10.10-678eef4",
     "dependencies": {
       "bn": ">=0.9.1"
     },
     "source": {
       "type": "github_archive",
       "url": "https://github.com/thelonestander/Lones-Used-Cars/archive/refs/heads/main.zip",
-      "commit_sha": "8b341ac01bbe297440d8c3930c2810f69acff124"
+      "commit_sha": "678eef48994d0e54f6abc1e66dd0d0d2f5784bc5"
     },
     "categories": [
       "content"
@@ -3474,7 +3475,7 @@
       "type": "commit",
       "branch": "main"
     },
-    "last_updated": "2026-10-09T04:03:30.843Z"
+    "last_updated": "2026-10-10T03:48:40.512Z"
   },
   {
     "schema_version": "1.0",
@@ -5380,6 +5381,39 @@
       "branch": "master"
     },
     "last_updated": "2026-05-19T09:19:11+09:00"
+  },
+  {
+    "schema_version": "1.0",
+    "id": "qol_item",
+    "display_name": "QoL Item",
+    "short_description": "A rope ladder you can hang, dangle or throw across a gap, a water dispenser for Auto Drink, reusable first aid for companions, and gear that fits mutated feet and mouths.",
+    "description": "A set of handy items: a rope ladder you can hang from a ledge, a homemade water dispenser that lets you auto-drink from the fluid grid, a makeshift bandage and disinfectant your companions can use any number of times, ankle warmers for mutated feet, and plague masks that fit mutated mouths.  Also makes the small and large cardboard boxes craftable.",
+    "author": [
+      "sagittarius72"
+    ],
+    "license": "MIT",
+    "homepage": "https://github.com/sagittarius72git/QoL_ITEM",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.13.0"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/sagittarius72git/QoL_ITEM/archive/refs/heads/main.zip",
+      "commit_sha": "41511def76abb4c34a7130f72f5307b7f78c7317"
+    },
+    "categories": [
+      "items",
+      "qol"
+    ],
+    "modinfo_url": "https://raw.githubusercontent.com/sagittarius72git/QoL_ITEM/41511def76abb4c34a7130f72f5307b7f78c7317/modinfo.json",
+    "uses_lua": true,
+    "lua_api_version": 2,
+    "autoupdate": {
+      "type": "commit",
+      "branch": "main"
+    },
+    "last_updated": "2026-10-09T23:31:19+09:00"
   },
   {
     "schema_version": "1.0",
