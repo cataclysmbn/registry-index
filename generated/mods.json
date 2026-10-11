@@ -489,7 +489,7 @@
     ],
     "license": "CC-BY-SA-3.0",
     "homepage": "https://github.com/Noctifer-de-Mortem/nocts_cata_mod/tree/master/Patchmods/BN_Arcana_Cata++_Patch",
-    "version": "2026.10.10-86eaafa",
+    "version": "2026.10.11-58611cb",
     "yanked": {
       "reason": "Replaced by mod_interactions."
     },
@@ -501,7 +501,7 @@
     "source": {
       "type": "github_archive",
       "url": "https://github.com/Noctifer-de-Mortem/nocts_cata_mod/archive/refs/heads/master.zip",
-      "commit_sha": "86eaafa0ee0ed72a86f5151ae481506b344cacdd",
+      "commit_sha": "58611cb6a7dbe3f4a516c87e489e457472746b18",
       "extract_path": "Patchmods/BN_Arcana_Cata++_Patch"
     },
     "categories": [
@@ -514,7 +514,7 @@
       "branch": "master"
     },
     "parent": "arcana",
-    "last_updated": "2026-10-10T03:48:56.216Z"
+    "last_updated": "2026-10-11T03:22:20.223Z"
   },
   {
     "schema_version": "1.0",
@@ -1545,7 +1545,7 @@
     ],
     "license": "CC-BY-SA-3.0",
     "homepage": "https://github.com/Noctifer-de-Mortem/nocts_cata_mod/tree/master/Patchmods/BN_Cata++_ExoticAmmo_Patch",
-    "version": "2026.10.10-86eaafa",
+    "version": "2026.10.11-58611cb",
     "yanked": {
       "reason": "Replaced by mod_interactions."
     },
@@ -1557,7 +1557,7 @@
     "source": {
       "type": "github_archive",
       "url": "https://github.com/Noctifer-de-Mortem/nocts_cata_mod/archive/refs/heads/master.zip",
-      "commit_sha": "86eaafa0ee0ed72a86f5151ae481506b344cacdd",
+      "commit_sha": "58611cb6a7dbe3f4a516c87e489e457472746b18",
       "extract_path": "Patchmods/BN_Cata++_ExoticAmmo_Patch"
     },
     "categories": [
@@ -1570,7 +1570,7 @@
       "branch": "master"
     },
     "parent": "cata",
-    "last_updated": "2026-10-10T03:48:43.499Z"
+    "last_updated": "2026-10-11T03:22:07.650Z"
   },
   {
     "schema_version": "1.0",
@@ -1583,14 +1583,14 @@
     ],
     "license": "ALL-RIGHTS-RESERVED",
     "homepage": "https://github.com/Noctifer-de-Mortem/nocts_cata_mod/tree/master/nocts_cata_mod_BN",
-    "version": "2026.10.10-86eaafa",
+    "version": "2026.10.11-58611cb",
     "dependencies": {
       "bn": ">=0.9.1"
     },
     "source": {
       "type": "github_archive",
       "url": "https://github.com/Noctifer-de-Mortem/nocts_cata_mod/archive/refs/heads/master.zip",
-      "commit_sha": "86eaafa0ee0ed72a86f5151ae481506b344cacdd",
+      "commit_sha": "58611cb6a7dbe3f4a516c87e489e457472746b18",
       "extract_path": "nocts_cata_mod_BN"
     },
     "categories": [
@@ -1602,7 +1602,7 @@
       "type": "commit",
       "branch": "master"
     },
-    "last_updated": "2026-10-10T03:48:36.275Z"
+    "last_updated": "2026-10-11T03:22:00.599Z"
   },
   {
     "schema_version": "1.0",
@@ -5180,6 +5180,29 @@
       "branch": "main"
     },
     "last_updated": "2026-06-20T02:48:48.609Z"
+  },
+  {
+    "schema_version": "1.0",
+    "id": "PCBM",
+    "display_name": "Permanent CBMs",
+    "short_description": "Adds some CBMs that are meant to act akin to a mutation threshold.",
+    "description": "Adds some CBMs that are meant to act akin to a mutation threshold.",
+    "author": [
+      "BaronOhShi"
+    ],
+    "license": "AGPL-3.0-or-later",
+    "homepage": "https://github.com/ohshidead/Permanent-CBM-mod",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": "0.13"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/ohshidead/Permanent-CBM-mod/archive/refs/heads/main.zip",
+      "commit_sha": "08c58146ef66cd3ab9baf7f820f5c1668df9be83"
+    },
+    "icon_url": "https://i.imgur.com/ASeUxFT.png",
+    "last_updated": "2026-10-11T11:36:34+09:00"
   },
   {
     "schema_version": "1.0",
