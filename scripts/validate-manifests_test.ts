@@ -248,7 +248,33 @@ Deno.test("allows fixed tag URL and icon templates without $version", async () =
   )
   assertEquals(issues, [])
   assert(calls.includes("https://github.com/latest/mod.zip"))
-  assert(calls.includes("https://github.com/icon.png"))
+  assert(!calls.includes("https://github.com/icon.png"))
+})
+
+Deno.test("accepts icon_url on any HTTPS host without fetching it", async () => {
+  const value = networkManifest()
+  value.icon_url = "https://i.imgur.com/ASeUxFT.png"
+  assertEquals(checkCanonical("manifests/network_mod.yaml", value), [])
+  const calls: string[] = []
+  const issues = await checkNetwork(
+    "manifests/network_mod.yaml",
+    value,
+    async (url) => {
+      await Promise.resolve()
+      calls.push(String(url))
+      return String(url).includes("api.github.com")
+        ? response([{ name: "v1.2.3" }])
+        : response("ok")
+    },
+  )
+  assertEquals(issues, [])
+  assert(!calls.some((call) => call.includes("imgur")))
+})
+
+Deno.test("rejects non-HTTPS icon_url", () => {
+  const value = networkManifest()
+  value.icon_url = "http://i.imgur.com/ASeUxFT.png"
+  assert(checkCanonical("manifests/network_mod.yaml", value).length > 0)
 })
 
 Deno.test("reports a broken fixed tag URL after substitution", async () => {
@@ -334,7 +360,6 @@ Deno.test("checks commit-generated URLs with updater CalVer rather than raw SHA"
     1,
   )
   assert(calls.includes(`https://github.com/releases/${version}.zip`))
-  assert(calls.includes(`https://github.com/icons/${version}.png`))
 })
 
 Deno.test("commit without templates retains current source and icon", async () => {
@@ -419,7 +444,7 @@ Deno.test("explains why a fixed Release tag cannot autoupdate", async () => {
   assertStringIncludes(issue.why, "exactly three numeric components")
 })
 
-Deno.test("checks substituted source and icon URLs for the selected latest tag", async () => {
+Deno.test("checks substituted source URL for the selected latest tag", async () => {
   const calls: string[] = []
   const issues = await checkNetwork(
     "manifests/network_mod.yaml",
@@ -432,13 +457,12 @@ Deno.test("checks substituted source and icon URLs for the selected latest tag",
           name: "v1.2.3",
         }, { name: "v1.0.0" }])
       }
-      if (String(url).includes("icons/")) return response("missing", 404)
+      if (String(url).includes("releases/")) return response("missing", 404)
       return response("ok")
     },
   )
   assert(issues.some((item) => item.code === "generated-url-unreachable"))
   assert(calls.some((call) => call.includes("releases/v1.2.3/demo.zip")))
-  assert(calls.some((call) => call.includes("icons/v1.2.3.png")))
 })
 
 Deno.test("does not report fixed generated URLs when all substituted URLs are reachable", async () => {

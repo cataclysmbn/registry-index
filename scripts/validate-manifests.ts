@@ -182,7 +182,13 @@ const ManifestSchema = v.pipe(
     source: Source,
     categories: v.optional(v.array(v.string())),
     tags: v.optional(v.array(v.string())),
-    icon_url: v.optional(v.string("Icon URL")),
+    icon_url: v.optional(
+      v.pipe(
+        v.string("Icon URL"),
+        v.url(),
+        v.startsWith("https://", "Icon URL must use HTTPS"),
+      ),
+    ),
     modinfo_url: v.optional(
       v.pipe(
         v.string("modinfo.json URL"),
@@ -845,10 +851,7 @@ const generatedUrls = (
     : type === "tag"
     ? archiveUrl(repo.owner, repo.repo, substitutionVersion)
     : null
-  const iconUrl = typeof update.icon_url === "string"
-    ? update.icon_url.replaceAll("$version", substitutionVersion)
-    : null
-  return { sourceUrl, iconUrl }
+  return { sourceUrl }
 }
 export const checkNetwork = async (
   file: string,
@@ -861,10 +864,10 @@ export const checkNetwork = async (
   const urls: [string, string][] = []
   const source = isObject(manifest.source) ? manifest.source : null
   for (
-    const [field, value] of [["source.url", source?.url], [
-      "icon_url",
-      manifest.icon_url,
-    ], ["modinfo_url", manifest.modinfo_url]] as [string, unknown][]
+    const [field, value] of [
+      ["source.url", source?.url],
+      ["modinfo_url", manifest.modinfo_url],
+    ] as [string, unknown][]
   ) if (typeof value === "string") urls.push([field, value])
   const urlChecks = await Promise.all(
     urls.map(async ([field, url]) =>
@@ -1079,9 +1082,6 @@ const checkGeneratedUrls = async (
   const generated = generatedUrls(manifest, repo, version, type)
   const urls: [string, string][] = []
   if (generated.sourceUrl) urls.push(["future source.url", generated.sourceUrl])
-  if (generated.iconUrl) {
-    urls.push(["future autoupdate.icon_url", generated.iconUrl])
-  }
   const generatedResults = await Promise.all(
     urls.map(async ([field, url]) =>
       [field, url, await checkHttpUrl(url, fetcher, urlCache)] as const
