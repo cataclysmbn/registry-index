@@ -17,6 +17,8 @@ jobs:
   autoupdate:
     name: Check for Updates
     runs-on: ubuntu-latest
+    outputs:
+      changed: ${{ steps.check.outputs.changed }}
     steps:
       - name: Checkout registry-index
         uses: actions/checkout@v4
@@ -79,3 +81,10 @@ jobs:
             -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
             commit -m "chore: autoupdate mod versions"
           git push
+
+  deploy:
+    name: Deploy site
+    needs: autoupdate
+    if: needs.autoupdate.outputs.changed == 'true'
+    permissions: { contents: read, pages: write, id-token: write }
+    uses: ./.github/workflows/deploy.yml

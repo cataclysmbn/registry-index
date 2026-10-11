@@ -1,0 +1,48 @@
+name: Deploy site
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: "17 3 * * 1"
+  workflow_dispatch:
+  workflow_call:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout registry site
+        uses: actions/checkout@v4
+        with:
+          repository: cataclysmbn/registry
+          path: registry
+
+      - name: Checkout registry-index
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          path: registry/registry-index
+
+      - uses: denoland/setup-deno@v2
+        with: { deno-version: v2.x, cache: true }
+
+      - name: Build site
+        working-directory: registry
+        run: deno task build
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v4
+        with: { path: registry/_site }
+
+      - uses: actions/deploy-pages@v4
