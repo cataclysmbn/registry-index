@@ -1,0 +1,17 @@
+schema_version: "1.0"
+id: PCBM
+display_name: Permanent CBMs
+short_description: Adds some CBMs that are meant to act akin to a mutation threshold.
+description: Adds some CBMs that are meant to act akin to a mutation threshold.
+author:
+  - BaronOhShi
+license: AGPL-3.0-or-later
+homepage: "https://github.com/ohshidead/Permanent-CBM-mod"
+version: 0.0.0
+dependencies:
+  bn: "0.13"
+source:
+  type: github_archive
+  url: "https://github.com/ohshidead/Permanent-CBM-mod/archive/refs/heads/main.zip"
+  commit_sha: 08c58146ef66cd3ab9baf7f820f5c1668df9be83
+icon_url: "https://i.imgur.com/ASeUxFT.png"
