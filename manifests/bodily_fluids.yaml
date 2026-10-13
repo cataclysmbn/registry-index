@@ -146,6 +146,8 @@ source:
   url: "https://github.com/shmakota/bodily_fluids_mod_bn/archive/refs/heads/main.zip"
   commit_sha: 46024685697d3e9d19f235642743588e5c0afc0a
   extract_path: bodily_fluids
+icon_url: >-
+  https://raw.githubusercontent.com/shmakota/bodily_fluids_mod_bn/refs/heads/main/gfx/mod_icon.png
 categories:
   - rebalance
 modinfo_url: >-
