@@ -1,158 +1,23 @@
 schema_version: "1.0"
 id: bodily_fluids
 display_name: Bodily Fluids
-short_description: >-
-  Adds bodily fluids as well as related mechanics for toilets.
-
-
-  NOTE: There is currently no way to interrupt long crafting actions, so you may
-  have to pay more attention to the log if you don't want to
+short_description: "Adds bodily fluids as well as related mechanics for toilets. "
 description: >-
-  Adds bodily fluids as well as related mechanics for toilets.
-
-
   NOTE: There is currently no way to interrupt long crafting actions, so you may
   have to pay more attention to the log if you don't want to dirty up your base.
 author:
-  - Kota
-license: ALL-RIGHTS-RESERVED
-homepage: "https://github.com/shmakota/bodily_fluids_mod_bn/tree/main/bodily_fluids"
-version: 2026.7.26-4602468
-previous_releases:
-  - version: 0.0.0
-    source:
-      type: github_archive
-      url: >-
-        https://github.com/shmakota/bodily_fluids_mod_bn/archive/refs/heads/main.zip
-      commit_sha: 3a149705c06a492f5454cedb7d66aa6ddc3d681e
-      extract_path: bodily_fluids
-    released_at: "2026-05-16T09:25:28.192Z"
-  - version: 2026.6.8-3a14970
-    source:
-      type: github_archive
-      url: >-
-        https://github.com/shmakota/bodily_fluids_mod_bn/archive/refs/heads/main.zip
-      commit_sha: 3a149705c06a492f5454cedb7d66aa6ddc3d681e
-      extract_path: bodily_fluids
-    released_at: "2026-06-08T03:02:58.165Z"
-  - version: 2026.6.9-3a14970
-    source:
-      type: github_archive
-      url: >-
-        https://github.com/shmakota/bodily_fluids_mod_bn/archive/refs/heads/main.zip
-      commit_sha: 3a149705c06a492f5454cedb7d66aa6ddc3d681e
-      extract_path: bodily_fluids
-    released_at: "2026-06-09T02:39:49.563Z"
-  - version: 2026.6.10-3a14970
-    source:
-      type: github_archive
-      url: >-
-        https://github.com/shmakota/bodily_fluids_mod_bn/archive/refs/heads/main.zip
-      commit_sha: 3a149705c06a492f5454cedb7d66aa6ddc3d681e
-      extract_path: bodily_fluids
-    released_at: "2026-06-10T02:55:50.575Z"
-  - version: 2026.6.11-3a14970
-    source:
-      type: github_archive
-      url: >-
-        https://github.com/shmakota/bodily_fluids_mod_bn/archive/refs/heads/main.zip
-      commit_sha: 3a149705c06a492f5454cedb7d66aa6ddc3d681e
-      extract_path: bodily_fluids
-    released_at: "2026-06-11T02:58:36.896Z"
-  - version: 2026.6.12-3a14970
-    source:
-      type: github_archive
-      url: >-
-        https://github.com/shmakota/bodily_fluids_mod_bn/archive/refs/heads/main.zip
-      commit_sha: 3a149705c06a492f5454cedb7d66aa6ddc3d681e
-      extract_path: bodily_fluids
-    released_at: "2026-06-12T03:01:40.868Z"
-  - version: 2026.6.13-3a14970
-    source:
-      type: github_archive
-      url: >-
-        https://github.com/shmakota/bodily_fluids_mod_bn/archive/refs/heads/main.zip
-      commit_sha: 3a149705c06a492f5454cedb7d66aa6ddc3d681e
-      extract_path: bodily_fluids
-    released_at: "2026-06-13T02:48:59.831Z"
-  - version: 2026.6.14-3a14970
-    source:
-      type: github_archive
-      url: >-
-        https://github.com/shmakota/bodily_fluids_mod_bn/archive/refs/heads/main.zip
-      commit_sha: 3a149705c06a492f5454cedb7d66aa6ddc3d681e
-      extract_path: bodily_fluids
-    released_at: "2026-06-14T02:59:25.098Z"
-  - version: 2026.6.15-3a14970
-    source:
-      type: github_archive
-      url: >-
-        https://github.com/shmakota/bodily_fluids_mod_bn/archive/refs/heads/main.zip
-      commit_sha: 3a149705c06a492f5454cedb7d66aa6ddc3d681e
-      extract_path: bodily_fluids
-    released_at: "2026-06-15T03:32:45.523Z"
-  - version: 2026.6.16-3a14970
-    source:
-      type: github_archive
-      url: >-
-        https://github.com/shmakota/bodily_fluids_mod_bn/archive/refs/heads/main.zip
-      commit_sha: 3a149705c06a492f5454cedb7d66aa6ddc3d681e
-      extract_path: bodily_fluids
-    released_at: "2026-06-16T03:34:43.996Z"
-  - version: 2026.6.17-3a14970
-    source:
-      type: github_archive
-      url: >-
-        https://github.com/shmakota/bodily_fluids_mod_bn/archive/refs/heads/main.zip
-      commit_sha: 3a149705c06a492f5454cedb7d66aa6ddc3d681e
-      extract_path: bodily_fluids
-    released_at: "2026-06-17T03:26:43.887Z"
-  - version: 2026.6.18-3a14970
-    source:
-      type: github_archive
-      url: >-
-        https://github.com/shmakota/bodily_fluids_mod_bn/archive/refs/heads/main.zip
-      commit_sha: 3a149705c06a492f5454cedb7d66aa6ddc3d681e
-      extract_path: bodily_fluids
-    released_at: "2026-06-18T03:01:41.344Z"
-  - version: 2026.6.19-3a14970
-    source:
-      type: github_archive
-      url: >-
-        https://github.com/shmakota/bodily_fluids_mod_bn/archive/refs/heads/main.zip
-      commit_sha: 3a149705c06a492f5454cedb7d66aa6ddc3d681e
-      extract_path: bodily_fluids
-    released_at: "2026-06-19T03:56:08.626Z"
-  - version: 2026.6.20-3a14970
-    source:
-      type: github_archive
-      url: >-
-        https://github.com/shmakota/bodily_fluids_mod_bn/archive/refs/heads/main.zip
-      commit_sha: 3a149705c06a492f5454cedb7d66aa6ddc3d681e
-      extract_path: bodily_fluids
-    released_at: "2026-06-20T02:49:02.528Z"
-  - version: 2026.7.19-39a81f2
-    source:
-      type: github_archive
-      url: >-
-        https://github.com/shmakota/bodily_fluids_mod_bn/archive/refs/heads/main.zip
-      commit_sha: 39a81f22b9bddd100b4730147d7722bab739a676
-      extract_path: bodily_fluids
-    released_at: "2026-07-19T02:04:04.921Z"
+  - you
+license: CC-BY-SA-4.0
+homepage: "https://github.com/shmakota/bodily_fluids_mod_bn"
+version: 0.0.0
 dependencies:
   bn: ">=0.9.1"
 source:
   type: github_archive
   url: "https://github.com/shmakota/bodily_fluids_mod_bn/archive/refs/heads/main.zip"
-  commit_sha: 46024685697d3e9d19f235642743588e5c0afc0a
-  extract_path: bodily_fluids
-categories:
-  - rebalance
-modinfo_url: >-
-  https://raw.githubusercontent.com/shmakota/bodily_fluids_mod_bn/3a149705c06a492f5454cedb7d66aa6ddc3d681e/bodily_fluids/modinfo.json
-uses_lua: true
-lua_api_version: 2
+  commit_sha: 44fd00f514a99b5dd579f4a274d35ca3ee7ec7e6
+icon_url: >-
+  https://raw.githubusercontent.com/shmakota/bodily_fluids_mod_bn/refs/heads/main/gfx/mod_icon.png
 autoupdate:
   type: commit
   branch: main
-last_updated: "2026-07-26T02:08:21.841Z"
