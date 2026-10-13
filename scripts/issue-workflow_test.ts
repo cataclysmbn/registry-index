@@ -106,6 +106,15 @@ Deno.test("publication guard refuses stale and closed issue snapshots", async ()
   }
 })
 
+Deno.test("publication guard ignores updated_at bumps from comments", async () => {
+  const test = fixture({
+    current: { ...snapshot, updated_at: "2026-10-09T00:00:15Z" },
+  })
+  await test.run()
+  assertEquals(test.outputs.current, "true")
+  assertEquals(test.failures, [])
+})
+
 Deno.test("publication guard refuses human or unverified branch heads", async () => {
   for (
     const statuses of [[], [{
@@ -324,5 +333,69 @@ Deno.test("bot comment lookup stops at the first match or its page budget", asyn
     assertEquals(pages, found ? 1 : 10)
     assertEquals(edits.length, found ? 1 : 0)
     assertEquals(warnings.length, found ? 0 : 1)
+  }
+})
+
+Deno.test("commit preparation ignores updated_at bumps from comments", async () => {
+  const test = fixture({
+    current: { ...snapshot, updated_at: "2026-10-09T00:00:15Z" },
+  })
+  const github = {
+    ...test.github,
+    rest: {
+      ...test.github.rest,
+      git: {
+        getCommit: () =>
+          Promise.resolve({ data: { tree: { sha: "base-tree" } } }),
+        createBlob: () => Promise.resolve({ data: { sha: "new-blob" } }),
+        createTree: () => Promise.resolve({ data: { sha: "new-tree" } }),
+        createCommit: () => Promise.resolve({ data: { sha: "new-commit" } }),
+      },
+      repos: {
+        getContent: () => Promise.resolve({ data: { sha: "old-blob" } }),
+        createCommitStatus: () => Promise.resolve(),
+      },
+    },
+  }
+  await prepareCommit(
+    github,
+    { ...test.context, sha: "base-commit" },
+    test.core,
+    () => ({ readFileSync: () => "id: demo\n" }),
+    {
+      env: {
+        ID: "demo",
+        OUT: "/artifact",
+        RUN_URL: "https://github.com/example/registry/actions/runs/1",
+      },
+    },
+  )
+  assertEquals(test.failures, [])
+  assertEquals(test.outputs.sha, "new-commit")
+})
+
+Deno.test("bot report is skipped when the issue body changed, closed or lost its label", async () => {
+  for (
+    const current of [{ ...snapshot, body: "edited" }, {
+      ...snapshot,
+      state: "closed",
+    }, { ...snapshot, labels: [] }]
+  ) {
+    const test = fixture({ current })
+    const github = {
+      ...test.github,
+      paginate: {
+        iterator: () => {
+          throw new Error("must not post a report")
+        },
+      },
+    }
+    await reportComment(
+      github,
+      { ...test.context, issue: { number: 1 }, payload: { issue: snapshot } },
+      test.core,
+      () => ({ existsSync: () => false }),
+      { env: {} },
+    )
   }
 })

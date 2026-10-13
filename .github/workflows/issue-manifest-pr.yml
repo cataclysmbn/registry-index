@@ -30,7 +30,7 @@ jobs:
             const repo = { owner: context.repo.owner, repo: context.repo.repo }
             const snapshot = context.payload.issue
             const { data: issue } = await github.rest.issues.get({ ...repo, issue_number: snapshot.number })
-            if (issue.body !== snapshot.body || issue.updated_at !== snapshot.updated_at || issue.state !== "open" || !issue.labels.some((label) => label.name === "manifest")) {
+            if (issue.body !== snapshot.body || issue.state !== "open" || !issue.labels.some((label) => label.name === "manifest")) {
               core.notice("The issue changed; this run will not publish its stale snapshot.")
               return
             }
@@ -139,7 +139,7 @@ jobs:
             const repo = { owner: context.repo.owner, repo: context.repo.repo }
             const snapshot = context.payload.issue
             const { data: issue } = await github.rest.issues.get({ ...repo, issue_number: snapshot.number })
-            if (issue.body !== snapshot.body || issue.updated_at !== snapshot.updated_at || issue.state !== "open" || !issue.labels.some((label) => label.name === "manifest")) {
+            if (issue.body !== snapshot.body || issue.state !== "open" || !issue.labels.some((label) => label.name === "manifest")) {
               core.setFailed("The issue changed during validation; refusing to publish the stale manifest.")
               return
             }
@@ -217,7 +217,7 @@ jobs:
             const fs = require("fs")
             const snapshot = context.payload.issue
             const current = await github.rest.issues.get({ owner: context.repo.owner, repo: context.repo.repo, issue_number: snapshot.number })
-            if (current.data.body !== snapshot.body || current.data.updated_at !== snapshot.updated_at) return
+            if (current.data.body !== snapshot.body || current.data.state !== "open" || !current.data.labels.some((label) => label.name === "manifest")) return
             const marker = "<!-- registry-index-issue-manifest -->"
             const { VALID, COMMIT_OUTCOME, UNCHANGED, PR_OUTCOME, PR_URL, REPORT, RUN_URL } = process.env
             const report = fs.existsSync(REPORT) ? fs.readFileSync(REPORT, "utf8") : "No report; see the workflow log."
