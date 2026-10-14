@@ -102,6 +102,8 @@ previous_releases:
     released_at: "2026-06-19T03:56:16.520Z"
 dependencies:
   bn: ">=0.9.1"
+yanked:
+  reason: "Source repository was deleted."
 source:
   type: github_archive
   url: "https://github.com/Fentanylreactor/CBN-INFPerks/archive/refs/heads/main.zip"
