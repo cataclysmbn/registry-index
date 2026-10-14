@@ -184,6 +184,7 @@
   "categories": [
     "rebalance"
   ],
+  "icon_url": "https://raw.githubusercontent.com/shmakota/bodily_fluids_mod_bn/refs/heads/main/gfx/mod_icon.png",
   "modinfo_url": "https://raw.githubusercontent.com/shmakota/bodily_fluids_mod_bn/3a149705c06a492f5454cedb7d66aa6ddc3d681e/bodily_fluids/modinfo.json",
   "uses_lua": true,
   "lua_api_version": 2,
