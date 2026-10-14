@@ -2,7 +2,7 @@ name: Issue Manifest PR
 
 on:
   issues:
-    types: [opened, edited, reopened]
+    types: [opened, edited, reopened, closed]
 
 concurrency:
   group: issue-manifest-${{ github.event.issue.number }}
@@ -12,6 +12,27 @@ permissions:
   contents: read
 
 jobs:
+  close-pr:
+    name: Close the pull request of a closed issue
+    if: github.event.action == 'closed'
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    permissions: { issues: read, pull-requests: write }
+    steps:
+      - name: Close the open bot pull request
+        id: close
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const repo = { owner: context.repo.owner, repo: context.repo.repo }
+            const number = context.payload.issue.number
+            const { data: issue } = await github.rest.issues.get({ ...repo, issue_number: number })
+            if (issue.state !== "closed") return
+            const { data: pulls } = await github.rest.pulls.list({ ...repo, head: `${repo.owner}:manifest/issue-${number}`, state: "open" })
+            for (const pull of pulls.filter((pull) => pull.user?.login === "github-actions[bot]")) {
+              await github.rest.pulls.update({ ...repo, pull_number: pull.number, state: "closed" })
+            }
+
   prepare:
     name: Invalidate previous issue validation
     if: github.event.issue.state == 'open' && contains(github.event.issue.labels.*.name, 'manifest')
