@@ -399,3 +399,75 @@ Deno.test("bot report is skipped when the issue body changed, closed or lost its
     )
   }
 })
+
+const closeScript = workflow.jobs["close-pr"]?.steps.find((step) =>
+  step.id === "close"
+)?.with?.script
+const closePr = (
+  state: string,
+  pulls: { number: number; user: { login: string } }[],
+) => {
+  const closed: unknown[] = []
+  const lists: unknown[] = []
+  const github = {
+    rest: {
+      issues: {
+        get: () => Promise.resolve({ data: { ...snapshot, state } }),
+      },
+      pulls: {
+        list: (value: unknown) => {
+          lists.push(value)
+          return Promise.resolve({ data: pulls })
+        },
+        update: (value: unknown) => {
+          closed.push(value)
+          return Promise.resolve()
+        },
+      },
+    },
+  }
+  const context = {
+    repo: { owner: "example", repo: "registry" },
+    payload: { issue: { ...snapshot, state: "closed" } },
+  }
+  return {
+    run: () =>
+      new Function(
+        "github",
+        "context",
+        `return (async () => {${v.parse(v.string(), closeScript)}})()`,
+      )(github, context),
+    closed,
+    lists,
+  }
+}
+
+Deno.test("closing the issue closes its open bot pull request", async () => {
+  const bot = { login: "github-actions[bot]" }
+  const run = closePr("closed", [
+    { number: 40, user: bot },
+    { number: 41, user: { login: "human" } },
+  ])
+  await run.run()
+  assertEquals(run.lists, [{
+    owner: "example",
+    repo: "registry",
+    head: "example:manifest/issue-1",
+    state: "open",
+  }])
+  assertEquals(run.closed, [{
+    owner: "example",
+    repo: "registry",
+    pull_number: 40,
+    state: "closed",
+  }])
+})
+
+Deno.test("closing the issue keeps the pull request after a reopen", async () => {
+  const run = closePr("open", [{
+    number: 40,
+    user: { login: "github-actions[bot]" },
+  }])
+  await run.run()
+  assertEquals(run.closed, [])
+})
