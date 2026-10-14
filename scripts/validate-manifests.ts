@@ -2,6 +2,7 @@
 /** Check registry manifests locally and in CI. */
 
 import * as v from "valibot"
+import { parse as parseJsonc } from "@std/jsonc"
 import { parse as parseYaml } from "@std/yaml"
 import { basename, extname, join, relative, resolve } from "@std/path"
 import { canParse, compare, tryParse, tryParseRange } from "@std/semver"
@@ -813,7 +814,7 @@ const githubApi = (
             }
           }
           try {
-            return { value: JSON.parse(await response.text()) }
+            return { value: parseJsonc(await response.text()) }
           } catch {
             return {
               error: "GitHub API returned invalid JSON",
@@ -892,6 +893,7 @@ export const checkNetwork = async (
       )
     }
   }
+  findings.push(...await checkModinfo(file, manifest, fetcher, apiCache))
   const update = isObject(manifest.autoupdate) ? manifest.autoupdate : null
   if (!update) return findings
   const repoUrl = repositoryUrl(manifest)
@@ -1067,6 +1069,150 @@ export const checkNetwork = async (
     ),
   )
   return findings
+}
+
+const modIdKey = (value: string) =>
+  value.toLowerCase().replace(/[^\p{L}\p{N}]+/gu, "_").replace(/^_|_$/g, "")
+const fetchFailure = (
+  file: string,
+  field: string,
+  url: string,
+  error: string,
+  transient = false,
+) =>
+  finding(
+    file,
+    field,
+    url,
+    transient
+      ? "Retry the network check later."
+      : "Set modinfo_url to the mod's modinfo.json at the pinned commit.",
+    `The validator compares the manifest with the mod's MOD_INFO; fetching it observed ${error}.`,
+    transient ? "modinfo-check-transient" : "modinfo-unreachable",
+    transient ? "warning" : "error",
+  )
+// Without modinfo_url, list every modinfo.json in the pinned GitHub archive.
+const modinfoUrls = async (
+  file: string,
+  manifest: Manifest,
+  fetcher: FetchLike,
+  apiCache: Map<string, Promise<GitHubApiResult>>,
+): Promise<string[] | Finding | null> => {
+  if (typeof manifest.modinfo_url === "string") return [manifest.modinfo_url]
+  const source = isObject(manifest.source) ? manifest.source : {}
+  const url = typeof source.url === "string" ? source.url : ""
+  const repo = source.type === "github_archive" ? githubRepository(url) : null
+  const ref = typeof source.commit_sha === "string"
+    ? source.commit_sha
+    : url.match(/\/archive\/(?:refs\/(?:heads|tags)\/)?(.+)\.zip$/)?.[1]
+  if (!repo || !ref) return null
+  const base = `${encodeURIComponent(repo.owner)}/${
+    encodeURIComponent(repo.repo)
+  }`
+  const tree = await githubApi(
+    `https://api.github.com/repos/${base}/git/trees/${
+      encodeURIComponent(ref)
+    }?recursive=1`,
+    fetcher,
+    apiCache,
+  )
+  if (tree.error) {
+    return fetchFailure(file, "source.url", url, tree.error, tree.transient)
+  }
+  const paths = isObject(tree.value) && Array.isArray(tree.value.tree)
+    ? tree.value.tree.filter(isObject).map((entry) => entry.path).filter((
+      path,
+    ): path is string =>
+      typeof path === "string" &&
+      basename(path).toLowerCase() === "modinfo.json"
+    )
+    : []
+  return paths.map((path) =>
+    `https://raw.githubusercontent.com/${base}/${encodeURIComponent(ref)}/${
+      path.split("/").map(encodeURIComponent).join("/")
+    }`
+  )
+}
+const checkModinfo = async (
+  file: string,
+  manifest: Manifest,
+  fetcher: FetchLike,
+  apiCache: Map<string, Promise<GitHubApiResult>>,
+): Promise<Finding[]> => {
+  if (manifest.package_type === "soundpack") return []
+  const urls = await modinfoUrls(file, manifest, fetcher, apiCache)
+  if (!urls) return []
+  if (!Array.isArray(urls)) return [urls]
+  if (!urls.length) {
+    return [finding(
+      file,
+      "source.url",
+      isObject(manifest.source) ? manifest.source.url : undefined,
+      "Point source at an archive containing modinfo.json, or set modinfo_url.",
+      "The game loads mods by their MOD_INFO; an archive without modinfo.json installs nothing.",
+      "modinfo-missing",
+    )]
+  }
+  const infos: Record<string, unknown>[] = []
+  for (const url of urls) {
+    const result = await githubApi(url, fetcher, apiCache)
+    if (result.error) {
+      return [
+        fetchFailure(file, "modinfo_url", url, result.error, result.transient),
+      ]
+    }
+    infos.push(
+      ...[result.value].flat().filter(isObject).filter((entry) =>
+        typeof entry.type === "string" &&
+        entry.type.toLowerCase() === "mod_info"
+      ),
+    )
+  }
+  const id = String(manifest.id)
+  const info = infos.find((entry) => {
+    const modId = entry.id ?? entry.ident
+    return typeof modId === "string" && modIdKey(modId) === modIdKey(id)
+  })
+  if (info) return authorFindings(file, manifest, [info])
+  return [
+    finding(
+      file,
+      "id",
+      id,
+      `Use the MOD_INFO id: ${
+        infos.map((entry) => entry.id ?? entry.ident).join(", ") || "<none>"
+      }.`,
+      "Dependencies and installs resolve the registry id against the mod's MOD_INFO id.",
+      "modinfo-id-mismatch",
+    ),
+    ...authorFindings(file, manifest, infos),
+  ]
+}
+const authorFindings = (
+  file: string,
+  manifest: Manifest,
+  infos: Record<string, unknown>[],
+): Finding[] => {
+  const names = infos.flatMap((entry) => [entry.authors, entry.maintainers])
+    .flat().filter((name): name is string => typeof name === "string" && !!name)
+  const authors = Array.isArray(manifest.author) ? manifest.author : []
+  const matches = authors.some((author) =>
+    typeof author === "string" && !!author.trim() &&
+    names.some((name) => {
+      const [left, right] = [name.toLowerCase(), author.toLowerCase().trim()]
+      return left.includes(right) || right.includes(left)
+    })
+  )
+  return names.length && !matches
+    ? [finding(
+      file,
+      "author",
+      authors,
+      `Use the MOD_INFO authors: ${names.join(", ")}.`,
+      "The registry must credit the people named in the mod's MOD_INFO.",
+      "modinfo-author-mismatch",
+    )]
+    : []
 }
 
 const checkGeneratedUrls = async (
