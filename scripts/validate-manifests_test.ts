@@ -536,3 +536,108 @@ Deno.test("reports the YAML parse error line for annotations", async () => {
     { code: "parse-error", line: 4 },
   ])
 })
+
+const modinfoFetcher =
+  (files: Record<string, unknown>) => async (url: string | URL) => {
+    await Promise.resolve()
+    const href = String(url)
+    if (href.includes("/git/trees/")) {
+      return response({
+        tree: Object.keys(files).map((path) => ({ path, type: "blob" })),
+      })
+    }
+    const path = Object.keys(files).find((key) => href.endsWith(`/${key}`))
+    return path ? response(files[path]) : response("ok")
+  }
+const issueManifest = () => {
+  const value = manifest("my_mod")
+  value.author = ["you"]
+  value.source = {
+    type: "github_archive",
+    url: "https://github.com/example/demo/archive/refs/heads/main.zip",
+    commit_sha: "64fe69a3fa0a47e236318cf5a7fc2339eabb1e38",
+  }
+  return value
+}
+
+Deno.test("rejects id and author that do not match the mod's MOD_INFO", async () => {
+  const issues = await checkNetwork(
+    "manifests/my_mod.yaml",
+    issueManifest(),
+    modinfoFetcher({
+      "modinfo.json": [{
+        type: "MOD_INFO",
+        id: "more_world",
+        authors: ["Grok"],
+      }],
+    }),
+  )
+  assertEquals(issues.map((item) => [item.code, item.field]), [
+    ["modinfo-id-mismatch", "id"],
+    ["modinfo-author-mismatch", "author"],
+  ])
+})
+
+Deno.test("accepts normalized ident and partial author from modinfo_url", async () => {
+  const value = manifest("arts_guns")
+  value.author = ["Artyom177"]
+  value.modinfo_url =
+    "https://raw.githubusercontent.com/example/demo/main/mods/arts/modinfo.json"
+  const issues = await checkNetwork(
+    "manifests/arts_guns.yaml",
+    value,
+    modinfoFetcher({
+      "mods/arts/modinfo.json": {
+        type: "mod_info",
+        ident: "Arts' Guns",
+        authors: ["Artyom177, Leon713"],
+      },
+    }),
+  )
+  assertEquals(issues, [])
+})
+
+Deno.test("matches any MOD_INFO found in a multi-mod archive", async () => {
+  const value = issueManifest()
+  value.id = "second"
+  value.author = ["B"]
+  const issues = await checkNetwork(
+    "manifests/second.yaml",
+    value,
+    modinfoFetcher({
+      "a/modinfo.json": [{ type: "MOD_INFO", id: "first", authors: ["A"] }],
+      "b/modinfo.json": [{
+        type: "MOD_INFO",
+        id: "Second",
+        maintainers: ["B"],
+      }],
+    }),
+  )
+  assertEquals(issues, [])
+})
+
+Deno.test("reports a missing modinfo.json as an error", async () => {
+  const issues = await checkNetwork(
+    "manifests/my_mod.yaml",
+    issueManifest(),
+    modinfoFetcher({}),
+  )
+  assertEquals(issues.map((item) => item.code), ["modinfo-missing"])
+})
+
+Deno.test("accepts MOD_INFO with trailing commas and skips soundpacks", async () => {
+  const value = issueManifest()
+  value.id = "filthy_clothing"
+  value.author = ["Wishduck"]
+  const fetcher = modinfoFetcher({
+    "modinfo.json":
+      '[{ "type": "MOD_INFO", "id": "filthy_clothing", "authors": ["Wishduck"], },]',
+  })
+  assertEquals(await checkNetwork("manifests/a.yaml", value, fetcher), [])
+  const soundpack = issueManifest()
+  soundpack.package_type = "soundpack"
+  assertEquals(
+    await checkNetwork("manifests/b.yaml", soundpack, modinfoFetcher({})),
+    [],
+  )
+})
