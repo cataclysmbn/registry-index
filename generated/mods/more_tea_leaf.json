@@ -4,7 +4,8 @@
   "display_name": "MOD to grow tea leaves",
   "short_description": "Adds new tea leaf seeds and raw tea leaves crafting options, new types of tea leaves and tea.",
   "author": [
-    "Unknown"
+    "Grim616",
+    "TheGoatGod"
   ],
   "license": "ALL-RIGHTS-RESERVED",
   "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/Medium-Maintenance-Small-Mods/More_tea_leaf",
@@ -30,5 +31,5 @@
     "type": "commit",
     "branch": "master"
   },
-  "last_updated": "2026-05-19T09:19:11+09:00"
+  "last_updated": "2026-10-14T15:26:06+09:00"
 }

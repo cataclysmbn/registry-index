@@ -4,7 +4,7 @@
   "display_name": "Morlock Village",
   "short_description": "Adds an underground village of mutant NPCs.  Connects to subways and sewers.",
   "author": [
-    "Unknown"
+    "Zlorthishen"
   ],
   "license": "ALL-RIGHTS-RESERVED",
   "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Morlock_Village",
@@ -30,5 +30,5 @@
     "type": "commit",
     "branch": "master"
   },
-  "last_updated": "2026-05-19T09:19:11+09:00"
+  "last_updated": "2026-10-14T15:26:06+09:00"
 }

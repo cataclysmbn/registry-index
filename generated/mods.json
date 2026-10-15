@@ -1150,14 +1150,13 @@
     ],
     "license": "MIT",
     "homepage": "https://github.com/AlexBromum/Blindness",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "dependencies": {
       "bn": ">=v0.12.0"
     },
     "source": {
-      "type": "github_archive",
-      "url": "https://github.com/AlexBromum/Blindness/archive/refs/heads/main.zip",
-      "commit_sha": "1e61a470f22083650d2f2b4842edcbc4a13c1616"
+      "type": "direct_url",
+      "url": "https://github.com/AlexBromum/Blindness/releases/download/v1.0.1/Blindness.zip"
     },
     "categories": [
       "qol",
@@ -1165,9 +1164,10 @@
     ],
     "icon_url": "https://ibb.co/G44zz7wX",
     "autoupdate": {
-      "type": "tag"
+      "type": "tag",
+      "url": "https://github.com/AlexBromum/Blindness/releases/download/$version/Blindness.zip"
     },
-    "last_updated": "2026-07-12T02:06:11Z"
+    "last_updated": "2026-10-14T15:26:06+09:00"
   },
   {
     "schema_version": "1.0",
@@ -2502,7 +2502,7 @@
     "short_description": "Adds Final Fantasy creatures. When the Catacylsm struck, portals to the Final Fantasy Franchise opened, and creatures crossed though. Some friendly, some enemy.",
     "description": "Adds Final Fantasy creatures. When the Catacylsm struck, portals to the Final Fantasy Franchise opened, and creatures crossed though. Some friendly, some enemy.",
     "author": [
-      "Unknown"
+      "baratan-creates"
     ],
     "license": "ALL-RIGHTS-RESERVED",
     "homepage": "https://github.com/Baratan-creates/BN-FinalFantasyMod/tree/main/FinalFantasyMod",
@@ -3035,6 +3035,9 @@
     "license": "ALL-RIGHTS-RESERVED",
     "homepage": "https://github.com/Fentanylreactor/CBN-INFPerks",
     "version": "2026.6.20-9387fb9",
+    "yanked": {
+      "reason": "Source repository was deleted."
+    },
     "dependencies": {
       "bn": ">=0.9.1"
     },
@@ -3484,7 +3487,8 @@
     "display_name": "MOD to grow tea leaves",
     "short_description": "Adds new tea leaf seeds and raw tea leaves crafting options, new types of tea leaves and tea.",
     "author": [
-      "Unknown"
+      "Grim616",
+      "TheGoatGod"
     ],
     "license": "ALL-RIGHTS-RESERVED",
     "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/Medium-Maintenance-Small-Mods/More_tea_leaf",
@@ -3510,7 +3514,7 @@
       "type": "commit",
       "branch": "master"
     },
-    "last_updated": "2026-05-19T09:19:11+09:00"
+    "last_updated": "2026-10-14T15:26:06+09:00"
   },
   {
     "schema_version": "1.0",
@@ -4145,7 +4149,7 @@
     "display_name": "Morlock Village",
     "short_description": "Adds an underground village of mutant NPCs.  Connects to subways and sewers.",
     "author": [
-      "Unknown"
+      "Zlorthishen"
     ],
     "license": "ALL-RIGHTS-RESERVED",
     "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Morlock_Village",
@@ -4171,7 +4175,7 @@
       "type": "commit",
       "branch": "master"
     },
-    "last_updated": "2026-05-19T09:19:11+09:00"
+    "last_updated": "2026-10-14T15:26:06+09:00"
   },
   {
     "schema_version": "1.0",

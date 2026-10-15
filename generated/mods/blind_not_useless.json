@@ -8,14 +8,13 @@
   ],
   "license": "MIT",
   "homepage": "https://github.com/AlexBromum/Blindness",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "dependencies": {
     "bn": ">=v0.12.0"
   },
   "source": {
-    "type": "github_archive",
-    "url": "https://github.com/AlexBromum/Blindness/archive/refs/heads/main.zip",
-    "commit_sha": "1e61a470f22083650d2f2b4842edcbc4a13c1616"
+    "type": "direct_url",
+    "url": "https://github.com/AlexBromum/Blindness/releases/download/v1.0.1/Blindness.zip"
   },
   "categories": [
     "qol",
@@ -23,7 +22,8 @@
   ],
   "icon_url": "https://ibb.co/G44zz7wX",
   "autoupdate": {
-    "type": "tag"
+    "type": "tag",
+    "url": "https://github.com/AlexBromum/Blindness/releases/download/$version/Blindness.zip"
   },
-  "last_updated": "2026-07-12T02:06:11Z"
+  "last_updated": "2026-10-14T15:26:06+09:00"
 }

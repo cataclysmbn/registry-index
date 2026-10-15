@@ -129,6 +129,9 @@
       "released_at": "2026-06-19T03:56:16.520Z"
     }
   ],
+  "yanked": {
+    "reason": "Source repository was deleted."
+  },
   "dependencies": {
     "bn": ">=0.9.1"
   },

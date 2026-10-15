@@ -40,7 +40,7 @@ This is an automatically generated list of mods in the registry.
 | ![Icon](https://raw.githubusercontent.com/cataclysmbn/Cataclysm-BN/main/gfx/app_icon/app-icon.svg)                 | [Birdbox](https://github.com/shmakota/birdbox_mod_bn/archive/refs/heads/main.zip)                                                         | Kota                                      | 2026.6.20-b3ac37c  | Adds a monster that will drive you insane, and cause death upon seeing it. Always keep a blindfold on hand, and have a plan to break line of sight.                                                      |
 | ![Icon](https://raw.githubusercontent.com/cataclysmbn/Cataclysm-BN/main/gfx/app_icon/app-icon.svg)                 | [Blazemod - Vehicle Additions Pack](https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip)   | Blaze-whatdoyoumeanitsalreadytaken        | 0.0.0              | Gigantic vehicle parts additions mod. Adds lots of regular along with blob vehicle parts which includes new custom turrets, engines along with other vehicle parts, which are craftable.                 |
 | ![Icon](https://raw.githubusercontent.com/cataclysmbn/Cataclysm-BN/main/gfx/app_icon/app-icon.svg)                 | [Blazemod SzQ edit](https://github.com/SzQ1/blazemod-SzQ-edit/archive/refs/heads/main.zip)                                                | Blaze-whatdoyoumeanitsalreadytaken        | 2026.6.20-b4b8ded  | A lot of vehicle parts and weapons.json                                                                                                                                                                  |
-| ![Icon](https://ibb.co/G44zz7wX)                                                                                   | [Blindness](https://github.com/AlexBromum/Blindness/archive/refs/heads/main.zip)                                                          | AlexBromum                                | 1.0.0              | A few additions for a new blind trait.                                                                                                                                                                   |
+| ![Icon](https://ibb.co/G44zz7wX)                                                                                   | [Blindness](https://github.com/AlexBromum/Blindness/releases/download/v1.0.1/Blindness.zip)                                               | AlexBromum                                | 1.0.1              | A few additions for a new blind trait.                                                                                                                                                                   |
 | ![Icon](https://github.com/shmakota/blood_moon_bn/blob/main/gfx/mod_icon.png)                                      | [Blood Moon](https://github.com/shmakota/blood_moon_bn/archive/refs/heads/main.zip)                                                       | Kota                                      | 0.0.0              | Adds configurable blood moon nights that spawn zombie hordes at certain intervals.                                                                                                                       |
 | ![Icon](https://raw.githubusercontent.com/cataclysmbn/Cataclysm-BN/main/gfx/app_icon/app-icon.svg)                 | [Bob's Professions Mod](https://github.com/Shad0wBlad321/Profession-Mod/archive/refs/heads/main.zip)                                      | Some Dumbass                              | 2026.6.20-be2f1f9  | The all in one module for my profession mod, adding, replacing, and rebalancing several professions to give the player more variety in their starts without having to pick a challenge or joke start. Do |
 | ![Icon](https://raw.githubusercontent.com/shmakota/bodily_fluids_mod_bn/refs/heads/main/gfx/mod_icon.png)          | [Bodily Fluids](https://github.com/shmakota/bodily_fluids_mod_bn/archive/refs/heads/main.zip)                                             | Kota                                      | 2026.10.13-44fd00f | Adds bodily fluids as well as related mechanics for toilets.                                                                                                                                             |
@@ -241,9 +241,9 @@ instead of one-sixth. | |
 ![Icon](https://raw.githubusercontent.com/cataclysmbn/Cataclysm-BN/main/gfx/app_icon/app-icon.svg)
 |
 [FinalFantasyMod](https://github.com/Baratan-creates/BN-FinalFantasyMod/archive/refs/heads/main.zip)
-| Unknown | 2026.6.20-b206c3f | Adds Final Fantasy creatures. When the Catacylsm
-struck, portals to the Final Fantasy Franchise opened, and creatures crossed
-though. Some friendly, some enemy. | |
+| baratan-creates | 2026.6.20-b206c3f | Adds Final Fantasy creatures. When the
+Catacylsm struck, portals to the Final Fantasy Franchise opened, and creatures
+crossed though. Some friendly, some enemy. | |
 ![Icon](https://raw.githubusercontent.com/cataclysmbn/Cataclysm-BN/main/gfx/app_icon/app-icon.svg)
 |
 [Fluid Cows](https://github.com/shmakota/Material-Plants/archive/refs/heads/master.zip)
@@ -392,8 +392,8 @@ to find | |
 ![Icon](https://raw.githubusercontent.com/cataclysmbn/Cataclysm-BN/main/gfx/app_icon/app-icon.svg)
 |
 [MOD to grow tea leaves](https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip)
-| Unknown | 0.0.0 | Adds new tea leaf seeds and raw tea leaves crafting options,
-new types of tea leaves and tea. | |
+| Grim616,TheGoatGod | 0.0.0 | Adds new tea leaf seeds and raw tea leaves
+crafting options, new types of tea leaves and tea. | |
 ![Icon](https://raw.githubusercontent.com/cataclysmbn/Cataclysm-BN/main/gfx/app_icon/app-icon.svg)
 |
 [MOREtations](https://github.com/bingosta/Moretations---More-unbalanced-mutations/archive/refs/heads/main.zip)
@@ -500,7 +500,7 @@ etc. | |
 ![Icon](https://raw.githubusercontent.com/cataclysmbn/Cataclysm-BN/main/gfx/app_icon/app-icon.svg)
 |
 [Morlock Village](https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip)
-| Unknown | 0.0.0 | Adds an underground village of mutant NPCs. Connects to
+| Zlorthishen | 0.0.0 | Adds an underground village of mutant NPCs. Connects to
 subways and sewers. | |
 ![Icon](https://raw.githubusercontent.com/cataclysmbn/Cataclysm-BN/main/gfx/app_icon/app-icon.svg)
 |
