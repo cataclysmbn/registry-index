@@ -489,7 +489,7 @@
     ],
     "license": "CC-BY-SA-3.0",
     "homepage": "https://github.com/Noctifer-de-Mortem/nocts_cata_mod/tree/master/Patchmods/BN_Arcana_Cata++_Patch",
-    "version": "2026.10.11-58611cb",
+    "version": "2026.10.16-b7740a2",
     "yanked": {
       "reason": "Replaced by mod_interactions."
     },
@@ -501,7 +501,7 @@
     "source": {
       "type": "github_archive",
       "url": "https://github.com/Noctifer-de-Mortem/nocts_cata_mod/archive/refs/heads/master.zip",
-      "commit_sha": "58611cb6a7dbe3f4a516c87e489e457472746b18",
+      "commit_sha": "b7740a26696768295ad0aef1c6644a7b2c80b064",
       "extract_path": "Patchmods/BN_Arcana_Cata++_Patch"
     },
     "categories": [
@@ -514,7 +514,7 @@
       "branch": "master"
     },
     "parent": "arcana",
-    "last_updated": "2026-10-11T03:22:20.223Z"
+    "last_updated": "2026-10-16T02:40:47.059Z"
   },
   {
     "schema_version": "1.0",
@@ -1546,7 +1546,7 @@
     ],
     "license": "CC-BY-SA-3.0",
     "homepage": "https://github.com/Noctifer-de-Mortem/nocts_cata_mod/tree/master/Patchmods/BN_Cata++_ExoticAmmo_Patch",
-    "version": "2026.10.11-58611cb",
+    "version": "2026.10.16-b7740a2",
     "yanked": {
       "reason": "Replaced by mod_interactions."
     },
@@ -1558,7 +1558,7 @@
     "source": {
       "type": "github_archive",
       "url": "https://github.com/Noctifer-de-Mortem/nocts_cata_mod/archive/refs/heads/master.zip",
-      "commit_sha": "58611cb6a7dbe3f4a516c87e489e457472746b18",
+      "commit_sha": "b7740a26696768295ad0aef1c6644a7b2c80b064",
       "extract_path": "Patchmods/BN_Cata++_ExoticAmmo_Patch"
     },
     "categories": [
@@ -1571,7 +1571,7 @@
       "branch": "master"
     },
     "parent": "cata",
-    "last_updated": "2026-10-11T03:22:07.650Z"
+    "last_updated": "2026-10-16T02:40:25.677Z"
   },
   {
     "schema_version": "1.0",
@@ -1584,14 +1584,14 @@
     ],
     "license": "ALL-RIGHTS-RESERVED",
     "homepage": "https://github.com/Noctifer-de-Mortem/nocts_cata_mod/tree/master/nocts_cata_mod_BN",
-    "version": "2026.10.11-58611cb",
+    "version": "2026.10.16-b7740a2",
     "dependencies": {
       "bn": ">=0.9.1"
     },
     "source": {
       "type": "github_archive",
       "url": "https://github.com/Noctifer-de-Mortem/nocts_cata_mod/archive/refs/heads/master.zip",
-      "commit_sha": "58611cb6a7dbe3f4a516c87e489e457472746b18",
+      "commit_sha": "b7740a26696768295ad0aef1c6644a7b2c80b064",
       "extract_path": "nocts_cata_mod_BN"
     },
     "categories": [
@@ -1603,7 +1603,7 @@
       "type": "commit",
       "branch": "master"
     },
-    "last_updated": "2026-10-11T03:22:00.599Z"
+    "last_updated": "2026-10-16T02:40:13.547Z"
   },
   {
     "schema_version": "1.0",
@@ -3725,14 +3725,14 @@
     ],
     "license": "ALL-RIGHTS-RESERVED",
     "homepage": "https://github.com/chaosvolt/cdda_medieval_mod_reborn/tree/master/Medieval_Mod_Reborn_BN",
-    "version": "2026.10.9-364a66e",
+    "version": "2026.10.16-998c70c",
     "dependencies": {
       "bn": ">=0.9.1"
     },
     "source": {
       "type": "github_archive",
       "url": "https://github.com/chaosvolt/cdda_medieval_mod_reborn/archive/refs/heads/master.zip",
-      "commit_sha": "364a66e93a52a3eb2e0edd09cccb936f80e16f2b",
+      "commit_sha": "998c70c96e3d2291478c3709a0add8221fc18320",
       "extract_path": "Medieval_Mod_Reborn_BN"
     },
     "categories": [
@@ -3744,7 +3744,7 @@
       "type": "commit",
       "branch": "master"
     },
-    "last_updated": "2026-10-09T04:03:55.551Z"
+    "last_updated": "2026-10-16T02:40:45.630Z"
   },
   {
     "schema_version": "1.0",
