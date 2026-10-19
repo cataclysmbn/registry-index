@@ -37,6 +37,7 @@ const snapshot = {
   labels: [{ name: "manifest" }],
   user: { login: "submitter", id: 123 },
 }
+type ListParams = { ref: string; per_page?: number; page?: number }
 const fixture = ({
   current = snapshot,
   sha = "a".repeat(40),
@@ -64,12 +65,37 @@ const fixture = ({
             : Promise.resolve({ data: { object: { sha } } }),
       },
       repos: {
-        getCombinedStatusForRef: () => Promise.resolve({ data: { statuses } }),
+        // GitHub omits creator from combined statuses; only the status list carries it
+        getCombinedStatusForRef: () =>
+          Promise.resolve({
+            data: {
+              statuses: statuses.map(({ creator: _, ...status }) => status),
+            },
+          }),
+        listCommitStatusesForRef: (
+          { ref, per_page = 30, page = 1 }: ListParams,
+        ) =>
+          Promise.resolve({
+            data: ref === sha
+              ? statuses.slice((page - 1) * per_page, page * per_page)
+              : [],
+          }),
         createCommitStatus: (value: unknown) => {
           writes.push(value)
           return Promise.resolve()
         },
       },
+    },
+    paginate: async (
+      method: (params: ListParams) => Promise<{ data: unknown[] }>,
+      params: ListParams,
+    ) => {
+      const all: unknown[] = []
+      for (let page = 1;; page++) {
+        const { data } = await method({ ...params, page })
+        if (!data.length) return all
+        all.push(...data)
+      }
     },
   }
   const context = {
@@ -165,6 +191,26 @@ Deno.test("publication guard recognizes the latest failed status as bot ownershi
       creator: { login: "github-actions[bot]" },
       description: "Issue #1: update failed validation or publication",
     }],
+  })
+  await test.run()
+  assertEquals(test.outputs.current, "true")
+  assertEquals(test.failures, [])
+})
+
+Deno.test("publication guard finds bot ownership beyond the first status page", async () => {
+  const test = fixture({
+    statuses: [
+      ...Array.from({ length: 100 }, () => ({
+        context: "Semantic PR",
+        creator: { login: "semantic-prs[bot]" },
+        description: "ready to be squashed",
+      })),
+      {
+        context: "Issue manifest validation",
+        creator: { login: "github-actions[bot]" },
+        description: "Issue #1: validated",
+      },
+    ],
   })
   await test.run()
   assertEquals(test.outputs.current, "true")
