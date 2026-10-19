@@ -97,7 +97,7 @@ jobs:
           OUT: ${{ runner.temp }}/out
         run: |
           mkdir -p "$OUT"
-          if id=$(deno run --allow-env=ISSUE_BODY --allow-write=manifests scripts/issue-manifest.ts 2> "$OUT/report.md"); then
+          if id=$(deno run --quiet --allow-env=ISSUE_BODY --allow-write=manifests scripts/issue-manifest.ts 2> "$OUT/report.md"); then
             deno fmt "manifests/$id.yaml"
             cp "manifests/$id.yaml" "$OUT/manifest.yaml"
             echo "id=$id" >> "$GITHUB_OUTPUT"
