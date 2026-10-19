@@ -127,7 +127,7 @@ jobs:
   publish:
     name: Report and open PR
     needs: [prepare, validate]
-    if: always() && (needs.prepare.outputs.current == 'true' || needs.prepare.outputs.sha)
+    if: always() && (needs.prepare.outputs.current == 'true' || needs.prepare.outputs.sha || needs.prepare.result == 'failure')
     runs-on: ubuntu-latest
     timeout-minutes: 5
     permissions: {
@@ -226,6 +226,7 @@ jobs:
         if: always()
         uses: actions/github-script@v7
         env:
+          PREPARE: ${{ needs.prepare.result }}
           VALID: ${{ needs.validate.outputs.valid }}
           COMMIT_OUTCOME: ${{ steps.commit.outcome }}
           UNCHANGED: ${{ steps.commit.outputs.unchanged }}
@@ -240,7 +241,7 @@ jobs:
             const current = await github.rest.issues.get({ owner: context.repo.owner, repo: context.repo.repo, issue_number: snapshot.number })
             if (current.data.body !== snapshot.body || current.data.state !== "open" || !current.data.labels.some((label) => label.name === "manifest")) return
             const marker = "<!-- registry-index-issue-manifest -->"
-            const { VALID, COMMIT_OUTCOME, UNCHANGED, PR_OUTCOME, PR_URL, REPORT, RUN_URL } = process.env
+            const { PREPARE, VALID, COMMIT_OUTCOME, UNCHANGED, PR_OUTCOME, PR_URL, REPORT, RUN_URL } = process.env
             const report = fs.existsSync(REPORT) ? fs.readFileSync(REPORT, "utf8") : "No report; see the workflow log."
             const escaped = report
               .normalize("NFKC")
@@ -250,7 +251,9 @@ jobs:
               .replaceAll(">", "&gt;")
               .replaceAll("@", "＠")
               .slice(0, 58_000)
-            const status = VALID !== "true"
+            const status = PREPARE === "failure"
+              ? "**failure**. The bot could not process this edit; see the log."
+              : VALID !== "true"
               ? "**failure**. Edit this issue to fix the manifest; the bot retries on every edit."
               : COMMIT_OUTCOME !== "success" ? "**success**, but preparing the pull request failed; see the log."
               : UNCHANGED === "true" ? "**success**. The manifest is identical to the registry; no new pull request needed. Any earlier pull request is unchanged and must be reviewed separately."
