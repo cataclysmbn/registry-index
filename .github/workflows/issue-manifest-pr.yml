@@ -64,7 +64,7 @@ jobs:
               if (error.status !== 404) throw error
             }
             if (sha) {
-              const { data: { statuses } } = await github.rest.repos.getCombinedStatusForRef({ ...repo, ref: sha, per_page: 100 })
+              const statuses = await github.paginate(github.rest.repos.listCommitStatusesForRef, { ...repo, ref: sha, per_page: 100 })
               if (!statuses.some((status) => status.context === "Issue manifest validation" && status.creator?.login === "github-actions[bot]" && status.description?.startsWith(`Issue #${snapshot.number}: `))) {
                 core.setFailed("The issue branch has changes not published by this workflow; refusing to overwrite them.")
                 return
