@@ -1,0 +1,32 @@
+schema_version: "1.0"
+id: anomaly_foundation
+display_name: >-
+  The Anomaly (A.N.O.M.A.L.Y., Agency for Non-Ordinary Matter, Abnormalities and
+  Liminal Yields)
+short_description: "https://github.com/kaiZer9999/Anomaly"
+description: >-
+  The Anomaly is an interdimensional organization that locates, catalogues and
+  contains anomalous creatures slipping through breaches between worlds.  Since
+  the Cataclysm tore those breaches wide open, its specimens have started
+  walking out on their own.
+author:
+  - kaiZer9999
+license: CC-BY-SA-4.0
+homepage: "https://github.com/kaiZer9999/Anomaly/tree/main/Anomaly"
+version: 0.0.0
+dependencies:
+  bn: ">=0.9.1"
+source:
+  type: github_archive
+  url: "https://github.com/kaiZer9999/Anomaly/archive/refs/heads/main.zip"
+  commit_sha: 71a9a59c7a502342c619ce064b6f7776e195e087
+  extract_path: Anomaly-main/Anomaly
+categories:
+  - items
+  - buildings
+  - creatures
+  - graphics
+  - content
+autoupdate:
+  type: commit
+  branch: main
