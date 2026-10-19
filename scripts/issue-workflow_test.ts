@@ -233,6 +233,40 @@ Deno.test("failed validation still schedules terminal publication cleanup", () =
   )
 })
 
+Deno.test("a refused publication guard still schedules the bot report", () => {
+  const allowed = (result: string) =>
+    new Function("needs", "always", `return ${workflow.jobs.publish.if}`)({
+      prepare: { result, outputs: {} },
+      validate: { result: "skipped", outputs: {} },
+    }, () => true)
+  assertEquals(allowed("failure"), true)
+  assertEquals(Boolean(allowed("success")), false)
+  assertEquals(Boolean(allowed("skipped")), false)
+})
+
+Deno.test("a refused publication guard leaves the unowned branch head unmarked", () => {
+  const step = workflow.jobs.publish.steps.find((step) =>
+    step.name === "Mark failed updates on the previous PR head"
+  )
+  const marks = new Function(
+    "needs",
+    "steps",
+    "always",
+    `return ${v.parse(v.string(), step?.if)}`,
+  )
+  assertEquals(
+    Boolean(marks(
+      {
+        prepare: { result: "failure", outputs: {} },
+        validate: { result: "skipped", outputs: {} },
+      },
+      { commit: { outcome: "skipped" }, pr: { outcome: "skipped" } },
+      () => true,
+    )),
+    false,
+  )
+})
+
 const commitScript = v.parse(
   v.string(),
   workflow.jobs.publish.steps.find((step) => step.id === "commit")?.with
@@ -444,6 +478,49 @@ Deno.test("bot report is skipped when the issue body changed, closed or lost its
       { env: {} },
     )
   }
+})
+
+Deno.test("bot report replaces an earlier success when the publication guard refuses", async () => {
+  const test = fixture()
+  const edits: { body: string }[] = []
+  const github = {
+    ...test.github,
+    rest: {
+      ...test.github.rest,
+      issues: {
+        ...test.github.rest.issues,
+        listComments: () => {},
+        updateComment: (value: { body: string }) => {
+          edits.push(value)
+          return Promise.resolve()
+        },
+      },
+    },
+    paginate: {
+      iterator: () => [{
+        data: [{
+          id: 1,
+          user: { login: "github-actions[bot]" },
+          body:
+            "<!-- registry-index-issue-manifest -->\nManifest validation: **success**. Pull request: https://github.com/example/registry/pull/2",
+        }],
+      }],
+    },
+  }
+  await reportComment(
+    github,
+    { ...test.context, issue: { number: 1 } },
+    test.core,
+    () => ({ existsSync: () => false }),
+    { env: { PREPARE: "failure" } },
+  )
+  assertEquals(edits.length, 1)
+  assertEquals(
+    edits[0].body.split("\n")[1].startsWith(
+      "Manifest validation: **failure**. The bot could not process this edit",
+    ),
+    true,
+  )
 })
 
 const closeScript = workflow.jobs["close-pr"]?.steps.find((step) =>
