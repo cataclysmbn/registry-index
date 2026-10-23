@@ -248,7 +248,7 @@ crossed though. Some friendly, some enemy. | |
 ![Icon](https://raw.githubusercontent.com/cataclysmbn/Cataclysm-BN/main/gfx/app_icon/app-icon.svg)
 |
 [Fluid Cows](https://github.com/shmakota/Material-Plants/archive/refs/heads/master.zip)
-| Kota | 2026.6.20-3093665 | Adds mutated cows that produce exotic fluids
+| Kota | 2026.10.23-a2ed4b8 | Adds mutated cows that produce exotic fluids
 obtained through catalyst cows. | |
 ![Icon](https://raw.githubusercontent.com/cataclysmbn/Cataclysm-BN/main/gfx/app_icon/app-icon.svg)
 |
@@ -423,7 +423,7 @@ existing ones. | |
 ![Icon](https://raw.githubusercontent.com/cataclysmbn/Cataclysm-BN/main/gfx/app_icon/app-icon.svg)
 |
 [Material Plants](https://github.com/shmakota/Material-Plants/archive/refs/heads/master.zip)
-| Broken "Spaghetti" Admin,Kota | 2026.6.20-3093665 | Adds mutated plants that
+| Broken "Spaghetti" Admin,Kota | 2026.10.23-a2ed4b8 | Adds mutated plants that
 grow materials like steel and gold.
 
 Exhaustive list: aluminum, coal, gold, silver, zinc, tin, lead, copper,

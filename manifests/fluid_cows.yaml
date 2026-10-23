@@ -7,7 +7,7 @@ author:
   - Kota
 license: ALL-RIGHTS-RESERVED
 homepage: "https://github.com/shmakota/Material-Plants/tree/master/Fluid Cows"
-version: 2026.6.20-3093665
+version: 2026.10.23-a2ed4b8
 previous_releases:
   - version: 0.0.0
     source:
@@ -113,12 +113,20 @@ previous_releases:
       commit_sha: 309366505af01c607bdd2db28d08b5c2fad98bba
       extract_path: Fluid Cows
     released_at: "2026-06-19T03:56:23.601Z"
+  - version: 2026.6.20-3093665
+    source:
+      type: github_archive
+      url: >-
+        https://github.com/shmakota/Material-Plants/archive/refs/heads/master.zip
+      commit_sha: 309366505af01c607bdd2db28d08b5c2fad98bba
+      extract_path: Fluid Cows
+    released_at: "2026-06-20T02:49:10.867Z"
 dependencies:
   bn: ">=0.9.1"
 source:
   type: github_archive
   url: "https://github.com/shmakota/Material-Plants/archive/refs/heads/master.zip"
-  commit_sha: 309366505af01c607bdd2db28d08b5c2fad98bba
+  commit_sha: a2ed4b8dd3a7226bb1e03f65a12a7a9e6b6b6e89
   extract_path: Fluid Cows
 categories:
   - items
@@ -128,4 +136,4 @@ uses_lua: false
 autoupdate:
   type: commit
   branch: master
-last_updated: "2026-06-20T02:49:10.867Z"
+last_updated: "2026-10-23T02:54:26.383Z"
