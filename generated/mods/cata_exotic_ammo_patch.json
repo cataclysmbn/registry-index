@@ -8,7 +8,7 @@
   ],
   "license": "CC-BY-SA-3.0",
   "homepage": "https://github.com/Noctifer-de-Mortem/nocts_cata_mod/tree/master/Patchmods/BN_Cata++_ExoticAmmo_Patch",
-  "version": "2026.10.24-7fca0cf",
+  "version": "2026.10.26-51e0b1c",
   "previous_releases": [
     {
       "version": "0.0.0",
@@ -419,6 +419,16 @@
         "extract_path": "Patchmods/BN_Cata++_ExoticAmmo_Patch"
       },
       "released_at": "2026-10-19T02:46:35.347Z"
+    },
+    {
+      "version": "2026.10.24-7fca0cf",
+      "source": {
+        "type": "github_archive",
+        "url": "https://github.com/Noctifer-de-Mortem/nocts_cata_mod/archive/refs/heads/master.zip",
+        "commit_sha": "7fca0cfd2ffe4d45bacf63b18cae1241961d22df",
+        "extract_path": "Patchmods/BN_Cata++_ExoticAmmo_Patch"
+      },
+      "released_at": "2026-10-24T02:51:16.158Z"
     }
   ],
   "yanked": {
@@ -432,7 +442,7 @@
   "source": {
     "type": "github_archive",
     "url": "https://github.com/Noctifer-de-Mortem/nocts_cata_mod/archive/refs/heads/master.zip",
-    "commit_sha": "7fca0cfd2ffe4d45bacf63b18cae1241961d22df",
+    "commit_sha": "51e0b1cf42e122fbd36bb3759be8a6f62eb34ab2",
     "extract_path": "Patchmods/BN_Cata++_ExoticAmmo_Patch"
   },
   "categories": [
@@ -445,5 +455,5 @@
     "branch": "master"
   },
   "parent": "cata",
-  "last_updated": "2026-10-24T02:51:16.158Z"
+  "last_updated": "2026-10-26T02:41:24.628Z"
 }
