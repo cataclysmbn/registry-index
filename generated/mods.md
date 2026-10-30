@@ -33,6 +33,7 @@ This is an automatically generated list of mods in the registry.
 | PLEASE, SET 'Monster evolution scaling factor' DURING IN-GAME WORLD GENERATION AROUND 5.00 FOR PROPER GAMEPLAY EXP |                                                                                                                                           |                                           |                    |                                                                                                                                                                                                          |
 | ![Icon](https://raw.githubusercontent.com/cataclysmbn/Cataclysm-BN/main/gfx/app_icon/app-icon.svg)                 | [BN Talk](https://github.com/yct1998/BN_Talk_AI/archive/refs/heads/main.zip)                                                              | Cline                                     | 2026.6.20-8e8255f  | Pure Lua prototype for RimTalk-like NPC dialogue routing in Cataclysm BN. Includes memory, context routing, and a local OpenAI-compatible provider shape.                                                |
 | ![Icon](https://raw.githubusercontent.com/cataclysmbn/Cataclysm-BN/main/gfx/app_icon/app-icon.svg)                 | [Battle Maid Redux](https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip)                   | Vermilion                                 | 0.0.0              | Translated and tweaked version of the original Battle Maid mod, newly revamped. Adds a friendly Shoggoth maid NPC along with lots of maid related gear. See README.md for details                        |
+| ![Icon](https://raw.githubusercontent.com/cataclysmbn/Cataclysm-BN/main/gfx/app_icon/app-icon.svg)                 | [Battle Maid Redux Plus](https://github.com/RobbieNeko/Battle-Maid-Redux-Plus/archive/refs/heads/main.zip)                                | Vermilion,RobbieNeko                      | 0.1.0              | Translated and tweaked version of the original Battle Maid mod, now with less artifact shenanigans. Adds a friendly Shoggoth maid NPC along with lots of maid related gear.                              |
 | ![Icon](https://raw.githubusercontent.com/cataclysmbn/Cataclysm-BN/main/gfx/app_icon/app-icon.svg)                 | [Bens GF recipes](https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip)                     | TechyBen                                  | 0.0.0              | Adds lots of simple gluten free and lactose free alternative recipe options. NOT EXHAUSTIVE.                                                                                                             |
 | ![Icon](https://raw.githubusercontent.com/cataclysmbn/Cataclysm-BN/main/gfx/app_icon/app-icon.svg)                 | [Bio-Synth Robot expansion](https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip)           | Jolmar7                                   | 0.0.0              | Adds electronic and biosynthetic robot enemies along with new robots related locations along with some new gear to the game.                                                                             |
 | ![Icon](https://raw.githubusercontent.com/cataclysmbn/Cataclysm-BN/main/gfx/app_icon/app-icon.svg)                 | [BioCo Content](https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip)                       | Poragon                                   | 0.0.0              | Adds many bionic centric items, curtosey of BioCo                                                                                                                                                        |
@@ -371,15 +372,15 @@ fancy needs. | |
 ![Icon](https://raw.githubusercontent.com/cataclysmbn/Cataclysm-BN/main/gfx/app_icon/app-icon.svg)
 |
 [Lones Atomic additions](https://github.com/thelonestander/Lones-atomic-additions/archive/refs/heads/main.zip)
-| Thelonestander | 2026.9.18-954280c | Adds many new atomic gears to BN! | |
+| Thelonestander | 2026.10.30-b0c6d12 | Adds many new atomic gears to BN! | |
 ![Icon](https://raw.githubusercontent.com/cataclysmbn/Cataclysm-BN/main/gfx/app_icon/app-icon.svg)
 |
 [Lones Augmented Arsenal](https://github.com/thelonestander/Lones-Augmented-Arsenal/archive/refs/heads/main.zip)
-| Thelonestander | 2026.10.9-18c1b2b | Adds many new atomic gears to BN! | |
+| Thelonestander | 2026.10.30-8fcbf10 | Adds many new atomic gears to BN! | |
 ![Icon](https://raw.githubusercontent.com/cataclysmbn/Cataclysm-BN/main/gfx/app_icon/app-icon.svg)
 |
 [Lones Cata++ patchmod](https://github.com/thelonestander/Lones-atomic-additions/archive/refs/heads/main.zip)
-| Thelonestander | 2026.9.18-954280c | Patch mod for acs stealth cloak to be
+| Thelonestander | 2026.10.30-b0c6d12 | Patch mod for acs stealth cloak to be
 used for cata++. | |
 ![Icon](https://raw.githubusercontent.com/cataclysmbn/Cataclysm-BN/main/gfx/app_icon/app-icon.svg)
 |

@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0",
+  "id": "battle_maid_plus",
+  "display_name": "Battle Maid Redux Plus",
+  "short_description": "Translated and tweaked version of the original Battle Maid mod, now with less artifact shenanigans. Adds a friendly Shoggoth maid NPC along with lots of maid related gear.",
+  "author": [
+    "Vermilion",
+    "RobbieNeko"
+  ],
+  "license": "CC-BY-SA-3.0",
+  "homepage": "https://github.com/RobbieNeko/Battle-Maid-Redux-Plus",
+  "version": "0.1.0",
+  "dependencies": {
+    "bn": ">=0.9.1"
+  },
+  "source": {
+    "type": "github_archive",
+    "url": "https://github.com/RobbieNeko/Battle-Maid-Redux-Plus/archive/refs/heads/main.zip",
+    "commit_sha": "1eeb06a18ca4c8c9a4d461bb5301010831e88e98"
+  },
+  "categories": [
+    "content"
+  ],
+  "autoupdate": {
+    "type": "commit",
+    "branch": "main"
+  },
+  "last_updated": "2026-10-29T20:11:19+09:00"
+}

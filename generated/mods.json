@@ -908,6 +908,35 @@
   },
   {
     "schema_version": "1.0",
+    "id": "battle_maid_plus",
+    "display_name": "Battle Maid Redux Plus",
+    "short_description": "Translated and tweaked version of the original Battle Maid mod, now with less artifact shenanigans. Adds a friendly Shoggoth maid NPC along with lots of maid related gear.",
+    "author": [
+      "Vermilion",
+      "RobbieNeko"
+    ],
+    "license": "CC-BY-SA-3.0",
+    "homepage": "https://github.com/RobbieNeko/Battle-Maid-Redux-Plus",
+    "version": "0.1.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/RobbieNeko/Battle-Maid-Redux-Plus/archive/refs/heads/main.zip",
+      "commit_sha": "1eeb06a18ca4c8c9a4d461bb5301010831e88e98"
+    },
+    "categories": [
+      "content"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "main"
+    },
+    "last_updated": "2026-10-29T20:11:19+09:00"
+  },
+  {
+    "schema_version": "1.0",
     "id": "tolerate_this",
     "display_name": "Bens GF recipes",
     "short_description": "Adds lots of simple gluten free and lactose free alternative recipe options. NOT EXHAUSTIVE.",
@@ -3366,14 +3395,14 @@
     ],
     "license": "ALL-RIGHTS-RESERVED",
     "homepage": "https://github.com/thelonestander/Lones-atomic-additions/tree/main/Lones Atomic additions",
-    "version": "2026.9.18-954280c",
+    "version": "2026.10.30-b0c6d12",
     "dependencies": {
       "bn": ">=0.9.1"
     },
     "source": {
       "type": "github_archive",
       "url": "https://github.com/thelonestander/Lones-atomic-additions/archive/refs/heads/main.zip",
-      "commit_sha": "954280cce32f8a6839179dab87ea2d5b148ca4cc",
+      "commit_sha": "b0c6d1202b46bc98dcb15278981b14e8d11d16cb",
       "extract_path": "Lones Atomic additions"
     },
     "categories": [
@@ -3385,7 +3414,7 @@
       "type": "commit",
       "branch": "main"
     },
-    "last_updated": "2026-09-18T02:39:45.808Z"
+    "last_updated": "2026-10-30T03:55:06.477Z"
   },
   {
     "schema_version": "1.0",
@@ -3398,7 +3427,7 @@
     ],
     "license": "ALL-RIGHTS-RESERVED",
     "homepage": "https://github.com/thelonestander/Lones-Augmented-Arsenal",
-    "version": "2026.10.9-18c1b2b",
+    "version": "2026.10.30-8fcbf10",
     "dependencies": {
       "bn": ">=0.9.1",
       "aftershock": "*",
@@ -3407,7 +3436,7 @@
     "source": {
       "type": "github_archive",
       "url": "https://github.com/thelonestander/Lones-Augmented-Arsenal/archive/refs/heads/main.zip",
-      "commit_sha": "18c1b2baa482c4092102ff1d31f6a68a4c40cfcf"
+      "commit_sha": "8fcbf10d33d418e6f2401825b88022cc16e6ab60"
     },
     "categories": [
       "content"
@@ -3418,7 +3447,7 @@
       "type": "commit",
       "branch": "main"
     },
-    "last_updated": "2026-10-09T04:03:46.206Z"
+    "last_updated": "2026-10-30T03:54:40.669Z"
   },
   {
     "schema_version": "1.0",
@@ -3431,7 +3460,7 @@
     ],
     "license": "ALL-RIGHTS-RESERVED",
     "homepage": "https://github.com/thelonestander/Lones-atomic-additions/tree/main/Cata++ patch mod",
-    "version": "2026.9.18-954280c",
+    "version": "2026.10.30-b0c6d12",
     "dependencies": {
       "bn": ">=0.9.1",
       "cata++": "*"
@@ -3439,7 +3468,7 @@
     "source": {
       "type": "github_archive",
       "url": "https://github.com/thelonestander/Lones-atomic-additions/archive/refs/heads/main.zip",
-      "commit_sha": "954280cce32f8a6839179dab87ea2d5b148ca4cc",
+      "commit_sha": "b0c6d1202b46bc98dcb15278981b14e8d11d16cb",
       "extract_path": "Cata++ patch mod"
     },
     "categories": [
@@ -3451,7 +3480,7 @@
       "type": "commit",
       "branch": "main"
     },
-    "last_updated": "2026-09-18T02:39:37.885Z"
+    "last_updated": "2026-10-30T03:54:57.233Z"
   },
   {
     "schema_version": "1.0",
