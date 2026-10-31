@@ -376,7 +376,7 @@ fancy needs. | |
 ![Icon](https://raw.githubusercontent.com/cataclysmbn/Cataclysm-BN/main/gfx/app_icon/app-icon.svg)
 |
 [Lones Augmented Arsenal](https://github.com/thelonestander/Lones-Augmented-Arsenal/archive/refs/heads/main.zip)
-| Thelonestander | 2026.10.30-8fcbf10 | Adds many new atomic gears to BN! | |
+| Thelonestander | 2026.10.31-e34a984 | Adds many new atomic gears to BN! | |
 ![Icon](https://raw.githubusercontent.com/cataclysmbn/Cataclysm-BN/main/gfx/app_icon/app-icon.svg)
 |
 [Lones Cata++ patchmod](https://github.com/thelonestander/Lones-atomic-additions/archive/refs/heads/main.zip)
@@ -447,7 +447,7 @@ material. | |
 ![Icon](https://raw.githubusercontent.com/cataclysmbn/Cataclysm-BN/main/gfx/app_icon/app-icon.svg)
 |
 [Mind Over Matter (BN)](https://github.com/MSCantrell/Mind-Over-Matter-for-Bright-Nights/archive/refs/heads/main.zip)
-| Standing-Storm (original),Mike Cantrell (BN port) | 2026.9.26-28682f2 |
+| Standing-Storm (original),Mike Cantrell (BN port) | 2026.10.31-72d32c1 |
 Psionics: nine psychic power paths. A Lua-based port of the Mind Over Matter mod
 from Cataclysm: DDA. Pinned upstream: CDDA master 69df2e4 (2026-07-04). | |
 ![Icon](https://raw.githubusercontent.com/cataclysmbn/Cataclysm-BN/main/gfx/app_icon/app-icon.svg)
