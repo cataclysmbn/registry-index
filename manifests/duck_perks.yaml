@@ -1,0 +1,22 @@
+schema_version: "1.0"
+id: duck_perks
+display_name: Duck Perks
+short_description: Level system mod that gives predominately non-stat based perks.
+description: Mod that adds perks on levels for characters. Takes inspiration and directly ports some of DDA's mod 'Bombastic Perks', but will differ more over time.
+author:
+  - Wishduck
+license: AGPL-3.0-or-later
+homepage: "https://github.com/WishDuck/Cataclysm-BN-Mods/tree/master/DuckPerks"
+version: 13.0.3
+dependencies:
+  bn: ">=0.13.0"
+source:
+  type: github_archive
+  url: "https://github.com/WishDuck/Cataclysm-BN-Mods/archive/refs/tags/13.0.3.zip"
+  extract_path: DuckPerks
+modinfo_url: >-
+  https://raw.githubusercontent.com/WishDuck/Cataclysm-BN-Mods/refs/heads/master/DuckPerks/modinfo.json
+uses_lua: true
+lua_api_version: 2
+autoupdate:
+  type: tag
