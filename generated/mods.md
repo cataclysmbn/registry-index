@@ -193,6 +193,11 @@ that can be trained into attack dogs (stat boosts). Adds dog pet professions. |
 |
 [Draco's Pig Mod](https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip)
 | DracoGriffin | 0.0.0 | Allows pigs to be tamed with cattle fodder. | |
+![Icon](https://raw.githubusercontent.com/cataclysmbn/Cataclysm-BN/main/gfx/app_icon/app-icon.svg)
+|
+[Duck Perks](https://github.com/WishDuck/Cataclysm-BN-Mods/archive/refs/tags/13.0.3.zip)
+| Wishduck | 13.0.3 | Level system mod that gives predominately non-stat based
+perks. | |
 ![Icon](https://raw.githubusercontent.com/cataclysmroguelikegallery/Cata-Rogall-Modpack/2b767bdb800949caa1207d8bb571e9c456ee6dc4/BN/ER_cosplay/icon.png)
 |
 [ER Cosplay](https://github.com/cataclysmroguelikegallery/Cata-Rogall-Modpack/archive/refs/heads/main.zip)
@@ -238,8 +243,8 @@ Stuff from the Core Region, all the wa | |
 instead of one-sixth. | |
 ![Icon](https://raw.githubusercontent.com/cataclysmbn/Cataclysm-BN/main/gfx/app_icon/app-icon.svg)
 |
-[Filthy Clothing](https://github.com/WishDuck/Cataclysm-BN-Mods/archive/refs/tags/12.0.1.zip)
-| Wishduck,UNOwenWasMe | 12.0.1 | Filthy clothing restoration mod. | |
+[Filthy Clothing](https://github.com/WishDuck/Cataclysm-BN-Mods/archive/refs/tags/13.0.3.zip)
+| Wishduck,UNOwenWasMe | 13.0.3 | Filthy clothing restoration mod. | |
 ![Icon](https://raw.githubusercontent.com/cataclysmbn/Cataclysm-BN/main/gfx/app_icon/app-icon.svg)
 |
 [FinalFantasyMod](https://github.com/Baratan-creates/BN-FinalFantasyMod/archive/refs/heads/main.zip)
