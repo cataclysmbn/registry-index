@@ -19,7 +19,7 @@ This is an automatically generated list of mods in the registry.
 | ![Icon](https://raw.githubusercontent.com/cataclysmbn/Cataclysm-BN/main/gfx/app_icon/app-icon.svg)                 | [Arcana and Magic Items](https://github.com/chaosvolt/cdda-arcana-mod/archive/refs/heads/master.zip)                                      | Chaosvolt                                 | 2026.6.20-33bfbbe  | Adds a host of craftable magic items and spells, centered around the use of Arcana skill to research and exploit otherworldly monsters and anomalies.                                                    |
 | ![Icon](https://raw.githubusercontent.com/cataclysmbn/Cataclysm-BN/main/gfx/app_icon/app-icon.svg)                 | [Arcana/Aftershock Patchmod](https://github.com/chaosvolt/cdda-arcana-mod/archive/refs/heads/master.zip)                                  | Chaosvolt                                 | 2026.6.20-33bfbbe  | Optional patch mod that allows content in Arcana and Aftershock to interact with each other.                                                                                                             |
 | ![Icon](https://raw.githubusercontent.com/cataclysmbn/Cataclysm-BN/main/gfx/app_icon/app-icon.svg)                 | [Arcana/C.R.I.T. Patchmod](https://github.com/chaosvolt/cdda-arcana-mod/archive/refs/heads/master.zip)                                    | Chaosvolt                                 | 2026.6.20-33bfbbe  | Optional patch mod that allows content in Arcana and C.R.I.T. to interact with each other.                                                                                                               |
-| ![Icon](https://raw.githubusercontent.com/cataclysmbn/Cataclysm-BN/main/gfx/app_icon/app-icon.svg)                 | [Arcana/Cata++ Patchmod](https://github.com/Noctifer-de-Mortem/nocts_cata_mod/archive/refs/heads/master.zip)                              | Chaosvolt,Noctifer                        | 2026.11.2-f032a50  | Optional patch mod that allows content in Arcana and Cataclysm++ to interact with each other.                                                                                                            |
+| ![Icon](https://raw.githubusercontent.com/cataclysmbn/Cataclysm-BN/main/gfx/app_icon/app-icon.svg)                 | [Arcana/Cata++ Patchmod](https://github.com/Noctifer-de-Mortem/nocts_cata_mod/archive/refs/heads/master.zip)                              | Chaosvolt,Noctifer                        | 2026.11.7-eb64bd5  | Optional patch mod that allows content in Arcana and Cataclysm++ to interact with each other.                                                                                                            |
 | ![Icon](https://raw.githubusercontent.com/cataclysmbn/Cataclysm-BN/main/gfx/app_icon/app-icon.svg)                 | [Arcana/DinoMod Patchmod](https://github.com/chaosvolt/cdda-arcana-mod/archive/refs/heads/master.zip)                                     | Chaosvolt                                 | 2026.6.20-33bfbbe  | Optional patch mod that allows content in Arcana and DinoMod to interact with each other.                                                                                                                |
 | ![Icon](https://raw.githubusercontent.com/cataclysmbn/Cataclysm-BN/main/gfx/app_icon/app-icon.svg)                 | [Arcana/Magical Nights Patchmod](https://github.com/chaosvolt/cdda-arcana-mod/archive/refs/heads/master.zip)                              | Chaosvolt                                 | 2026.6.20-33bfbbe  | Optional patch mod that allows content in Arcana and Magical Nights to interact with each other.                                                                                                         |
 | ![Icon](https://raw.githubusercontent.com/cataclysmbn/Cataclysm-BN/main/gfx/app_icon/app-icon.svg)                 | [Arsenal Breach](https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip)                      | Rooki1,community                          | 0.0.0              | Adds futuristic weapons                                                                                                                                                                                  |
@@ -92,12 +92,12 @@ supplies. | |
 ![Icon](https://raw.githubusercontent.com/cataclysmbn/Cataclysm-BN/main/gfx/app_icon/app-icon.svg)
 |
 [Cata++/Exotic ammo types Patchmod](https://github.com/Noctifer-de-Mortem/nocts_cata_mod/archive/refs/heads/master.zip)
-| Chaosvolt | 2026.11.2-f032a50 | Optional patch mod that allows content in
+| Chaosvolt | 2026.11.7-eb64bd5 | Optional patch mod that allows content in
 Cataclysm++ and Exotic ammo types to interact with each other. | |
 ![Icon](https://raw.githubusercontent.com/cataclysmbn/Cataclysm-BN/main/gfx/app_icon/app-icon.svg)
 |
 [Cataclysm++](https://github.com/Noctifer-de-Mortem/nocts_cata_mod/archive/refs/heads/master.zip)
-| Noctifer | 2026.11.2-f032a50 | The unofficial expansion mod for Cataclysm:
+| Noctifer | 2026.11.7-eb64bd5 | The unofficial expansion mod for Cataclysm:
 Bright Nights.
 
 The gigantic jabberwock of a mod that adds a lot of content to the game: new
@@ -452,7 +452,7 @@ material. | |
 ![Icon](https://raw.githubusercontent.com/cataclysmbn/Cataclysm-BN/main/gfx/app_icon/app-icon.svg)
 |
 [Mind Over Matter (BN)](https://github.com/MSCantrell/Mind-Over-Matter-for-Bright-Nights/archive/refs/heads/main.zip)
-| Standing-Storm (original),Mike Cantrell (BN port) | 2026.11.6-f9d4e2b |
+| Standing-Storm (original),Mike Cantrell (BN port) | 2026.11.7-8f1c7e0 |
 Psionics: nine psychic power paths. A Lua-based port of the Mind Over Matter mod
 from Cataclysm: DDA. Pinned upstream: CDDA master 69df2e4 (2026-07-04). | |
 ![Icon](https://raw.githubusercontent.com/cataclysmbn/Cataclysm-BN/main/gfx/app_icon/app-icon.svg)

@@ -28,7 +28,7 @@ author:
 license: ALL-RIGHTS-RESERVED
 homepage: >-
   https://github.com/Noctifer-de-Mortem/nocts_cata_mod/tree/master/nocts_cata_mod_BN
-version: 2026.11.2-f032a50
+version: 2026.11.7-eb64bd5
 previous_releases:
   - version: 0.0.0
     source:
@@ -390,13 +390,21 @@ previous_releases:
       commit_sha: 1dcb73f8eca72de849f8705ffeec804c13223e14
       extract_path: nocts_cata_mod_BN
     released_at: "2026-10-28T03:30:45.053Z"
+  - version: 2026.11.2-f032a50
+    source:
+      type: github_archive
+      url: >-
+        https://github.com/Noctifer-de-Mortem/nocts_cata_mod/archive/refs/heads/master.zip
+      commit_sha: f032a5085821cf5db99fbe760678f7feda8b828c
+      extract_path: nocts_cata_mod_BN
+    released_at: "2026-11-02T03:51:30.184Z"
 dependencies:
   bn: ">=0.9.1"
 source:
   type: github_archive
   url: >-
     https://github.com/Noctifer-de-Mortem/nocts_cata_mod/archive/refs/heads/master.zip
-  commit_sha: f032a5085821cf5db99fbe760678f7feda8b828c
+  commit_sha: eb64bd56a6d88842c37bb87ceb017b3b9cdf943d
   extract_path: nocts_cata_mod_BN
 categories:
   - content
@@ -406,4 +414,4 @@ uses_lua: false
 autoupdate:
   type: commit
   branch: master
-last_updated: "2026-11-02T03:51:30.184Z"
+last_updated: "2026-11-07T04:04:55.542Z"
