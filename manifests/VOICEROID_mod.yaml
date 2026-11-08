@@ -1,0 +1,31 @@
+schema_version: "1.0"
+id: VOICEROID_mod
+display_name: 追加 - ボイスロイドBNver
+short_description: >-
+  キャラクターの容姿をVOICEROID、音街ウナTalk_Ex、重音テト、CeVIO、ガイノイドTalk、ギャラ子Talk、VOICEVOXのイメージキャラクターに変更出来ます。
+description: >-
+  キャラクターの容姿をVOICEROID、音街ウナTalk_Ex、重音テト、CeVIO、ガイノイドTalk、ギャラ子Talk、VOICEVOXのイメージキャラクターに変更出来ます。
+
+  This mod lets you change the look of the characters made by shaba into the
+  image characters of VOICEROID, Otomachi Una Talk Ex, CeVIO, Gynoid Talk,
+  Galaco Talk and Kasane Teto.
+author:
+  - shaba
+  - YasuYasu
+  - sagittarius72
+license: MIT
+homepage: "https://github.com/sagittarius72git/VOICEROID_modBNver"
+version: 0.0.0
+dependencies:
+  bn: ">=0.9.1"
+source:
+  type: github_archive
+  url: >-
+    https://github.com/sagittarius72git/VOICEROID_modBNver/archive/refs/heads/main.zip
+  commit_sha: fbf48b80bc2eeb7e4e45fe039e4b7e08e88835e5
+categories:
+  - graphics
+  - items
+autoupdate:
+  type: commit
+  branch: main
