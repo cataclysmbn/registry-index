@@ -452,7 +452,7 @@ material. | |
 ![Icon](https://raw.githubusercontent.com/cataclysmbn/Cataclysm-BN/main/gfx/app_icon/app-icon.svg)
 |
 [Mind Over Matter (BN)](https://github.com/MSCantrell/Mind-Over-Matter-for-Bright-Nights/archive/refs/heads/main.zip)
-| Standing-Storm (original),Mike Cantrell (BN port) | 2026.11.7-8f1c7e0 |
+| Standing-Storm (original),Mike Cantrell (BN port) | 2026.11.9-832b3b6 |
 Psionics: nine psychic power paths. A Lua-based port of the Mind Over Matter mod
 from Cataclysm: DDA. Pinned upstream: CDDA master 69df2e4 (2026-07-04). | |
 ![Icon](https://raw.githubusercontent.com/cataclysmbn/Cataclysm-BN/main/gfx/app_icon/app-icon.svg)
@@ -1358,6 +1358,12 @@ zeds, for mobile devices. | |
 [vorpal weapons](https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip)
 | | 0.0.0 | A collection of assorted gear, weapons, recipes and more. Machine
 translated from Japanese. | |
+![Icon](https://raw.githubusercontent.com/cataclysmbn/Cataclysm-BN/main/gfx/app_icon/app-icon.svg)
+|
+[追加 - ボイスロイドBNver](https://github.com/sagittarius72git/VOICEROID_modBNver/archive/refs/heads/main.zip)
+| shaba,YasuYasu,sagittarius72 | 0.0.0 |
+キャラクターの容姿をVOICEROID、音街ウナTalk_Ex、重音テト、CeVIO、ガイノイドTalk、ギャラ子Talk、VOICEVOXのイメージキャラクターに変更出来ます。
+| |
 ![Icon](https://raw.githubusercontent.com/cataclysmbn/Cataclysm-BN/main/gfx/app_icon/app-icon.svg)
 |
 [짐승의 무기술](https://github.com/NappingOcean/Wield_Wild_Weapons/archive/refs/heads/main.zip)

@@ -3915,21 +3915,21 @@
     ],
     "license": "CC-BY-SA-4.0",
     "homepage": "https://github.com/MSCantrell/Mind-Over-Matter-for-Bright-Nights/tree/main/mindovermatter_bn",
-    "version": "2026.11.7-8f1c7e0",
+    "version": "2026.11.9-832b3b6",
     "dependencies": {
       "bn": ">=0.9.1"
     },
     "source": {
       "type": "github_archive",
       "url": "https://github.com/MSCantrell/Mind-Over-Matter-for-Bright-Nights/archive/refs/heads/main.zip",
-      "commit_sha": "8f1c7e04201860867e92be4124170d005ff9a2c6",
+      "commit_sha": "832b3b60052dbedd2f275a6b92f330db1f55872f",
       "extract_path": "Mind-Over-Matter-for-Bright-Nights-main/mindovermatter_bn"
     },
     "autoupdate": {
       "type": "commit",
       "branch": "main"
     },
-    "last_updated": "2026-11-07T04:04:53.036Z"
+    "last_updated": "2026-11-09T04:01:48.266Z"
   },
   {
     "schema_version": "1.0",
@@ -9955,6 +9955,38 @@
       "branch": "master"
     },
     "last_updated": "2026-05-19T09:19:11+09:00"
+  },
+  {
+    "schema_version": "1.0",
+    "id": "VOICEROID_mod",
+    "display_name": "追加 - ボイスロイドBNver",
+    "short_description": "キャラクターの容姿をVOICEROID、音街ウナTalk_Ex、重音テト、CeVIO、ガイノイドTalk、ギャラ子Talk、VOICEVOXのイメージキャラクターに変更出来ます。",
+    "description": "キャラクターの容姿をVOICEROID、音街ウナTalk_Ex、重音テト、CeVIO、ガイノイドTalk、ギャラ子Talk、VOICEVOXのイメージキャラクターに変更出来ます。\nThis mod lets you change the look of the characters made by shaba into the image characters of VOICEROID, Otomachi Una Talk Ex, CeVIO, Gynoid Talk, Galaco Talk and Kasane Teto.",
+    "author": [
+      "shaba",
+      "YasuYasu",
+      "sagittarius72"
+    ],
+    "license": "MIT",
+    "homepage": "https://github.com/sagittarius72git/VOICEROID_modBNver",
+    "version": "0.0.0",
+    "dependencies": {
+      "bn": ">=0.9.1"
+    },
+    "source": {
+      "type": "github_archive",
+      "url": "https://github.com/sagittarius72git/VOICEROID_modBNver/archive/refs/heads/main.zip",
+      "commit_sha": "fbf48b80bc2eeb7e4e45fe039e4b7e08e88835e5"
+    },
+    "categories": [
+      "graphics",
+      "items"
+    ],
+    "autoupdate": {
+      "type": "commit",
+      "branch": "main"
+    },
+    "last_updated": "2026-11-08T20:10:17+09:00"
   },
   {
     "schema_version": "1.0",
