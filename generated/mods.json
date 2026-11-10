@@ -523,7 +523,7 @@
     ],
     "license": "CC-BY-SA-3.0",
     "homepage": "https://github.com/Noctifer-de-Mortem/nocts_cata_mod/tree/master/Patchmods/BN_Arcana_Cata++_Patch",
-    "version": "2026.11.8-7593f51",
+    "version": "2026.11.10-46982a6",
     "yanked": {
       "reason": "Replaced by mod_interactions."
     },
@@ -535,7 +535,7 @@
     "source": {
       "type": "github_archive",
       "url": "https://github.com/Noctifer-de-Mortem/nocts_cata_mod/archive/refs/heads/master.zip",
-      "commit_sha": "7593f51b83ca9c5fa38ffab34322e542dc5b7e47",
+      "commit_sha": "46982a63da25b064c8d0fdee9b68c23dccc1f671",
       "extract_path": "Patchmods/BN_Arcana_Cata++_Patch"
     },
     "categories": [
@@ -548,7 +548,7 @@
       "branch": "master"
     },
     "parent": "arcana",
-    "last_updated": "2026-11-08T03:55:46.963Z"
+    "last_updated": "2026-11-10T05:42:35.968Z"
   },
   {
     "schema_version": "1.0",
@@ -1609,7 +1609,7 @@
     ],
     "license": "CC-BY-SA-3.0",
     "homepage": "https://github.com/Noctifer-de-Mortem/nocts_cata_mod/tree/master/Patchmods/BN_Cata++_ExoticAmmo_Patch",
-    "version": "2026.11.8-7593f51",
+    "version": "2026.11.10-46982a6",
     "yanked": {
       "reason": "Replaced by mod_interactions."
     },
@@ -1621,7 +1621,7 @@
     "source": {
       "type": "github_archive",
       "url": "https://github.com/Noctifer-de-Mortem/nocts_cata_mod/archive/refs/heads/master.zip",
-      "commit_sha": "7593f51b83ca9c5fa38ffab34322e542dc5b7e47",
+      "commit_sha": "46982a63da25b064c8d0fdee9b68c23dccc1f671",
       "extract_path": "Patchmods/BN_Cata++_ExoticAmmo_Patch"
     },
     "categories": [
@@ -1634,7 +1634,7 @@
       "branch": "master"
     },
     "parent": "cata",
-    "last_updated": "2026-11-08T03:55:43.480Z"
+    "last_updated": "2026-11-10T05:42:33.868Z"
   },
   {
     "schema_version": "1.0",
@@ -1647,14 +1647,14 @@
     ],
     "license": "ALL-RIGHTS-RESERVED",
     "homepage": "https://github.com/Noctifer-de-Mortem/nocts_cata_mod/tree/master/nocts_cata_mod_BN",
-    "version": "2026.11.8-7593f51",
+    "version": "2026.11.10-46982a6",
     "dependencies": {
       "bn": ">=0.9.1"
     },
     "source": {
       "type": "github_archive",
       "url": "https://github.com/Noctifer-de-Mortem/nocts_cata_mod/archive/refs/heads/master.zip",
-      "commit_sha": "7593f51b83ca9c5fa38ffab34322e542dc5b7e47",
+      "commit_sha": "46982a63da25b064c8d0fdee9b68c23dccc1f671",
       "extract_path": "nocts_cata_mod_BN"
     },
     "categories": [
@@ -1666,7 +1666,7 @@
       "type": "commit",
       "branch": "master"
     },
-    "last_updated": "2026-11-08T03:55:42.763Z"
+    "last_updated": "2026-11-10T05:42:33.495Z"
   },
   {
     "schema_version": "1.0",
@@ -3421,14 +3421,14 @@
     ],
     "license": "ALL-RIGHTS-RESERVED",
     "homepage": "https://github.com/thelonestander/Lones-atomic-additions/tree/main/Lones Atomic additions",
-    "version": "2026.10.30-b0c6d12",
+    "version": "2026.11.10-5b57152",
     "dependencies": {
       "bn": ">=0.9.1"
     },
     "source": {
       "type": "github_archive",
       "url": "https://github.com/thelonestander/Lones-atomic-additions/archive/refs/heads/main.zip",
-      "commit_sha": "b0c6d1202b46bc98dcb15278981b14e8d11d16cb",
+      "commit_sha": "5b57152307975d5df6d5e1f935f47a08baad1bdd",
       "extract_path": "Lones Atomic additions"
     },
     "categories": [
@@ -3440,7 +3440,7 @@
       "type": "commit",
       "branch": "main"
     },
-    "last_updated": "2026-10-30T03:55:06.477Z"
+    "last_updated": "2026-11-10T05:42:32.343Z"
   },
   {
     "schema_version": "1.0",
@@ -3486,7 +3486,7 @@
     ],
     "license": "ALL-RIGHTS-RESERVED",
     "homepage": "https://github.com/thelonestander/Lones-atomic-additions/tree/main/Cata++ patch mod",
-    "version": "2026.10.30-b0c6d12",
+    "version": "2026.11.10-5b57152",
     "dependencies": {
       "bn": ">=0.9.1",
       "cata++": "*"
@@ -3494,7 +3494,7 @@
     "source": {
       "type": "github_archive",
       "url": "https://github.com/thelonestander/Lones-atomic-additions/archive/refs/heads/main.zip",
-      "commit_sha": "b0c6d1202b46bc98dcb15278981b14e8d11d16cb",
+      "commit_sha": "5b57152307975d5df6d5e1f935f47a08baad1bdd",
       "extract_path": "Cata++ patch mod"
     },
     "categories": [
@@ -3506,7 +3506,7 @@
       "type": "commit",
       "branch": "main"
     },
-    "last_updated": "2026-10-30T03:54:57.233Z"
+    "last_updated": "2026-11-10T05:42:35.297Z"
   },
   {
     "schema_version": "1.0",
@@ -3647,14 +3647,14 @@
     ],
     "license": "ALL-RIGHTS-RESERVED",
     "homepage": "https://github.com/chaosvolt/MST_Extra_Mod/tree/master/MST_Extra_BN",
-    "version": "2026.11.2-443ea41",
+    "version": "2026.11.10-0e694b3",
     "dependencies": {
       "bn": ">=0.9.1"
     },
     "source": {
       "type": "github_archive",
       "url": "https://github.com/chaosvolt/MST_Extra_Mod/archive/refs/heads/master.zip",
-      "commit_sha": "443ea413c4ccdcfdc4b90a2606399946827523e4",
+      "commit_sha": "0e694b3b846b69441fffc8cf4ef1ea521551bcc1",
       "extract_path": "MST_Extra_BN"
     },
     "categories": [
@@ -3666,7 +3666,7 @@
       "type": "commit",
       "branch": "master"
     },
-    "last_updated": "2026-11-02T03:51:03.867Z"
+    "last_updated": "2026-11-10T05:42:35.862Z"
   },
   {
     "schema_version": "1.0",
@@ -3814,14 +3814,14 @@
     ],
     "license": "ALL-RIGHTS-RESERVED",
     "homepage": "https://github.com/chaosvolt/cdda_medieval_mod_reborn/tree/master/Medieval_Mod_Reborn_BN",
-    "version": "2026.11.2-9f402e1",
+    "version": "2026.11.10-4a42bee",
     "dependencies": {
       "bn": ">=0.9.1"
     },
     "source": {
       "type": "github_archive",
       "url": "https://github.com/chaosvolt/cdda_medieval_mod_reborn/archive/refs/heads/master.zip",
-      "commit_sha": "9f402e1a0d978ce3e4d31496ecca5795ed1b15d4",
+      "commit_sha": "4a42bee4b2ef5941cc2d658ab5c8933670c344a5",
       "extract_path": "Medieval_Mod_Reborn_BN"
     },
     "categories": [
@@ -3833,7 +3833,7 @@
       "type": "commit",
       "branch": "master"
     },
-    "last_updated": "2026-11-02T03:51:02.769Z"
+    "last_updated": "2026-11-10T05:42:35.470Z"
   },
   {
     "schema_version": "1.0",
@@ -3915,21 +3915,21 @@
     ],
     "license": "CC-BY-SA-4.0",
     "homepage": "https://github.com/MSCantrell/Mind-Over-Matter-for-Bright-Nights/tree/main/mindovermatter_bn",
-    "version": "2026.11.9-832b3b6",
+    "version": "2026.11.10-eb25111",
     "dependencies": {
       "bn": ">=0.9.1"
     },
     "source": {
       "type": "github_archive",
       "url": "https://github.com/MSCantrell/Mind-Over-Matter-for-Bright-Nights/archive/refs/heads/main.zip",
-      "commit_sha": "832b3b60052dbedd2f275a6b92f330db1f55872f",
+      "commit_sha": "eb25111c47845e78e7c6022af52f4745c38f1f15",
       "extract_path": "Mind-Over-Matter-for-Bright-Nights-main/mindovermatter_bn"
     },
     "autoupdate": {
       "type": "commit",
       "branch": "main"
     },
-    "last_updated": "2026-11-09T04:01:48.266Z"
+    "last_updated": "2026-11-10T05:42:30.373Z"
   },
   {
     "schema_version": "1.0",
@@ -6716,14 +6716,14 @@
     ],
     "license": "CC-BY-SA-4.0",
     "homepage": "https://github.com/graysonchao/CBN-Sky-Island",
-    "version": "0.0.9-alpha",
+    "version": "0.1.0-alpha",
     "dependencies": {
       "bn": ">=0.9.1"
     },
     "source": {
       "type": "github_archive",
-      "url": "https://github.com/graysonchao/CBN-Sky-Island/archive/refs/tags/v0.0.9-alpha.zip",
-      "commit_sha": "f303b4681c5df7287f108a106942800aff0d9a50"
+      "url": "https://github.com/graysonchao/CBN-Sky-Island/archive/refs/tags/v0.1.0-alpha.zip",
+      "commit_sha": "cd982dc084a4c9f45cacd9c628b658433848b6b8"
     },
     "modinfo_url": "https://raw.githubusercontent.com/graysonchao/CBN-Sky-Island/f303b4681c5df7287f108a106942800aff0d9a50/modinfo.json",
     "uses_lua": true,
@@ -6731,7 +6731,7 @@
     "autoupdate": {
       "type": "tag"
     },
-    "last_updated": "2026-06-07T23:59:44.865Z"
+    "last_updated": "2026-11-10T05:42:27.260Z"
   },
   {
     "schema_version": "1.0",

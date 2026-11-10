@@ -10,7 +10,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "homepage": "https://github.com/graysonchao/CBN-Sky-Island",
-  "version": "0.0.9-alpha",
+  "version": "0.1.0-alpha",
   "previous_releases": [
     {
       "version": "v0.0.6-alpha",
@@ -77,6 +77,15 @@
         "commit_sha": "477e81417e90b85fdee7d83aa6c16c9a4a04dcaf"
       },
       "released_at": "2026-02-24T14:26:42.438Z"
+    },
+    {
+      "version": "0.0.9-alpha",
+      "source": {
+        "type": "github_archive",
+        "url": "https://github.com/graysonchao/CBN-Sky-Island/archive/refs/tags/v0.0.9-alpha.zip",
+        "commit_sha": "f303b4681c5df7287f108a106942800aff0d9a50"
+      },
+      "released_at": "2026-06-07T23:59:44.865Z"
     }
   ],
   "dependencies": {
@@ -84,8 +93,8 @@
   },
   "source": {
     "type": "github_archive",
-    "url": "https://github.com/graysonchao/CBN-Sky-Island/archive/refs/tags/v0.0.9-alpha.zip",
-    "commit_sha": "f303b4681c5df7287f108a106942800aff0d9a50"
+    "url": "https://github.com/graysonchao/CBN-Sky-Island/archive/refs/tags/v0.1.0-alpha.zip",
+    "commit_sha": "cd982dc084a4c9f45cacd9c628b658433848b6b8"
   },
   "modinfo_url": "https://raw.githubusercontent.com/graysonchao/CBN-Sky-Island/f303b4681c5df7287f108a106942800aff0d9a50/modinfo.json",
   "uses_lua": true,
@@ -93,5 +102,5 @@
   "autoupdate": {
     "type": "tag"
   },
-  "last_updated": "2026-06-07T23:59:44.865Z"
+  "last_updated": "2026-11-10T05:42:27.260Z"
 }

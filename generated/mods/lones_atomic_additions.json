@@ -9,7 +9,7 @@
   ],
   "license": "ALL-RIGHTS-RESERVED",
   "homepage": "https://github.com/thelonestander/Lones-atomic-additions/tree/main/Lones Atomic additions",
-  "version": "2026.10.30-b0c6d12",
+  "version": "2026.11.10-5b57152",
   "previous_releases": [
     {
       "version": "0.0.0",
@@ -180,6 +180,16 @@
         "extract_path": "Lones Atomic additions"
       },
       "released_at": "2026-09-18T02:39:45.808Z"
+    },
+    {
+      "version": "2026.10.30-b0c6d12",
+      "source": {
+        "type": "github_archive",
+        "url": "https://github.com/thelonestander/Lones-atomic-additions/archive/refs/heads/main.zip",
+        "commit_sha": "b0c6d1202b46bc98dcb15278981b14e8d11d16cb",
+        "extract_path": "Lones Atomic additions"
+      },
+      "released_at": "2026-10-30T03:55:06.477Z"
     }
   ],
   "dependencies": {
@@ -188,7 +198,7 @@
   "source": {
     "type": "github_archive",
     "url": "https://github.com/thelonestander/Lones-atomic-additions/archive/refs/heads/main.zip",
-    "commit_sha": "b0c6d1202b46bc98dcb15278981b14e8d11d16cb",
+    "commit_sha": "5b57152307975d5df6d5e1f935f47a08baad1bdd",
     "extract_path": "Lones Atomic additions"
   },
   "categories": [
@@ -200,5 +210,5 @@
     "type": "commit",
     "branch": "main"
   },
-  "last_updated": "2026-10-30T03:55:06.477Z"
+  "last_updated": "2026-11-10T05:42:32.343Z"
 }
