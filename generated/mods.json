@@ -3453,7 +3453,7 @@
     ],
     "license": "ALL-RIGHTS-RESERVED",
     "homepage": "https://github.com/thelonestander/Lones-Augmented-Arsenal",
-    "version": "2026.11.12-dd536e6",
+    "version": "2026.11.13-236d3c5",
     "dependencies": {
       "bn": ">=0.9.1",
       "aftershock": "*",
@@ -3462,7 +3462,7 @@
     "source": {
       "type": "github_archive",
       "url": "https://github.com/thelonestander/Lones-Augmented-Arsenal/archive/refs/heads/main.zip",
-      "commit_sha": "dd536e614a30e50dce282d5e91378241cc8bca95"
+      "commit_sha": "236d3c5a90f427aa9d2075f7c8271f0a5ae2992a"
     },
     "categories": [
       "content"
@@ -3473,7 +3473,7 @@
       "type": "commit",
       "branch": "main"
     },
-    "last_updated": "2026-11-12T05:19:29.355Z"
+    "last_updated": "2026-11-13T04:34:19.886Z"
   },
   {
     "schema_version": "1.0",
@@ -3915,21 +3915,21 @@
     ],
     "license": "CC-BY-SA-4.0",
     "homepage": "https://github.com/MSCantrell/Mind-Over-Matter-for-Bright-Nights/tree/main/mindovermatter_bn",
-    "version": "2026.11.12-51b0fbe",
+    "version": "2026.11.13-44b948c",
     "dependencies": {
       "bn": ">=0.9.1"
     },
     "source": {
       "type": "github_archive",
       "url": "https://github.com/MSCantrell/Mind-Over-Matter-for-Bright-Nights/archive/refs/heads/main.zip",
-      "commit_sha": "51b0fbe3763d709987976be3f207c0e085aefc3c",
+      "commit_sha": "44b948c286089050e3441898f995a4f939a765a5",
       "extract_path": "Mind-Over-Matter-for-Bright-Nights-main/mindovermatter_bn"
     },
     "autoupdate": {
       "type": "commit",
       "branch": "main"
     },
-    "last_updated": "2026-11-12T05:19:05.932Z"
+    "last_updated": "2026-11-13T04:33:54.629Z"
   },
   {
     "schema_version": "1.0",
