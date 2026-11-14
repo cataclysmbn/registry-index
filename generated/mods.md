@@ -377,25 +377,25 @@ fancy needs. | |
 ![Icon](https://raw.githubusercontent.com/cataclysmbn/Cataclysm-BN/main/gfx/app_icon/app-icon.svg)
 |
 [Lones Atomic additions](https://github.com/thelonestander/Lones-atomic-additions/archive/refs/heads/main.zip)
-| Thelonestander | 2026.11.10-5b57152 | Adds many new atomic gears to BN! | |
+| Thelonestander | 2026.11.14-fc555d1 | Adds many new atomic gears to BN! | |
 ![Icon](https://raw.githubusercontent.com/cataclysmbn/Cataclysm-BN/main/gfx/app_icon/app-icon.svg)
 |
 [Lones Augmented Arsenal](https://github.com/thelonestander/Lones-Augmented-Arsenal/archive/refs/heads/main.zip)
-| Thelonestander | 2026.11.13-236d3c5 | Adds many new atomic gears to BN! | |
+| Thelonestander | 2026.11.14-366579b | Adds many new atomic gears to BN! | |
 ![Icon](https://raw.githubusercontent.com/cataclysmbn/Cataclysm-BN/main/gfx/app_icon/app-icon.svg)
 |
 [Lones Cata++ patchmod](https://github.com/thelonestander/Lones-atomic-additions/archive/refs/heads/main.zip)
-| Thelonestander | 2026.11.10-5b57152 | Patch mod for acs stealth cloak to be
+| Thelonestander | 2026.11.14-fc555d1 | Patch mod for acs stealth cloak to be
 used for cata++. | |
 ![Icon](https://raw.githubusercontent.com/cataclysmbn/Cataclysm-BN/main/gfx/app_icon/app-icon.svg)
 |
 [Lones Soda mod](https://github.com/thelonestander/Lones-soda-mod/archive/refs/heads/main.zip)
-| thelonestander | 2026.9.18-badce41 | A mod that adds many new flavors of coke
+| thelonestander | 2026.11.14-12287bd | A mod that adds many new flavors of coke
 to find | |
 ![Icon](https://raw.githubusercontent.com/cataclysmbn/Cataclysm-BN/main/gfx/app_icon/app-icon.svg)
 |
 [Lones used cars](https://github.com/thelonestander/Lones-Used-Cars/archive/refs/heads/main.zip)
-| thelonestander | 2026.11.11-dad24cb | A mod that adds new cars to BN! | |
+| thelonestander | 2026.11.14-b1856ef | A mod that adds new cars to BN! | |
 ![Icon](https://raw.githubusercontent.com/cataclysmbn/Cataclysm-BN/main/gfx/app_icon/app-icon.svg)
 |
 [MOD to grow tea leaves](https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip)
@@ -410,7 +410,7 @@ strange substances? Growing bizarre apendices? (almost)Everybody gets one! | |
 ![Icon](https://raw.githubusercontent.com/cataclysmbn/Cataclysm-BN/main/gfx/app_icon/app-icon.svg)
 |
 [MST Extra](https://github.com/chaosvolt/MST_Extra_Mod/archive/refs/heads/master.zip)
-| Chaosvolt | 2026.11.10-0e694b3 | The sequeal to CDDA's old More Survival Tools
+| Chaosvolt | 2026.11.14-5f9dbfe | The sequeal to CDDA's old More Survival Tools
 mod, adding additional useful innawoods content. | |
 ![Icon](https://raw.githubusercontent.com/cataclysmbn/Cataclysm-BN/main/gfx/app_icon/app-icon.svg)
 |
@@ -437,7 +437,7 @@ platinum, bronze, steel, rock, rocksalt, sulfur, limestone, gunpow | |
 ![Icon](https://raw.githubusercontent.com/cataclysmbn/Cataclysm-BN/main/gfx/app_icon/app-icon.svg)
 |
 [Medieval Mod Reborn](https://github.com/chaosvolt/cdda_medieval_mod_reborn/archive/refs/heads/master.zip)
-| Chaosvolt | 2026.11.10-4a42bee | The official replacement for and expansion of
+| Chaosvolt | 2026.11.14-763b175 | The official replacement for and expansion of
 the Medieval and Historic Content mod, Bright Nights version. | |
 ![Icon](https://raw.githubusercontent.com/cataclysmbn/Cataclysm-BN/main/gfx/app_icon/app-icon.svg)
 |
@@ -452,7 +452,7 @@ material. | |
 ![Icon](https://raw.githubusercontent.com/cataclysmbn/Cataclysm-BN/main/gfx/app_icon/app-icon.svg)
 |
 [Mind Over Matter (BN)](https://github.com/MSCantrell/Mind-Over-Matter-for-Bright-Nights/archive/refs/heads/main.zip)
-| Standing-Storm (original),Mike Cantrell (BN port) | 2026.11.13-44b948c |
+| Standing-Storm (original),Mike Cantrell (BN port) | 2026.11.14-e563eee |
 Psionics: nine psychic power paths. A Lua-based port of the Mind Over Matter mod
 from Cataclysm: DDA. Pinned upstream: CDDA master 69df2e4 (2026-07-04). | |
 ![Icon](https://raw.githubusercontent.com/cataclysmbn/Cataclysm-BN/main/gfx/app_icon/app-icon.svg)

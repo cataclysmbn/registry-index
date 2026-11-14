@@ -3421,14 +3421,14 @@
     ],
     "license": "ALL-RIGHTS-RESERVED",
     "homepage": "https://github.com/thelonestander/Lones-atomic-additions/tree/main/Lones Atomic additions",
-    "version": "2026.11.10-5b57152",
+    "version": "2026.11.14-fc555d1",
     "dependencies": {
       "bn": ">=0.9.1"
     },
     "source": {
       "type": "github_archive",
       "url": "https://github.com/thelonestander/Lones-atomic-additions/archive/refs/heads/main.zip",
-      "commit_sha": "5b57152307975d5df6d5e1f935f47a08baad1bdd",
+      "commit_sha": "fc555d16f6014f967d1bf444ff3ededa32372ead",
       "extract_path": "Lones Atomic additions"
     },
     "categories": [
@@ -3440,7 +3440,7 @@
       "type": "commit",
       "branch": "main"
     },
-    "last_updated": "2026-11-10T05:42:32.343Z"
+    "last_updated": "2026-11-14T04:29:37.652Z"
   },
   {
     "schema_version": "1.0",
@@ -3453,7 +3453,7 @@
     ],
     "license": "ALL-RIGHTS-RESERVED",
     "homepage": "https://github.com/thelonestander/Lones-Augmented-Arsenal",
-    "version": "2026.11.13-236d3c5",
+    "version": "2026.11.14-366579b",
     "dependencies": {
       "bn": ">=0.9.1",
       "aftershock": "*",
@@ -3462,7 +3462,7 @@
     "source": {
       "type": "github_archive",
       "url": "https://github.com/thelonestander/Lones-Augmented-Arsenal/archive/refs/heads/main.zip",
-      "commit_sha": "236d3c5a90f427aa9d2075f7c8271f0a5ae2992a"
+      "commit_sha": "366579bab6a2eb5fc62ed558034064fcf62e8c74"
     },
     "categories": [
       "content"
@@ -3473,7 +3473,7 @@
       "type": "commit",
       "branch": "main"
     },
-    "last_updated": "2026-11-13T04:34:19.886Z"
+    "last_updated": "2026-11-14T04:29:59.264Z"
   },
   {
     "schema_version": "1.0",
@@ -3486,7 +3486,7 @@
     ],
     "license": "ALL-RIGHTS-RESERVED",
     "homepage": "https://github.com/thelonestander/Lones-atomic-additions/tree/main/Cata++ patch mod",
-    "version": "2026.11.10-5b57152",
+    "version": "2026.11.14-fc555d1",
     "dependencies": {
       "bn": ">=0.9.1",
       "cata++": "*"
@@ -3494,7 +3494,7 @@
     "source": {
       "type": "github_archive",
       "url": "https://github.com/thelonestander/Lones-atomic-additions/archive/refs/heads/main.zip",
-      "commit_sha": "5b57152307975d5df6d5e1f935f47a08baad1bdd",
+      "commit_sha": "fc555d16f6014f967d1bf444ff3ededa32372ead",
       "extract_path": "Cata++ patch mod"
     },
     "categories": [
@@ -3506,7 +3506,7 @@
       "type": "commit",
       "branch": "main"
     },
-    "last_updated": "2026-11-10T05:42:35.297Z"
+    "last_updated": "2026-11-14T04:29:42.489Z"
   },
   {
     "schema_version": "1.0",
@@ -3519,14 +3519,14 @@
     ],
     "license": "ALL-RIGHTS-RESERVED",
     "homepage": "https://github.com/thelonestander/Lones-soda-mod",
-    "version": "2026.9.18-badce41",
+    "version": "2026.11.14-12287bd",
     "dependencies": {
       "bn": ">=0.9.1"
     },
     "source": {
       "type": "github_archive",
       "url": "https://github.com/thelonestander/Lones-soda-mod/archive/refs/heads/main.zip",
-      "commit_sha": "badce413ef20d723b4d22e1d5e49c2a7ce019aed"
+      "commit_sha": "12287bd24db1ca6f0f9376b05da61c85e2f719e4"
     },
     "categories": [
       "items"
@@ -3537,7 +3537,7 @@
       "type": "commit",
       "branch": "main"
     },
-    "last_updated": "2026-09-18T02:39:43.049Z"
+    "last_updated": "2026-11-14T04:29:42.275Z"
   },
   {
     "schema_version": "1.0",
@@ -3550,14 +3550,14 @@
     ],
     "license": "ALL-RIGHTS-RESERVED",
     "homepage": "https://github.com/thelonestander/Lones-Used-Cars",
-    "version": "2026.11.11-dad24cb",
+    "version": "2026.11.14-b1856ef",
     "dependencies": {
       "bn": ">=0.9.1"
     },
     "source": {
       "type": "github_archive",
       "url": "https://github.com/thelonestander/Lones-Used-Cars/archive/refs/heads/main.zip",
-      "commit_sha": "dad24cb0ca396bd47fef845a7ca9ff6d7b883a3b"
+      "commit_sha": "b1856ef7c45b9f524bc104123dffc9fabe976adc"
     },
     "categories": [
       "content"
@@ -3568,7 +3568,7 @@
       "type": "commit",
       "branch": "main"
     },
-    "last_updated": "2026-11-11T04:08:36.960Z"
+    "last_updated": "2026-11-14T04:29:41.462Z"
   },
   {
     "schema_version": "1.0",
@@ -3647,14 +3647,14 @@
     ],
     "license": "ALL-RIGHTS-RESERVED",
     "homepage": "https://github.com/chaosvolt/MST_Extra_Mod/tree/master/MST_Extra_BN",
-    "version": "2026.11.10-0e694b3",
+    "version": "2026.11.14-5f9dbfe",
     "dependencies": {
       "bn": ">=0.9.1"
     },
     "source": {
       "type": "github_archive",
       "url": "https://github.com/chaosvolt/MST_Extra_Mod/archive/refs/heads/master.zip",
-      "commit_sha": "0e694b3b846b69441fffc8cf4ef1ea521551bcc1",
+      "commit_sha": "5f9dbfef550d5c140865ce5f6a32c40eb34c07ca",
       "extract_path": "MST_Extra_BN"
     },
     "categories": [
@@ -3666,7 +3666,7 @@
       "type": "commit",
       "branch": "master"
     },
-    "last_updated": "2026-11-10T05:42:35.862Z"
+    "last_updated": "2026-11-14T04:29:43.100Z"
   },
   {
     "schema_version": "1.0",
@@ -3814,14 +3814,14 @@
     ],
     "license": "ALL-RIGHTS-RESERVED",
     "homepage": "https://github.com/chaosvolt/cdda_medieval_mod_reborn/tree/master/Medieval_Mod_Reborn_BN",
-    "version": "2026.11.10-4a42bee",
+    "version": "2026.11.14-763b175",
     "dependencies": {
       "bn": ">=0.9.1"
     },
     "source": {
       "type": "github_archive",
       "url": "https://github.com/chaosvolt/cdda_medieval_mod_reborn/archive/refs/heads/master.zip",
-      "commit_sha": "4a42bee4b2ef5941cc2d658ab5c8933670c344a5",
+      "commit_sha": "763b175d2be9d1d21b914712a0fdec342079ab25",
       "extract_path": "Medieval_Mod_Reborn_BN"
     },
     "categories": [
@@ -3833,7 +3833,7 @@
       "type": "commit",
       "branch": "master"
     },
-    "last_updated": "2026-11-10T05:42:35.470Z"
+    "last_updated": "2026-11-14T04:29:42.738Z"
   },
   {
     "schema_version": "1.0",
@@ -3915,21 +3915,21 @@
     ],
     "license": "CC-BY-SA-4.0",
     "homepage": "https://github.com/MSCantrell/Mind-Over-Matter-for-Bright-Nights/tree/main/mindovermatter_bn",
-    "version": "2026.11.13-44b948c",
+    "version": "2026.11.14-e563eee",
     "dependencies": {
       "bn": ">=0.9.1"
     },
     "source": {
       "type": "github_archive",
       "url": "https://github.com/MSCantrell/Mind-Over-Matter-for-Bright-Nights/archive/refs/heads/main.zip",
-      "commit_sha": "44b948c286089050e3441898f995a4f939a765a5",
+      "commit_sha": "e563eeed1f132461217c0866c4c140007f084180",
       "extract_path": "Mind-Over-Matter-for-Bright-Nights-main/mindovermatter_bn"
     },
     "autoupdate": {
       "type": "commit",
       "branch": "main"
     },
-    "last_updated": "2026-11-13T04:33:54.629Z"
+    "last_updated": "2026-11-14T04:29:35.248Z"
   },
   {
     "schema_version": "1.0",
