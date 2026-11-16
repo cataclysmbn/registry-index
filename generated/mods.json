@@ -3421,14 +3421,14 @@
     ],
     "license": "ALL-RIGHTS-RESERVED",
     "homepage": "https://github.com/thelonestander/Lones-atomic-additions/tree/main/Lones Atomic additions",
-    "version": "2026.11.14-fc555d1",
+    "version": "2026.11.16-410f709",
     "dependencies": {
       "bn": ">=0.9.1"
     },
     "source": {
       "type": "github_archive",
       "url": "https://github.com/thelonestander/Lones-atomic-additions/archive/refs/heads/main.zip",
-      "commit_sha": "fc555d16f6014f967d1bf444ff3ededa32372ead",
+      "commit_sha": "410f709c90f7f37841b55216a2b53d124e72627f",
       "extract_path": "Lones Atomic additions"
     },
     "categories": [
@@ -3440,7 +3440,7 @@
       "type": "commit",
       "branch": "main"
     },
-    "last_updated": "2026-11-14T04:29:37.652Z"
+    "last_updated": "2026-11-16T04:16:03.072Z"
   },
   {
     "schema_version": "1.0",
@@ -3453,7 +3453,7 @@
     ],
     "license": "ALL-RIGHTS-RESERVED",
     "homepage": "https://github.com/thelonestander/Lones-Augmented-Arsenal",
-    "version": "2026.11.14-366579b",
+    "version": "2026.11.16-0ab0788",
     "dependencies": {
       "bn": ">=0.9.1",
       "aftershock": "*",
@@ -3462,7 +3462,7 @@
     "source": {
       "type": "github_archive",
       "url": "https://github.com/thelonestander/Lones-Augmented-Arsenal/archive/refs/heads/main.zip",
-      "commit_sha": "366579bab6a2eb5fc62ed558034064fcf62e8c74"
+      "commit_sha": "0ab078832ca6d252b3568ff3c5850a7248593ebd"
     },
     "categories": [
       "content"
@@ -3473,7 +3473,7 @@
       "type": "commit",
       "branch": "main"
     },
-    "last_updated": "2026-11-14T04:29:59.264Z"
+    "last_updated": "2026-11-16T04:16:30.024Z"
   },
   {
     "schema_version": "1.0",
@@ -3486,7 +3486,7 @@
     ],
     "license": "ALL-RIGHTS-RESERVED",
     "homepage": "https://github.com/thelonestander/Lones-atomic-additions/tree/main/Cata++ patch mod",
-    "version": "2026.11.14-fc555d1",
+    "version": "2026.11.16-410f709",
     "dependencies": {
       "bn": ">=0.9.1",
       "cata++": "*"
@@ -3494,7 +3494,7 @@
     "source": {
       "type": "github_archive",
       "url": "https://github.com/thelonestander/Lones-atomic-additions/archive/refs/heads/main.zip",
-      "commit_sha": "fc555d16f6014f967d1bf444ff3ededa32372ead",
+      "commit_sha": "410f709c90f7f37841b55216a2b53d124e72627f",
       "extract_path": "Cata++ patch mod"
     },
     "categories": [
@@ -3506,7 +3506,7 @@
       "type": "commit",
       "branch": "main"
     },
-    "last_updated": "2026-11-14T04:29:42.489Z"
+    "last_updated": "2026-11-16T04:16:08.788Z"
   },
   {
     "schema_version": "1.0",

@@ -9,7 +9,7 @@ license: ALL-RIGHTS-RESERVED
 homepage: >-
   https://github.com/thelonestander/Lones-atomic-additions/tree/main/Lones
   Atomic additions
-version: 2026.11.14-fc555d1
+version: 2026.11.16-410f709
 previous_releases:
   - version: 0.0.0
     source:
@@ -163,13 +163,21 @@ previous_releases:
       commit_sha: 5b57152307975d5df6d5e1f935f47a08baad1bdd
       extract_path: Lones Atomic additions
     released_at: "2026-11-10T05:42:32.343Z"
+  - version: 2026.11.14-fc555d1
+    source:
+      type: github_archive
+      url: >-
+        https://github.com/thelonestander/Lones-atomic-additions/archive/refs/heads/main.zip
+      commit_sha: fc555d16f6014f967d1bf444ff3ededa32372ead
+      extract_path: Lones Atomic additions
+    released_at: "2026-11-14T04:29:37.652Z"
 dependencies:
   bn: ">=0.9.1"
 source:
   type: github_archive
   url: >-
     https://github.com/thelonestander/Lones-atomic-additions/archive/refs/heads/main.zip
-  commit_sha: fc555d16f6014f967d1bf444ff3ededa32372ead
+  commit_sha: 410f709c90f7f37841b55216a2b53d124e72627f
   extract_path: Lones Atomic additions
 categories:
   - content
@@ -179,4 +187,4 @@ uses_lua: false
 autoupdate:
   type: commit
   branch: main
-last_updated: "2026-11-14T04:29:37.652Z"
+last_updated: "2026-11-16T04:16:03.072Z"
