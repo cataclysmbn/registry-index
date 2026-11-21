@@ -32,6 +32,8 @@ jobs:
         with:
           fetch-depth: 0
           path: registry/registry-index
+          # Autoupdate calls this after it pushes a commit; build that commit, not the caller's SHA.
+          ref: main
 
       - uses: denoland/setup-deno@v2
         with: { deno-version: v2.x, cache: true }
