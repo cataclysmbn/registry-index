@@ -9,13 +9,24 @@
   ],
   "license": "CC BY-SA 3.0",
   "homepage": "https://github.com/leoCottret/cbn-leocottret-mods/tree/main/MODS/XE038 XE038",
-  "version": "1.1.0",
+  "version": "2026.11.21-a504540",
+  "previous_releases": [
+    {
+      "version": "1.1.0",
+      "source": {
+        "type": "github_archive",
+        "url": "https://github.com/leoCottret/cbn-leocottret-mods/archive/refs/heads/main.zip",
+        "extract_path": "MODS/XE038"
+      }
+    }
+  ],
   "dependencies": {
     "bn": ">=0.11.1"
   },
   "source": {
     "type": "github_archive",
     "url": "https://github.com/leoCottret/cbn-leocottret-mods/archive/refs/heads/main.zip",
+    "commit_sha": "a50454009dbc93614728d335760283237b719b8c",
     "extract_path": "MODS/XE038"
   },
   "categories": [
@@ -32,5 +43,5 @@
     "type": "commit",
     "branch": "main"
   },
-  "last_updated": "2026-06-08T00:54:13Z"
+  "last_updated": "2026-11-21T02:49:29.631Z"
 }

@@ -9,14 +9,25 @@
   ],
   "license": "CC-BY-SA-4.0",
   "homepage": "https://github.com/shmakota/blood_moon_bn/tree/main/Blood_Moon",
-  "version": "0.0.0",
+  "version": "2026.11.21-e09e442",
+  "previous_releases": [
+    {
+      "version": "0.0.0",
+      "source": {
+        "type": "github_archive",
+        "url": "https://github.com/shmakota/blood_moon_bn/archive/refs/heads/main.zip",
+        "commit_sha": "80803602b5e897a6fd344d409cfb8ce8334de613",
+        "extract_path": "blood_moon_bn-main/Blood_Moon"
+      }
+    }
+  ],
   "dependencies": {
     "bn": ">=0.9.1"
   },
   "source": {
     "type": "github_archive",
     "url": "https://github.com/shmakota/blood_moon_bn/archive/refs/heads/main.zip",
-    "commit_sha": "80803602b5e897a6fd344d409cfb8ce8334de613",
+    "commit_sha": "e09e442ff5f624ea0a3d6f9f3963191eff7ec2b8",
     "extract_path": "blood_moon_bn-main/Blood_Moon"
   },
   "categories": [
@@ -33,5 +44,5 @@
     "type": "commit",
     "branch": "main"
   },
-  "last_updated": "2026-07-03T02:23:34Z"
+  "last_updated": "2026-11-21T02:49:35.474Z"
 }

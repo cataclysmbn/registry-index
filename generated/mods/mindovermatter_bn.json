@@ -10,7 +10,7 @@
   ],
   "license": "CC-BY-SA-4.0",
   "homepage": "https://github.com/MSCantrell/Mind-Over-Matter-for-Bright-Nights/tree/main/mindovermatter_bn",
-  "version": "2026.11.15-dfb6abb",
+  "version": "2026.11.20",
   "previous_releases": [
     {
       "version": "2026.9.26-28682f2",
@@ -121,6 +121,16 @@
         "extract_path": "Mind-Over-Matter-for-Bright-Nights-main/mindovermatter_bn"
       },
       "released_at": "2026-11-14T04:29:35.248Z"
+    },
+    {
+      "version": "2026.11.15-dfb6abb",
+      "source": {
+        "type": "github_archive",
+        "url": "https://github.com/MSCantrell/Mind-Over-Matter-for-Bright-Nights/archive/refs/heads/main.zip",
+        "commit_sha": "dfb6abb4fdf2c52a3173ffa7bc585930777f7f9a",
+        "extract_path": "Mind-Over-Matter-for-Bright-Nights-main/mindovermatter_bn"
+      },
+      "released_at": "2026-11-15T04:17:14.524Z"
     }
   ],
   "dependencies": {
@@ -128,13 +138,14 @@
   },
   "source": {
     "type": "github_archive",
-    "url": "https://github.com/MSCantrell/Mind-Over-Matter-for-Bright-Nights/archive/refs/heads/main.zip",
-    "commit_sha": "dfb6abb4fdf2c52a3173ffa7bc585930777f7f9a",
-    "extract_path": "Mind-Over-Matter-for-Bright-Nights-main/mindovermatter_bn"
+    "url": "https://github.com/MSCantrell/Mind-Over-Matter-for-Bright-Nights/archive/refs/tags/2026.11.20.zip",
+    "commit_sha": "961e9a8ee93b7def8a59c9397958b6c0d04a3992",
+    "extract_path": "mindovermatter_bn"
   },
   "autoupdate": {
-    "type": "commit",
-    "branch": "main"
+    "type": "tag",
+    "update_url": "https://github.com/MSCantrell/Mind-Over-Matter-for-Bright-Nights",
+    "regex": "^[0-9]{4}\\.[0-9]+\\.[0-9]+(-.+)?$"
   },
-  "last_updated": "2026-11-15T04:17:14.524Z"
+  "last_updated": "2026-11-21T02:35:35.000Z"
 }

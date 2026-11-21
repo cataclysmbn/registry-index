@@ -21,17 +21,26 @@ license: CC-BY-SA-4.0
 homepage: >-
   https://github.com/lotus-eaten/Cataclysm-Second-Chance/tree/main/Second Chance
   Redux
-version: 0.0.0
+version: 2026.11.21-f2b4c56
 dependencies:
   bn: ">=0.9.1"
 source:
   type: github_archive
   url: >-
     https://github.com/lotus-eaten/Cataclysm-Second-Chance/archive/refs/heads/main.zip
-  commit_sha: 30d3b06d751121afaa65ca77f55ab2f5a2934913
+  commit_sha: f2b4c5659828857bd90e89a5ed0f6ad9f9b6c09f
   extract_path: Cataclysm-Second-Chance-main/Second Chance Redux
 categories:
   - content
 autoupdate:
   type: commit
   branch: main
+last_updated: "2026-11-21T02:49:23.868Z"
+previous_releases:
+  - version: 0.0.0
+    source:
+      type: github_archive
+      url: >-
+        https://github.com/lotus-eaten/Cataclysm-Second-Chance/archive/refs/heads/main.zip
+      commit_sha: 30d3b06d751121afaa65ca77f55ab2f5a2934913
+      extract_path: Cataclysm-Second-Chance-main/Second Chance Redux

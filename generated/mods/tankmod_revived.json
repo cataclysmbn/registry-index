@@ -8,7 +8,18 @@
   ],
   "license": "ALL-RIGHTS-RESERVED",
   "homepage": "https://github.com/chaosvolt/cdda-tankmod-revived-mod/tree/master/Tankmod_Revived_BN",
-  "version": "0.0.0",
+  "version": "2026.11.21-7456a2e",
+  "previous_releases": [
+    {
+      "version": "0.0.0",
+      "source": {
+        "type": "github_archive",
+        "url": "https://github.com/chaosvolt/cdda-tankmod-revived-mod/archive/refs/heads/master.zip",
+        "commit_sha": "ae4015995f7f619a35966b9a745209e91662971c",
+        "extract_path": "Tankmod_Revived_BN"
+      }
+    }
+  ],
   "yanked": {
     "reason": "mainlined in Nightly 2026-05-17 (see https://github.com/cataclysmbn/Cataclysm-BN/pull/8894)"
   },
@@ -18,7 +29,7 @@
   "source": {
     "type": "github_archive",
     "url": "https://github.com/chaosvolt/cdda-tankmod-revived-mod/archive/refs/heads/master.zip",
-    "commit_sha": "ae4015995f7f619a35966b9a745209e91662971c",
+    "commit_sha": "7456a2e7d4f31dfb25714a2015ea7bebbd6b0dbe",
     "extract_path": "Tankmod_Revived_BN"
   },
   "categories": [
@@ -30,5 +41,5 @@
     "type": "commit",
     "branch": "master"
   },
-  "last_updated": "2026-05-17T12:24:18+09:00"
+  "last_updated": "2026-11-21T02:49:27.787Z"
 }

@@ -9,14 +9,24 @@
   ],
   "license": "MIT",
   "homepage": "https://github.com/sagittarius72git/QoL_ITEM",
-  "version": "0.0.0",
+  "version": "2026.11.21-a7097d4",
+  "previous_releases": [
+    {
+      "version": "0.0.0",
+      "source": {
+        "type": "github_archive",
+        "url": "https://github.com/sagittarius72git/QoL_ITEM/archive/refs/heads/main.zip",
+        "commit_sha": "41511def76abb4c34a7130f72f5307b7f78c7317"
+      }
+    }
+  ],
   "dependencies": {
     "bn": ">=0.13.0"
   },
   "source": {
     "type": "github_archive",
     "url": "https://github.com/sagittarius72git/QoL_ITEM/archive/refs/heads/main.zip",
-    "commit_sha": "41511def76abb4c34a7130f72f5307b7f78c7317"
+    "commit_sha": "a7097d43aa582949fce759ac5d9380a50bb055bf"
   },
   "categories": [
     "items",
@@ -29,5 +39,5 @@
     "type": "commit",
     "branch": "main"
   },
-  "last_updated": "2026-10-09T23:31:19+09:00"
+  "last_updated": "2026-11-21T02:49:30.433Z"
 }

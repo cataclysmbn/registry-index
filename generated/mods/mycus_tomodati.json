@@ -8,7 +8,18 @@
   ],
   "license": "ALL-RIGHTS-RESERVED",
   "homepage": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/mycus",
-  "version": "0.0.0",
+  "version": "2026.11.21-c82bd17",
+  "previous_releases": [
+    {
+      "version": "0.0.0",
+      "source": {
+        "type": "github_archive",
+        "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
+        "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+        "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/mycus"
+      }
+    }
+  ],
   "yanked": {
     "reason": "Kenan modpack entries are no longer tracked in this registry."
   },
@@ -18,7 +29,7 @@
   "source": {
     "type": "github_archive",
     "url": "https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip",
-    "commit_sha": "142b53ba0079e9c0aea3e8e674ad17a7dc193d07",
+    "commit_sha": "c82bd17794e8d050cbbd6fb77369ba998171c661",
     "extract_path": "Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/mycus"
   },
   "categories": [
@@ -30,5 +41,5 @@
     "type": "commit",
     "branch": "master"
   },
-  "last_updated": "2026-05-19T09:19:11+09:00"
+  "last_updated": "2026-11-21T02:49:01.050Z"
 }

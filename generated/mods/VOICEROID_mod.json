@@ -11,14 +11,24 @@
   ],
   "license": "MIT",
   "homepage": "https://github.com/sagittarius72git/VOICEROID_modBNver",
-  "version": "0.0.0",
+  "version": "2026.11.21-7db07e9",
+  "previous_releases": [
+    {
+      "version": "0.0.0",
+      "source": {
+        "type": "github_archive",
+        "url": "https://github.com/sagittarius72git/VOICEROID_modBNver/archive/refs/heads/main.zip",
+        "commit_sha": "fbf48b80bc2eeb7e4e45fe039e4b7e08e88835e5"
+      }
+    }
+  ],
   "dependencies": {
     "bn": ">=0.9.1"
   },
   "source": {
     "type": "github_archive",
     "url": "https://github.com/sagittarius72git/VOICEROID_modBNver/archive/refs/heads/main.zip",
-    "commit_sha": "fbf48b80bc2eeb7e4e45fe039e4b7e08e88835e5"
+    "commit_sha": "7db07e96207add293eb3860a8ad6404bece8867f"
   },
   "categories": [
     "graphics",
@@ -28,5 +38,5 @@
     "type": "commit",
     "branch": "main"
   },
-  "last_updated": "2026-11-08T20:10:17+09:00"
+  "last_updated": "2026-11-21T02:49:34.667Z"
 }

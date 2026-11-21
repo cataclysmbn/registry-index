@@ -6,19 +6,29 @@ author:
   - NakedJake
 license: ALL-RIGHTS-RESERVED
 homepage: "https://github.com/NobleJake/ProjectPackRat/tree/main/ProjectSquirrel"
-icon_url: "https://raw.githubusercontent.com/NobleJake/ProjectPackRat/8682733b32eda1b463e9ea58245aaae68cd1a733/ProjectSquirrel/icon.png"
-version: 0.0.0
+version: 2026.11.21-9688ed6
+dependencies:
+  bn: ">=0.9.1"
 source:
   type: github_archive
   url: "https://github.com/NobleJake/ProjectPackRat/archive/refs/heads/main.zip"
-  commit_sha: a8718444676e1fc191c7a4b9470fcdcbf23bbbf5
+  commit_sha: 9688ed6e873a062f02f20b8d08450f50be902091
   extract_path: ProjectPackRat-main/ProjectSquirrel
 categories:
   - content
-dependencies:
-  bn: ">=0.9.1"
-modinfo_url: "https://raw.githubusercontent.com/NobleJake/ProjectPackRat/a8718444676e1fc191c7a4b9470fcdcbf23bbbf5/ProjectSquirrel/modinfo.json"
+icon_url: >-
+  https://raw.githubusercontent.com/NobleJake/ProjectPackRat/8682733b32eda1b463e9ea58245aaae68cd1a733/ProjectSquirrel/icon.png
+modinfo_url: >-
+  https://raw.githubusercontent.com/NobleJake/ProjectPackRat/a8718444676e1fc191c7a4b9470fcdcbf23bbbf5/ProjectSquirrel/modinfo.json
 uses_lua: false
 autoupdate:
   type: commit
   branch: main
+last_updated: "2026-11-21T02:49:27.057Z"
+previous_releases:
+  - version: 0.0.0
+    source:
+      type: github_archive
+      url: "https://github.com/NobleJake/ProjectPackRat/archive/refs/heads/main.zip"
+      commit_sha: a8718444676e1fc191c7a4b9470fcdcbf23bbbf5
+      extract_path: ProjectPackRat-main/ProjectSquirrel

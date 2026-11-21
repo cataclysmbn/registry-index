@@ -7,22 +7,33 @@ author:
 license: ALL-RIGHTS-RESERVED
 homepage: >-
   https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/tree/master/Kenan-BrightNights-Structured-Modpack/Medium-Maintenance-Small-Mods/anti_fungal_gears
-version: 0.0.0
+version: 2026.11.21-c82bd17
+yanked:
+  reason: Kenan modpack entries are no longer tracked in this registry.
+dependencies:
+  bn: ">=0.9.1"
 source:
   type: github_archive
   url: >-
     https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip
-  commit_sha: 142b53ba0079e9c0aea3e8e674ad17a7dc193d07
+  commit_sha: c82bd17794e8d050cbbd6fb77369ba998171c661
   extract_path: >-
     Kenan-BrightNights-Structured-Modpack/Medium-Maintenance-Small-Mods/anti_fungal_gears
 categories:
   - items
-dependencies:
-  bn: ">=0.9.1"
-yanked:
-  reason: "Kenan modpack entries are no longer tracked in this registry."
-modinfo_url: "https://raw.githubusercontent.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/142b53ba0079e9c0aea3e8e674ad17a7dc193d07/Kenan-BrightNights-Structured-Modpack/Medium-Maintenance-Small-Mods/anti_fungal_gears/modinfo.json"
+modinfo_url: >-
+  https://raw.githubusercontent.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/142b53ba0079e9c0aea3e8e674ad17a7dc193d07/Kenan-BrightNights-Structured-Modpack/Medium-Maintenance-Small-Mods/anti_fungal_gears/modinfo.json
 uses_lua: false
 autoupdate:
   type: commit
   branch: master
+last_updated: "2026-11-21T02:49:25.890Z"
+previous_releases:
+  - version: 0.0.0
+    source:
+      type: github_archive
+      url: >-
+        https://github.com/Zlorthishen/BrightNights-Structured-Kenan-Modpack/archive/refs/heads/master.zip
+      commit_sha: 142b53ba0079e9c0aea3e8e674ad17a7dc193d07
+      extract_path: >-
+        Kenan-BrightNights-Structured-Modpack/Medium-Maintenance-Small-Mods/anti_fungal_gears

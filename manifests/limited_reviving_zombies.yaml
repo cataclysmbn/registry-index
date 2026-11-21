@@ -15,17 +15,25 @@ author:
   - sagittarius72
 license: MIT
 homepage: "https://github.com/sagittarius72git/limited_reviving_zombies"
-version: 1.0.0
+version: 2026.11.21-2f8b455
 dependencies:
   bn: ">=0.12.0"
 source:
   type: github_archive
   url: >-
     https://github.com/sagittarius72git/limited_reviving_zombies/archive/refs/heads/main.zip
-  commit_sha: de8b0b863a711d07a71a01232cabc5db01166465
+  commit_sha: 2f8b455c12f37b6abfdc19567fd45e600281c0aa
 categories:
   - qol
   - creatures
 autoupdate:
   type: commit
   branch: main
+last_updated: "2026-11-21T02:49:11.361Z"
+previous_releases:
+  - version: 1.0.0
+    source:
+      type: github_archive
+      url: >-
+        https://github.com/sagittarius72git/limited_reviving_zombies/archive/refs/heads/main.zip
+      commit_sha: de8b0b863a711d07a71a01232cabc5db01166465

@@ -4,26 +4,36 @@ display_name: Zombie Highschool Mod
 short_description: >-
   Add a weird school which includes quests, killing zombies, adding weapons, and
   moar, still WIP.
-author:
-  - Another Marius
-license: CC-BY-SA-4.0
-version: 0.0.0
-icon_url: https://github.com/thhoney08/ZombieHighMod/blob/2f3b44b710232ffb61b5baf718e74af480aef5bf/Zhigh_mod/icon.png
-source:
-  type: github_archive
-  url: "https://github.com/thhoney08/ZombieHighMod/archive/refs/heads/main.zip"
-  commit_sha: bf47b1fa4b426280b3498a42a18cc02ec0ddb0bb
-  extract_path: ZombieHighMod-main/Zhigh_mod
 description: >-
   Add a weird school which includes quests, killing zombies, adding weapons, and
   moar, still WIP.
+author:
+  - Another Marius
+license: CC-BY-SA-4.0
 homepage: "https://github.com/thhoney08/ZombieHighMod/tree/main/Zhigh_mod"
+version: 2026.11.21-dd30843
 dependencies:
   bn: ">=0.9.1"
   exotic_ammo: "*"
+source:
+  type: github_archive
+  url: "https://github.com/thhoney08/ZombieHighMod/archive/refs/heads/main.zip"
+  commit_sha: dd308435c862ea231044ab9f9884d35c9c1fc1da
+  extract_path: ZombieHighMod-main/Zhigh_mod
 tags: []
-modinfo_url: "https://raw.githubusercontent.com/thhoney08/ZombieHighMod/bf47b1fa4b426280b3498a42a18cc02ec0ddb0bb/Zhigh_mod/modinfo.json"
+icon_url: >-
+  https://github.com/thhoney08/ZombieHighMod/blob/2f3b44b710232ffb61b5baf718e74af480aef5bf/Zhigh_mod/icon.png
+modinfo_url: >-
+  https://raw.githubusercontent.com/thhoney08/ZombieHighMod/bf47b1fa4b426280b3498a42a18cc02ec0ddb0bb/Zhigh_mod/modinfo.json
 uses_lua: false
 autoupdate:
   type: commit
   branch: main
+last_updated: "2026-11-21T02:48:59.317Z"
+previous_releases:
+  - version: 0.0.0
+    source:
+      type: github_archive
+      url: "https://github.com/thhoney08/ZombieHighMod/archive/refs/heads/main.zip"
+      commit_sha: bf47b1fa4b426280b3498a42a18cc02ec0ddb0bb
+      extract_path: ZombieHighMod-main/Zhigh_mod

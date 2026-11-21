@@ -1,32 +1,46 @@
 schema_version: "1.0"
 id: xe038
 display_name: XE038
-short_description: The blob has evolved, now a new substance called XE038 is making monsters mutate even further. Add challenging late game monsters, big bundle of materials and late game items.
+short_description: >-
+  The blob has evolved, now a new substance called XE038 is making monsters
+  mutate even further. Add challenging late game monsters, big bundle of
+  materials and late game items.
+description: >-
+  The blob has evolved, now a new substance called XE038 is making monsters
+  mutate even further. Add challenging late game monsters, big bundle of
+  materials and late game items.
 author:
   - leoCottret aka Sudo67
 license: CC BY-SA 3.0
-homepage: >-
-  https://github.com/leoCottret/cbn-leocottret-mods/tree/main/MODS/XE038
-  XE038
-version: 1.1.0
+homepage: "https://github.com/leoCottret/cbn-leocottret-mods/tree/main/MODS/XE038 XE038"
+version: 2026.11.21-a504540
+dependencies:
+  bn: ">=0.11.1"
 source:
   type: github_archive
   url: >-
     https://github.com/leoCottret/cbn-leocottret-mods/archive/refs/heads/main.zip
   extract_path: MODS/XE038
-icon_url: >-
-  https://raw.githubusercontent.com/leoCottret/cbn-leocottret-mods/refs/heads/main/MODS/XE038/mod_icon.png
-description: The blob has evolved, now a new substance called XE038 is making monsters mutate even further. Add challenging late game monsters, big bundle of materials and late game items.
+  commit_sha: a50454009dbc93614728d335760283237b719b8c
 categories:
   - content
   - qol
   - graphics
   - creatures
   - items
-dependencies:
-  bn: ">=0.11.1"
-modinfo_url: "https://raw.githubusercontent.com/leoCottret/cbn-leocottret-mods/refs/heads/main/MODS/XE038/modinfo.json"
+icon_url: >-
+  https://raw.githubusercontent.com/leoCottret/cbn-leocottret-mods/refs/heads/main/MODS/XE038/mod_icon.png
+modinfo_url: >-
+  https://raw.githubusercontent.com/leoCottret/cbn-leocottret-mods/refs/heads/main/MODS/XE038/modinfo.json
 uses_lua: true
 autoupdate:
   type: commit
   branch: main
+last_updated: "2026-11-21T02:49:29.631Z"
+previous_releases:
+  - version: 1.1.0
+    source:
+      type: github_archive
+      url: >-
+        https://github.com/leoCottret/cbn-leocottret-mods/archive/refs/heads/main.zip
+      extract_path: MODS/XE038
