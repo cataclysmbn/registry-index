@@ -21,3 +21,4 @@ uses_lua: true
 lua_api_version: 2
 autoupdate:
   type: tag
+  regex: "^[0-9]+\\.[0-9]+\\.[0-9]+$"
