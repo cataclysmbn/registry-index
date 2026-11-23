@@ -998,7 +998,7 @@ trailers. | |
 ![Icon](https://raw.githubusercontent.com/cataclysmbn/Cataclysm-BN/main/gfx/app_icon/app-icon.svg)
 |
 [Transformers](https://github.com/NobleJake/ProjectPackRat/archive/refs/heads/main.zip)
-| Nyaa | 2026.11.21-9688ed6 | Allows Project: Pack Rat mechs to transform
+| Nyaa | 2026.11.23-64857d8 | Allows Project: Pack Rat mechs to transform
 between rideable and autonomous modes. | |
 ![Icon](https://raw.githubusercontent.com/cataclysmbn/Cataclysm-BN/main/gfx/app_icon/app-icon.svg)
 |
@@ -1397,4 +1397,4 @@ more. Machine translated from Japanese. | |
 ![Icon](https://raw.githubusercontent.com/NobleJake/ProjectPackRat/8682733b32eda1b463e9ea58245aaae68cd1a733/ProjectSquirrel/icon.png)
 |
 [프로젝트: 다람쥐](https://github.com/NobleJake/ProjectPackRat/archive/refs/heads/main.zip)
-| NakedJake | 2026.11.21-9688ed6 | 하이테크 모드. |
+| NakedJake | 2026.11.23-64857d8 | 하이테크 모드. |

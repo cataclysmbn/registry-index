@@ -8,14 +8,28 @@ author:
   - Nyaa
 license: CC-BY-SA-3.0
 homepage: "https://github.com/NobleJake/ProjectPackRat/tree/main/transformers_beta2.2"
-version: 2026.11.21-9688ed6
+version: 2026.11.23-64857d8
+previous_releases:
+  - version: 2.2.0
+    source:
+      type: github_archive
+      url: "https://github.com/NobleJake/ProjectPackRat/archive/refs/heads/main.zip"
+      commit_sha: aa10755711cfb537af03b944b3fcfb23f05b4800
+      extract_path: ProjectPackRat-main/transformers_beta2.2
+  - version: 2026.11.21-9688ed6
+    source:
+      type: github_archive
+      url: "https://github.com/NobleJake/ProjectPackRat/archive/refs/heads/main.zip"
+      commit_sha: 9688ed6e873a062f02f20b8d08450f50be902091
+      extract_path: ProjectPackRat-main/transformers_beta2.2
+    released_at: "2026-11-21T02:49:31.683Z"
 dependencies:
   bn: ">=0.9.1"
   jake_s_squirrel_mod: "*"
 source:
   type: github_archive
   url: "https://github.com/NobleJake/ProjectPackRat/archive/refs/heads/main.zip"
-  commit_sha: 9688ed6e873a062f02f20b8d08450f50be902091
+  commit_sha: 64857d85a01a0164a40430848ddd7f787cebc3d5
   extract_path: ProjectPackRat-main/transformers_beta2.2
 categories:
   - content
@@ -27,11 +41,4 @@ autoupdate:
   type: commit
   branch: main
 parent: jake_s_squirrel_mod
-last_updated: "2026-11-21T02:49:31.683Z"
-previous_releases:
-  - version: 2.2.0
-    source:
-      type: github_archive
-      url: "https://github.com/NobleJake/ProjectPackRat/archive/refs/heads/main.zip"
-      commit_sha: aa10755711cfb537af03b944b3fcfb23f05b4800
-      extract_path: ProjectPackRat-main/transformers_beta2.2
+last_updated: "2026-11-23T05:15:17.504Z"

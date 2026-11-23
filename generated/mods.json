@@ -7337,7 +7337,7 @@
     ],
     "license": "CC-BY-SA-3.0",
     "homepage": "https://github.com/NobleJake/ProjectPackRat/tree/main/transformers_beta2.2",
-    "version": "2026.11.21-9688ed6",
+    "version": "2026.11.23-64857d8",
     "dependencies": {
       "bn": ">=0.9.1",
       "jake_s_squirrel_mod": "*"
@@ -7345,7 +7345,7 @@
     "source": {
       "type": "github_archive",
       "url": "https://github.com/NobleJake/ProjectPackRat/archive/refs/heads/main.zip",
-      "commit_sha": "9688ed6e873a062f02f20b8d08450f50be902091",
+      "commit_sha": "64857d85a01a0164a40430848ddd7f787cebc3d5",
       "extract_path": "ProjectPackRat-main/transformers_beta2.2"
     },
     "categories": [
@@ -7359,7 +7359,7 @@
       "branch": "main"
     },
     "parent": "jake_s_squirrel_mod",
-    "last_updated": "2026-11-21T02:49:31.683Z"
+    "last_updated": "2026-11-23T05:15:17.504Z"
   },
   {
     "schema_version": "1.0",
@@ -10035,14 +10035,14 @@
     ],
     "license": "ALL-RIGHTS-RESERVED",
     "homepage": "https://github.com/NobleJake/ProjectPackRat/tree/main/ProjectSquirrel",
-    "version": "2026.11.21-9688ed6",
+    "version": "2026.11.23-64857d8",
     "dependencies": {
       "bn": ">=0.9.1"
     },
     "source": {
       "type": "github_archive",
       "url": "https://github.com/NobleJake/ProjectPackRat/archive/refs/heads/main.zip",
-      "commit_sha": "9688ed6e873a062f02f20b8d08450f50be902091",
+      "commit_sha": "64857d85a01a0164a40430848ddd7f787cebc3d5",
       "extract_path": "ProjectPackRat-main/ProjectSquirrel"
     },
     "categories": [
@@ -10055,6 +10055,6 @@
       "type": "commit",
       "branch": "main"
     },
-    "last_updated": "2026-11-21T02:49:27.057Z"
+    "last_updated": "2026-11-23T05:15:18.504Z"
   }
 ]
