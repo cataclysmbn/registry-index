@@ -10,7 +10,7 @@
   ],
   "license": "AGPL-3.0-or-later",
   "homepage": "https://github.com/WishDuck/Cataclysm-BN-Mods/tree/master/FilthyClothing",
-  "version": "13.0.7",
+  "version": "13.0.8",
   "previous_releases": [
     {
       "version": "13.0.3",
@@ -19,6 +19,16 @@
         "url": "https://github.com/WishDuck/Cataclysm-BN-Mods/archive/refs/tags/13.0.3.zip",
         "extract_path": "FilthyClothing"
       }
+    },
+    {
+      "version": "13.0.7",
+      "source": {
+        "type": "github_archive",
+        "url": "https://github.com/WishDuck/Cataclysm-BN-Mods/archive/refs/tags/13.0.7.zip",
+        "commit_sha": "92c72371f56f580ce5cfe5c0c80488ce62c6bcc5",
+        "extract_path": "FilthyClothing"
+      },
+      "released_at": "2026-11-21T02:49:21.246Z"
     }
   ],
   "dependencies": {
@@ -26,8 +36,8 @@
   },
   "source": {
     "type": "github_archive",
-    "url": "https://github.com/WishDuck/Cataclysm-BN-Mods/archive/refs/tags/13.0.7.zip",
-    "commit_sha": "92c72371f56f580ce5cfe5c0c80488ce62c6bcc5",
+    "url": "https://github.com/WishDuck/Cataclysm-BN-Mods/archive/refs/tags/13.0.8.zip",
+    "commit_sha": "f1d878b91d1750b7ccc25de2224b73dda070dd4e",
     "extract_path": "FilthyClothing"
   },
   "modinfo_url": "https://raw.githubusercontent.com/WishDuck/Cataclysm-BN-Mods/refs/heads/master/FilthyClothing/modinfo.json",
@@ -37,5 +47,5 @@
     "type": "tag",
     "regex": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
   },
-  "last_updated": "2026-11-21T02:49:21.246Z"
+  "last_updated": "2026-11-25T06:28:47.724Z"
 }

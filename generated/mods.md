@@ -197,8 +197,8 @@ professions. | |
 fodder. | |
 ![Icon](https://raw.githubusercontent.com/cataclysmbn/Cataclysm-BN/main/gfx/app_icon/app-icon.svg)
 |
-[Duck Perks](https://github.com/WishDuck/Cataclysm-BN-Mods/archive/refs/tags/13.0.7.zip)
-| Wishduck | 13.0.7 | Level system mod that gives predominately non-stat based
+[Duck Perks](https://github.com/WishDuck/Cataclysm-BN-Mods/archive/refs/tags/13.0.8.zip)
+| Wishduck | 13.0.8 | Level system mod that gives predominately non-stat based
 perks. | |
 ![Icon](https://raw.githubusercontent.com/cataclysmroguelikegallery/Cata-Rogall-Modpack/2b767bdb800949caa1207d8bb571e9c456ee6dc4/BN/ER_cosplay/icon.png)
 |
@@ -247,8 +247,8 @@ Stuff from the Core Region, all the wa | |
 roughly half, instead of one-sixth. | |
 ![Icon](https://raw.githubusercontent.com/cataclysmbn/Cataclysm-BN/main/gfx/app_icon/app-icon.svg)
 |
-[Filthy Clothing](https://github.com/WishDuck/Cataclysm-BN-Mods/archive/refs/tags/13.0.7.zip)
-| Wishduck,UNOwenWasMe | 13.0.7 | Filthy clothing restoration mod. | |
+[Filthy Clothing](https://github.com/WishDuck/Cataclysm-BN-Mods/archive/refs/tags/13.0.8.zip)
+| Wishduck,UNOwenWasMe | 13.0.8 | Filthy clothing restoration mod. | |
 ![Icon](https://raw.githubusercontent.com/cataclysmbn/Cataclysm-BN/main/gfx/app_icon/app-icon.svg)
 |
 [FinalFantasyMod](https://github.com/Baratan-creates/BN-FinalFantasyMod/archive/refs/heads/main.zip)
