@@ -9,7 +9,7 @@ author:
   - Wishduck
 license: AGPL-3.0-or-later
 homepage: "https://github.com/WishDuck/Cataclysm-BN-Mods/tree/master/DuckPerks"
-version: 13.0.8
+version: 13.0.10
 previous_releases:
   - version: 13.0.3
     source:
@@ -25,12 +25,20 @@ previous_releases:
       commit_sha: 92c72371f56f580ce5cfe5c0c80488ce62c6bcc5
       extract_path: DuckPerks
     released_at: "2026-11-21T02:49:19.461Z"
+  - version: 13.0.8
+    source:
+      type: github_archive
+      url: >-
+        https://github.com/WishDuck/Cataclysm-BN-Mods/archive/refs/tags/13.0.8.zip
+      commit_sha: f1d878b91d1750b7ccc25de2224b73dda070dd4e
+      extract_path: DuckPerks
+    released_at: "2026-11-25T06:28:50.624Z"
 dependencies:
   bn: ">=0.13.0"
 source:
   type: github_archive
-  url: "https://github.com/WishDuck/Cataclysm-BN-Mods/archive/refs/tags/13.0.8.zip"
-  commit_sha: f1d878b91d1750b7ccc25de2224b73dda070dd4e
+  url: "https://github.com/WishDuck/Cataclysm-BN-Mods/archive/refs/tags/13.0.10.zip"
+  commit_sha: a16c5c299ca3ea4e0d6e7646418a26b07e732637
   extract_path: DuckPerks
 modinfo_url: >-
   https://raw.githubusercontent.com/WishDuck/Cataclysm-BN-Mods/refs/heads/master/DuckPerks/modinfo.json
@@ -39,4 +47,4 @@ lua_api_version: 2
 autoupdate:
   type: tag
   regex: "^[0-9]+\\.[0-9]+\\.[0-9]+$"
-last_updated: "2026-11-25T06:28:50.624Z"
+last_updated: "2026-11-26T06:21:42.612Z"
